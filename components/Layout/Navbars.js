@@ -7,7 +7,10 @@ function Navbar() {
   const [opened, setOpened] = useState(false);
   return (
     <div>
-      <Drawers opened={opened} setOpened={setOpened} />
+      <Drawers 
+      styles={{   drawer: { color: 'red' } }}
+       opened={opened} 
+       setOpened={setOpened} />
       <div className="flex justify-between items-center">
       <h1 onClick={()=>setOpened(true)}>logo</h1>
       <TextInput 

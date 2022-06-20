@@ -1,10 +1,10 @@
 import React, { Children, useState } from 'react';
 import Navbars from './Navbars';
+import Footers from './Footers';
 import {
   AppShell,
   Navbar,
   Header,
-  Footer,
   Aside,
   Text,
   MediaQuery,
@@ -27,9 +27,7 @@ export default function Layout( {children}) {
       fixed
      
       footer={
-        <Footer height={60} p="md">
-          Application footer
-        </Footer>
+        <Footers/>
       }
       header={
         <Navbars/>
