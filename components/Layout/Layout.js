@@ -3,12 +3,6 @@ import Navbars from './Navbars';
 import Footers from './Footers';
 import {
   AppShell,
-  Navbar,
-  Header,
-  Aside,
-  Text,
-  MediaQuery,
-  Burger,
   useMantineTheme,
 } from '@mantine/core';
 
