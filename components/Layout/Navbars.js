@@ -22,6 +22,7 @@ function Navbar() {
         <div className="flex gap-3 justify-center">
           <h2>Trending</h2>
           <h2>Categories</h2>
+          <h2>Build PC</h2>
         </div>
       </div>
     </div>
