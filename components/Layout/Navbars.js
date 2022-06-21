@@ -6,12 +6,13 @@ import { UilSearch } from "@iconscout/react-unicons";
 function Navbar() {
   const [opened, setOpened] = useState(false);
   return (
-    <div className="flex flex-col justify-between py-2 px-4">
+    <div className="flex flex-col justify-between py-4 px-14">
       <Drawers opened={opened} setOpened={setOpened} />
       <div className="flex justify-between items-center">
         <img className="w-14" src="../assets/logo.webp" />
         <TextInput
-          styles={{ input: { width: "15rem" } }}
+          className="md:w-552 sm:w-96"
+          // styles={{ input: { width: "15rem" } }}
           placeholder="Search Product ..."
           rightSection={<UilSearch size="18" color="#6F6F6F" />}
         />
