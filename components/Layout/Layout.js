@@ -3,53 +3,34 @@ import Navbars from './Navbars';
 import Footers from './Footers';
 import { Layout, Drawer } from 'antd';
 import Drawers from "../Layout/Drawer";
-import {
-  AppShell,
-  useMantineTheme,
-} from '@mantine/core';
 import { Footer } from 'antd/lib/layout/layout';
 
 const { Header, Content, Sider } = Layout;
 
-export default function LayoutMain({children}) {
-  const theme = useMantineTheme();
+export default function LayoutMain({ children }) {
+  const [collapsed, setCollapsed] = useState(false);
   return (
-    // <AppShell
-    //   // styles={{
-    //   //   main: {
-    //   //     background: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
-    //   //   },
-    //   // }}
-    //   navbarOffsetBreakpoint="sm"
-    //   asideOffsetBreakpoint="sm"
-    //   fixed
-     
-    //   footer={
-    //     <Footers/>
-    //   }
-    //   header={
-    //     <Navbars/>
-    //   }
-    // >
-    //   {children}
-    // </AppShell>
-  <Layout>
-    <Header className="header">
-      <Navbars/>   {/*custom*/}
-    </Header>
+
     <Layout>
-      <Sider>
-        <Drawers/> {/*custom*/}
-      </Sider>
+      <Header style={{ background: '#fff' }}><Navbars setCollapsed={setCollapsed} collapsed={collapsed} /></Header>
       <Layout>
-        <Content>
-          {children}
-        </Content>
-        <Footer>
-          <Footers/>  {/*custom*/}
-        </Footer>
+        <Drawer
+          size="default"
+          title="aDS"
+          placement={"left"}
+          closable={false}
+          onClose={() => setCollapsed(false)}
+          visible={collapsed}
+          key={"left"}
+          style={{
+            backgroundColor:'rgba( 255, 255, 255, 0.25 )',
+            backdropFilter:'blur( 4px )'
+          }}
+        ></Drawer>
+        <Content>{children}</Content>
       </Layout>
+      <Footer>Footer</Footer>
     </Layout>
-  </Layout>
+
   );
 }
