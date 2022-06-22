@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextInput, Loader, Burger } from "@mantine/core";
+import { TextInput, Loader, Burger, Avatar } from "@mantine/core";
 import Drawers from "../Layout/Drawer";
 import { UilSearch } from "@iconscout/react-unicons";
 
@@ -16,10 +16,12 @@ function Navbar() {
           placeholder="Search Product ..."
           rightSection={<UilSearch size="18" color="#6F6F6F" />}
         />
-        <h1>icon</h1>
+        <Avatar alt="it's me" color="cyan" radius="xl">CY</Avatar>
       </div>
-      <div className="flex items-center gap-40">
-        <Burger opened={opened} onClick={() => setOpened((o) => !o)} />
+      <div className="">
+        <div>
+          <Burger opened={opened} onClick={() => setOpened((o) => !o)} />
+        </div>
         <div className="flex gap-3 justify-center">
           <h2>Trending</h2>
           <h2>Categories</h2>

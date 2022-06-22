@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Drawer, Button, Group } from "@mantine/core";
+import { Breadcrumb, Layout, Menu, Drawer } from 'antd';
 import Link from "next/link";
 import {
   UilAward,
@@ -15,14 +15,13 @@ const Drawers = ({ opened, setOpened }) => {
   return (
     <>
       <Drawer
-        opened={opened}
+        closable={true}
+        visible={opened}
         onClose={() => setOpened(false)}
-        // title="logo"
-        padding="xl"
-        size="lg"
+        placement={"left"}
+        size="default"
         className="glass"
-        // style={("backdropFilter:blur(45px)")}
-        withOverlay={false}
+        key={"left"}
       >
         <div className="flex flex-col gap-2 md:gap-6 md:mb-16">
           <h3 className="text-base">links</h3>
@@ -72,11 +71,12 @@ const Drawers = ({ opened, setOpened }) => {
           </div>
         </div>
       </Drawer>
-      <style>{`
+      {/* <style>{`
           .glass {
             background-color: rgb(255,255,255,0.65);
           }
-        `}</style>
+        `}</style> */}
+      
     </>
   );
 };

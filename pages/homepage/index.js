@@ -62,7 +62,7 @@ const index = () => {
           Today’s <span className="text-red-600"> Deal</span>
         </p>
 
-        <Carousel showArrows={true} autoPlay={true} className="p-6">
+        <Carousel showArrows={true} showThumbs={false} autoPlay={true} className="p-6">
           <div className="md:flex md:gap-16">
             <Image
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
