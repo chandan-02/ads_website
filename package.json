@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
     "@mantine/core": "^4.2.10",
     "@mantine/hooks": "^4.2.10",
     "@mantine/next": "^4.2.10",
     "@mantine/notifications": "^4.2.10",
-    "next": "12.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "antd": "^4.21.3",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
