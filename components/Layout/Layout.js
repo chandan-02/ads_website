@@ -34,11 +34,11 @@ export default function LayoutMain({children}) {
     //   {children}
     // </AppShell>
   <Layout>
-    <Header className="header">
+    <Header>
       <Navbars/>   {/*custom*/}
     </Header>
     <Layout>
-      <Sider>
+      <Sider theme="light">
         <Drawers/> {/*custom*/}
       </Sider>
       <Layout>

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import 'antd/dist/antd.css';
 import { MantineProvider } from "@mantine/core";
 
 /*********************************** Components Import ************************************/
