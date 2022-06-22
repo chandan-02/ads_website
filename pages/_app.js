@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import 'antd/dist/antd.css';
-import { MantineProvider } from "@mantine/core";
+import 'antd/dist/antd.css';
 
 /*********************************** Components Import ************************************/
 import Header from "../components/Head/Head";
@@ -12,20 +12,9 @@ export default function App(props) {
   return (
     <>
       <Header />
-
-      <MantineProvider
-        withGlobalStyles
-        withNormalizeCSS
-        theme={{
-          /** Put your mantine theme override here */
-          colorScheme: "light",
-          fontFamily: "Lato",
-        }}
-      >
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </MantineProvider>
     </>
   );
 }

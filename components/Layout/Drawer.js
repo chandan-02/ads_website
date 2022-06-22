@@ -71,12 +71,11 @@ const Drawers = ({ opened, setOpened }) => {
           </div>
         </div>
       </Drawer>
-      {/* <style>{`
+      <style>{`
           .glass {
             background-color: rgb(255,255,255,0.65);
           }
-        `}</style> */}
-      
+        `}</style>
     </>
   );
 };
