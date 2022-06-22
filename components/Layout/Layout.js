@@ -59,19 +59,19 @@ export default function LayoutMain({ children }) {
           <h3>User</h3>
           <div className="flex flex-col gap-8 text-xl md:gap-12">
             <Link href="/myaccount">
-              <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/contactus' ? 'text-[#EE2841]':'text-black'}`}>
+              <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/myaccount' ? 'text-[#EE2841]':'text-black'}`}>
                 <UilUserSquare />
                 My Account
               </a>
             </Link>
             <Link href="/myorder">
-              <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/contactus' ? 'text-[#EE2841]':'text-black'}`}>
+              <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/myorder' ? 'text-[#EE2841]':'text-black'}`}>
                 <UilHeart />
                 My Orders
               </a>
             </Link>
             <Link href="/wishlist">
-              <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/contactus' ? 'text-[#EE2841]':'text-black'}`}>
+              <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/wishlist' ? 'text-[#EE2841]':'text-black'}`}>
                 <UilShoppingCartAlt />
                 Wishlist
               </a>
