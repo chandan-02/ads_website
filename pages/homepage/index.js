@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Button } from '@mantine/core';
+// import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Slider from '../../components/homepage/slider'
 
 const index = () => {
   const data = [
@@ -22,6 +22,9 @@ const index = () => {
       scr: "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     },
   ];
+  const onChange = (currentSlide) => {
+    console.log(currentSlide);
+  };
   return (
     <div className="p-8">
       <div className=" grid  grid-cols-2 grid-rows-4 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-6">
@@ -62,7 +65,7 @@ const index = () => {
         <p className="flex justify-center items-center text-[2.5rem] font-bold gap-2 py-9">
           Today’s <span className="text-red-600"> Deal</span>
         </p>
-
+{/* 
         <Carousel
           showArrows={true}
           // autoPlay={true}
@@ -123,7 +126,8 @@ const index = () => {
               </div>
             </div>
           </div>
-        </Carousel>
+        </Carousel> */}
+        <Slider/>
       </div>
       <style>{`
           .carousel .control-next.control-arrow:before { border-left: 8px solid #EE2841 }
