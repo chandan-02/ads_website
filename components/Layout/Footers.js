@@ -65,7 +65,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-zinc-700 p-1"></div>
+      <div className="border-t border-zinc-700"></div>
       <div className="text-white  text-sm flex flex-col justify-center items-center	 ">
         <p className="my-6">Copyright © 2022 ADS. All rights reserved.</p>
         <div></div>

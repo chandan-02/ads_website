@@ -34,7 +34,7 @@ function Navbar({setCollapsed,collapsed}) {
               </a>
           </Link>
           <Dropdown placement="bottom" overlay={<Categories/>}>
-            <a className={`transition hover:text-[#EE2841] text-black`} onClick={e => e.preventDefault()}>
+            <a className={`transition hover:text-[#EE2841] hover:underline hover:underline-offset-2 text-black`} onClick={e => e.preventDefault()}>
               <Space>
                 Categories
               </Space>
