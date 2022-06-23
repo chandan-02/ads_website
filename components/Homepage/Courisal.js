@@ -10,7 +10,7 @@ const Courisal = ({img,title,desc,price}) => {
   return (
     <div>
     <div className="md:flex md:justify-center  md:gap-[3.7rem]">
-    <Image
+    <img
           src={img}
           className="rounded-md"
           height={541}

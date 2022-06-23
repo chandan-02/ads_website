@@ -92,8 +92,10 @@ const App = () => {
         content: '';
     }
     .ant-carousel .slick-dots-bottom {
-      bottom: -4.125rem;
+      // bottom: -4.125rem;
       gap:2.5rem;
+      // margin-bottom:1rem;
+      padding-top:3.2rem;
   }
   .ant-carousel .slick-dots li.slick-active button {
     opacity: 1;
@@ -108,6 +110,10 @@ const App = () => {
   width: 3rem;
   height: 0.25rem;
   border-radius: 0.3rem;
+}
+
+.ant-carousel .slick-dots{
+  position: unset;
 }
     
       
