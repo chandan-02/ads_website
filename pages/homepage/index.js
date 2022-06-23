@@ -6,6 +6,7 @@ import Slider from '../../components/homepage/slider'
 import Banner from "../../components/Homepage/Banner";
 import Bannergrid from "../../components/Homepage/Bannergrid";
 import Secondcourisal from "../../components/Homepage/SecondCarousel";
+import Review from "../../components/Homepage/Review";
 
 const index = () => {
   const data = [
@@ -81,6 +82,10 @@ const index = () => {
           <Secondcourisal />
         </div>
 
+      </div>
+
+      <div>
+        <Review/>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ function Navbar({setCollapsed,collapsed}) {
   return (
     <div className="flex flex-col justify-between py-4 md:gap-[1rem]">
       <div className="flex justify-between items-center">
-        <img className="w-14" src="../assets/logo.webp" />
+        <img className="w-20" src="../assets/logo.webp"/>
         <Input
           style={{ width: 400, borderRadius: 5 }}
           placeholder="Search Product ..."
@@ -29,9 +29,9 @@ function Navbar({setCollapsed,collapsed}) {
         </div>
         <div className="col-start-2 col-end-4 gap-[2.4rem] flex justify-center text-xl">
           <Link href="/homepage">
-              <a className={`transition hover:text-[#EE2841] ${router.pathname === '/homepage' ? 'text-[#EE2841]':'text-black'}`}>
-                Trending
-              </a>
+            <a className={`transition hover:text-[#EE2841] ${router.pathname === '/homepage' ? 'text-[#EE2841]':'text-black'}`}>
+              Trending
+            </a>
           </Link>
           <Dropdown placement="bottom" overlay={<Categories/>}>
             <a className={`transition hover:text-[#EE2841] hover:underline hover:underline-offset-2 text-black`} onClick={e => e.preventDefault()}>
@@ -41,9 +41,9 @@ function Navbar({setCollapsed,collapsed}) {
             </a>
           </Dropdown>
           <Link href="/buildpc">
-              <a className={`transition hover:text-[#EE2841] ${router.pathname === '/buildpc' ? 'text-[#EE2841]':'text-black'}`}>
-                Build PC
-              </a>
+            <a className={`transition hover:text-[#EE2841] ${router.pathname === '/buildpc' ? 'text-[#EE2841]':'text-black'}`}>
+              Build PC
+            </a>
           </Link>
         </div>
       </div>
