@@ -5,7 +5,7 @@ import Image from "next/image";
 import Slider from '../../components/homepage/slider'
 import Banner from "../../components/Homepage/Banner";
 import Bannergrid from "../../components/Homepage/Bannergrid";
-import  Secondcourisal  from "../../components/Homepage/Secondcourisal";
+import Secondcourisal from "../../components/Homepage/SecondCarousel";
 
 const index = () => {
   const data = [
@@ -68,19 +68,19 @@ const index = () => {
         <span className="flex justify-center items-center text-[2.5rem] font-bold gap-2 my-10 ">
           Today’s <span className="text-red-600"> Deal</span>
         </span>
-        <Slider/>
+        <Slider />
         <div>
-        <Banner/>
-        <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2">
-        <Bannergrid/>
-        <Bannergrid/>
-        <div className="col-span-2 md:col-span-1">
-        <Bannergrid />
+          <Banner />
+          <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2">
+            <Bannergrid />
+            <Bannergrid />
+            <div className="col-span-2 md:col-span-1">
+              <Bannergrid />
+            </div>
+          </div>
+          <Secondcourisal />
         </div>
-        </div>
-        <Secondcourisal/>
-        </div>
-        
+
       </div>
     </div>
   );
