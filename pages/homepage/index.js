@@ -3,6 +3,9 @@ import Image from "next/image";
 // import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slider from '../../components/homepage/slider'
+import Banner from "../../components/Homepage/Banner";
+import Bannergrid from "../../components/Homepage/Bannergrid";
+import  Secondcourisal  from "../../components/Homepage/Secondcourisal";
 
 const index = () => {
   const data = [
@@ -66,6 +69,18 @@ const index = () => {
           Today’s <span className="text-red-600"> Deal</span>
         </span>
         <Slider/>
+        <div>
+        <Banner/>
+        <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2">
+        <Bannergrid/>
+        <Bannergrid/>
+        <div className="col-span-2 md:col-span-1">
+        <Bannergrid />
+        </div>
+        </div>
+        <Secondcourisal/>
+        </div>
+        
       </div>
     </div>
   );
