@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { RightOutlined } from "@ant-design/icons";
+
 // import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slider from '../../components/homepage/slider'
@@ -7,6 +9,7 @@ import Banner from "../../components/Homepage/Banner";
 import Bannergrid from "../../components/Homepage/Bannergrid";
 import Secondcourisal from "../../components/Homepage/SecondCarousel";
 import Review from "../../components/Homepage/Review";
+import GamingRigsCard from "../../components/Homepage/GamingRigsCard";
 
 const index = () => {
   const data = [
@@ -80,6 +83,39 @@ const index = () => {
             </div>
           </div>
           <Secondcourisal />
+         
+          <div className="flex justify-between items-center mt-[1.2rem] ">
+        <div className="flex gap-[0.5rem] items-center">
+          <span className="md:text-[2.2rem] text-[#000000] text-[0.8rem]">Upgrade your</span>
+          <span className="text-[#EE2841] font-bold text-[0.8rem] md:text-[2.2rem]">
+            Existing Gaming Rigs
+          </span>
+        </div>
+
+        <div>
+        <div className="flex items-end">
+          <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl">
+            See More
+          </span>
+          <RightOutlined
+            style={{ color: "#EE2841", font: "bold", fontSize: "" }}
+            className="md:text-[1.5rem] text-[1rem]"
+          />
+          
+        </div>
+        
+        </div>
+        
+      </div>
+      <div className=" grid grid-cols-2 md:grid-cols-5 md:gap-10 gap-4 ">
+      <GamingRigsCard/>
+        <GamingRigsCard/>
+        <GamingRigsCard/>
+        <GamingRigsCard/>
+        <GamingRigsCard/>
+        
+      </div>
+        
         </div>
 
       </div>
