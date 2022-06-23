@@ -34,7 +34,7 @@ const Categories = () => {
                     <h1 key={each}>{each.title}</h1>;
                 </div>
                 <div className="text-[#202020] text-[1rem] flex flex-col">
-                    <div className="flex"><h1 key={each}>{each.content.map(())}</h1></div>;
+                    <div className="flex"><h1 key={each}>{each.content.map()}</h1></div>;
                 </div>
             </div>
         );
