@@ -36,7 +36,7 @@ export default function LayoutMain({ children }) {
           <div className='pb-6 border-[#4d4d4d] border-b-[1px]'>
             <img src="/assets/logo.webp"/>
           </div>
-          <div className="flex flex-col gap-2 md:gap-6 md:mb-16 md:mt-6">
+          <div className="flex flex-col gap-2 md:gap-6 mb-16 mt-6">
             <h3 className="text-base">Links</h3>
             <div className="flex flex-col gap-8 text-xl md:gap-12">
               <Link href="/shopbybrand">
