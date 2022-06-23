@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router'
 import Drawers from "../Layout/Drawer";
+import Categories from '../Homepage/Categories';
 import { Avatar, Input } from 'antd';
 import { UilSearch,UilBars } from "@iconscout/react-unicons";
+import { Dropdown, Space } from 'antd';
 
 
 function Navbar({setCollapsed,collapsed}) {
   const router = useRouter();
   const [opened, setOpened] = useState(false);
-  console.log("rout",router);
+
   return (
     <div className="flex flex-col justify-between py-4 md:gap-[1rem]">
       <div className="flex justify-between items-center">
@@ -31,11 +33,13 @@ function Navbar({setCollapsed,collapsed}) {
                 Trending
               </a>
           </Link>
-          <Link href="#">
-              <a className={`transition hover:text-[#EE2841] text-black`}>
+          <Dropdown placement="bottom" overlay={<Categories/>}>
+            <a className={`transition hover:text-[#EE2841] text-black`} onClick={e => e.preventDefault()}>
+              <Space>
                 Categories
-              </a>
-          </Link>
+              </Space>
+            </a>
+          </Dropdown>
           <Link href="/buildpc">
               <a className={`transition hover:text-[#EE2841] ${router.pathname === '/buildpc' ? 'text-[#EE2841]':'text-black'}`}>
                 Build PC
