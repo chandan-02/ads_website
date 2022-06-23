@@ -3,7 +3,7 @@ import React from "react";
 
 // import "./index.css";
 import { Carousel } from "antd";
-import { LeftOutlined, RightCircleFilled } from "@ant-design/icons";
+import { LeftCircleFilled, RightCircleFilled } from "@ant-design/icons";
 
 // import { UilAngleRightB,UilAngleLeftB } from '@iconscout/react-unicons';
 const contentStyle = {
@@ -23,15 +23,14 @@ const SampleNextArrow = (props) => {
       style={{
         ...style,
         color: "black",
-        fontSize: "15px",
+        fontSize: "1.5rem",
         lineHeight: "1.5715",
       }}
       onClick={onClick}
     >
-
-
-      <RightCircleFilled style={{ color: "#EE2841", font: "bold", fontSize: "1.5rem" }} />
-
+      <RightCircleFilled
+        style={{ color: "#EE2841", font: "bold", fontSize: "1.5rem" }}
+      />
     </div>
   );
 };
@@ -40,15 +39,18 @@ const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
+      className={className}
       style={{
         ...style,
         color: "black",
-        fontSize: "15px",
+        fontSize: "1.5rem",
         lineHeight: "1.5715",
       }}
       onClick={onClick}
     >
-      <LeftOutlined style={{ color: "#EE2841", font: "bold", fontSize: "1.5rem" }} />
+      <LeftCircleFilled
+        style={{ color: "#EE2841", font: "bold", fontSize: "1.5rem" }}
+      />
     </div>
   );
 };
@@ -65,9 +67,11 @@ const Secondcourisal = () => {
 
   return (
     <div className="sliderNew">
-      <Carousel afterChange={onChange} arrows {...settings}   >
+      <Carousel afterChange={onChange}>
         <div className=" flex justify-center items-center mt-[3.2rem]">
-          <img src="/assets/banner.svg" className="w-[100%]" />
+          <div>
+            <img src="/assets/banner.svg" className="w-[100%]" />
+          </div>
         </div>
         <div className=" flex justify-center items-center mt-[3.2rem]">
           <img src="/assets/banner.svg" className="w-[100%]" />
@@ -129,9 +133,6 @@ const Secondcourisal = () => {
       
       `}</style>
     </div>
-
-
-
   );
 };
 
