@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 
 const Bannergrid = () => {
@@ -7,6 +8,7 @@ const Bannergrid = () => {
           className="rounded-md"
           height={310}
           width={590}
+          alt="img"
         />
   )
 }

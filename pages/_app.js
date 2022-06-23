@@ -8,13 +8,12 @@ import Layout from "../components/Layout/Layout";
 
 export default function App(props) {
   const { Component, pageProps } = props;
-
   return (
     <>
       <Header />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

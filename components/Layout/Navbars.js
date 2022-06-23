@@ -24,8 +24,8 @@ function Navbar({setCollapsed,collapsed}) {
         <Avatar alt="it's me" size={40}>CY</Avatar>
       </div>
       <div className="grid grid-cols-4 items-center">
-        <div className="">
-          <UilBars opened={collapsed} onClick={() => setCollapsed(!collapsed)} />
+        <div className="" opened={collapsed} onClick={() => setCollapsed(!collapsed)}>
+          <UilBars  />
         </div>
         <div className="col-start-2 col-end-4 gap-[2.4rem] flex justify-center text-xl">
           <Link href="/homepage">
