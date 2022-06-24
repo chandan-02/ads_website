@@ -12,7 +12,7 @@ const Review = () => {
         <figure className="relative text-white ">
           <img
             src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
-            className="md:w-[36.5rem] md:h-[29rem] w-[30.5rem] h-[25rem]"
+            className="md:w-[36.5rem] md:h-[29rem] w-[30.5rem] h-[25rem] object-cover"
           />
           <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
             <ReviewStars stars={5} />
@@ -26,7 +26,7 @@ const Review = () => {
         <figure className="relative  text-white">
           <img
             src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
-            className="md:w-[36.5rem] md:h-[29rem] w-[30.5rem] h-[25rem]"
+            className="md:w-[36.5rem] md:h-[29rem] w-[30.5rem] h-[25rem] object-cover"
           />
           <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
             <ReviewStars stars={3}/>
@@ -40,7 +40,7 @@ const Review = () => {
         <figure className="relative text-white hidden lg:inline-block">
           <img
             src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
-            className="w-[36.5rem] h-[29rem]"
+            className="w-[36.5rem] h-[29rem] object-cover"
           />
           <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
             <ReviewStars stars={4}/>

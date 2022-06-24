@@ -1,9 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { RightOutlined } from "@ant-design/icons";
-
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "antd";
 import Slider from '../../components/homepage/slider'
 import Banner from "../../components/Homepage/Banner";
 import Bannergrid from "../../components/Homepage/Bannergrid";
@@ -33,6 +31,14 @@ const index = () => {
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
+
+  const carouselDecider = () => {
+    if(typeof window !== "undefined" && window.innerWidth >= "1000"){
+      return <ComingSoon/>;
+    }else{
+      return <Carousel><ComingSoon/></Carousel>;
+    }
+  }
   return (
     <div className="p-8">
       <div className=" grid  grid-cols-2 grid-rows-4 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-6">
@@ -125,7 +131,7 @@ const index = () => {
         <Review/>
       </div>
       <div>
-        <ComingSoon/>
+        {carouselDecider()}
       </div>
     </div>
   );
