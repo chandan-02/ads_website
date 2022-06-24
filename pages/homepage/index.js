@@ -10,6 +10,7 @@ import Bannergrid from "../../components/Homepage/Bannergrid";
 import Secondcourisal from "../../components/Homepage/SecondCarousel";
 import Review from "../../components/Homepage/Review";
 import GamingRigsCard from "../../components/Homepage/GamingRigsCard";
+import ComingSoon from "../../components/Homepage/ComingSoon";
 
 const index = () => {
   const data = [
@@ -122,6 +123,9 @@ const index = () => {
 
       <div>
         <Review/>
+      </div>
+      <div>
+        <ComingSoon/>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
+    "@iconscout/react-unicons-solid": "0.0.3",
     "antd": "^4.21.3",
     "next": "12.1.0",
     "react": "17.0.2",
