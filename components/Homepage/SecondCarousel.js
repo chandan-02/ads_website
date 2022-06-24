@@ -67,7 +67,7 @@ const Secondcourisal = () => {
 
   return (
     <div className="sliderNew">
-      <Carousel afterChange={onChange}>
+      <Carousel afterChange={onChange} autoplay={true} draggable={true}>
         <div className=" flex justify-center items-center mt-[3.2rem]">
           <div>
             <img src="/assets/banner.svg" className="w-[100%]" />
