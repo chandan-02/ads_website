@@ -122,8 +122,8 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div className="flex justify-between items-center mt-[1.2rem] ">
+      <div className="flex flex-col gap-[2rem]">
+        <div className="flex justify-between items-center mt-[2rem] ">
           <div className="flex gap-[0.5rem] items-center">
             <span className="md:text-[2.2rem] font-bold text-[#000000] text-[0.8rem]">
               New
