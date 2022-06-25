@@ -13,6 +13,7 @@ import GamingRigsSlides from "../../components/Homepage/GamingRigsSlides";
 import ShopByBrand from "../../components/Homepage/ShopByBrand";
 import NewLaunches from "../../components/Homepage/NewLaunches";
 import NewLaunchesCompo from "../../components/Homepage/NewLaunchesCompo";
+import NewsLetter from "../../components/Homepage/NewsLetter";
 
 const index = () => {
   const data = [
@@ -178,7 +179,10 @@ const index = () => {
         <Review />
       </div>
       <div>
-        {carouselDecider()}
+        <ComingSoon/>
+      </div>
+      <div>
+        <NewsLetter/>
       </div>
     </div>
   );

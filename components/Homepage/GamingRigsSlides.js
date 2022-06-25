@@ -97,13 +97,10 @@ const GamingRigsSlides = () => {
   //     slidesToShow: 3,
   //     slidesToScroll: 3
   //   };
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
+
   return (
     <div className="flex flex-col gap-[5rem]">
       <Carousel
-        afterChange={onChange}
         arrows
         {...settings}
         autoplay={true}
