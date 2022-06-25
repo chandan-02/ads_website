@@ -62,7 +62,7 @@ const App = () => {
 
   return (
     <div>
-      <Carousel afterChange={onChange} arrows {...settings} autoplay={true} draggable={true}>
+      <Carousel afterChange={onChange} autoplay={true} draggable={true}>
         <Courisal img={"https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"} title={"AMD Ryzen 9 5950x"} desc={"AMD 5000 Series Ryzen 9 5950X Desktop Processor 16 Cores 32Threads 70 MB Cache 3.7 GHz up to 4.8 GHz AM4 Socket 500 Serieschipset (100-100000061WOF)"} price={19000} />
         <Courisal img={"https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"} title={"AMD Ryzen 9 5950x"} desc={"AMD 5000 Series Ryzen 9 5950X Desktop Processor 16 Cores 32Threads 70 MB Cache 3.7 GHz up to 4.8 GHz AM4 Socket 500 Serieschipset (100-100000061WOF)"} price={19000} />
         <Courisal img={"https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"} title={"AMD Ryzen 9 5950x"} desc={"AMD 5000 Series Ryzen 9 5950X Desktop Processor 16 Cores 32Threads 70 MB Cache 3.7 GHz up to 4.8 GHz AM4 Socket 500 Serieschipset (100-100000061WOF)"} price={19000} />
