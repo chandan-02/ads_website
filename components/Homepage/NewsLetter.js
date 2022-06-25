@@ -7,7 +7,7 @@ const onChange = (e) => {
 
 const NewsLetter = () => {
   return (
-    <div className="lg:flex justify-center items-center gap-4 my-[5rem] w-full h-full">
+    <div className="flex lg:flex-row md:flex-row justify-center items-center gap-4 my-[5rem] w-full h-full">
       <div className="relative w-3/6 h-full">
         <div className="flex h-min gap-6">
           <img className="object-contain" src="../assets/red-circles.webp" />
