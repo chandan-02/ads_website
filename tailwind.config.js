@@ -25,6 +25,7 @@ module.exports = {
         'regal-red': '#FF0000',
       },
     },
+    
   },
   plugins: [],
 }

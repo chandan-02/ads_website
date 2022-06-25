@@ -25,7 +25,7 @@ const NewLaunches = () => {
                 >
                   <HeartFilled
                     className="cursor-pointer"
-                    style={{ fontSize: "1.5rem", color: "black" }}
+                    style={{ fontSize: "1.5rem", color: "red" }}
                   />
                 </div>
               ) : (
@@ -37,13 +37,13 @@ const NewLaunches = () => {
                 >
                   <HeartOutlined
                     className=""
-                    style={{ fontSize: "1.5rem", color: "black" }}
+                    style={{ fontSize: "1.5rem", color: "red" }}
                   />
                 </div>
               )}
             </div>
             <div className="md:w-[20rem] 2xl:w-[30rem]">
-              <span className="md:text-[0.8rem] text-[0.6rem] text-ellipsis 	">
+              <span className="md:text-[0.8rem] text-[0.6rem]">
                 AMD 5000 Series Ryzen 9 5900X Desktop Processor 12 Cores 24
                 Threads 70 MB Cache 3.7 GHz up to 4.8 GHz AM4 Socket 500 Series
                 chipset (100-100000061WOF)
