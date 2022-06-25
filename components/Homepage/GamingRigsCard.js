@@ -20,7 +20,7 @@ const GamingRigsCard = () => {
             />
             {click == 0 ? (
               <div
-                className="bg-[#FFFFFF] absolute top-0 right-0 m-[0.7rem] rounded-full p-[0.5rem] flex justify-center items-center borderofheart"
+                className="bg-[#FFFFFF] absolute cursor-pointer top-0 right-0 m-[0.7rem] rounded-full p-[0.5rem] flex justify-center items-center borderofheart"
                 onClick={() => {
                   setClick(1);
                 }}
@@ -32,7 +32,7 @@ const GamingRigsCard = () => {
               </div>
             ) : (
               <div
-                className="bg-[#FFFFFF] absolute top-0 right-0 m-[0.7rem] rounded-full p-[0.5rem] flex justify-center items-center borderofheart"
+                className="bg-[#FFFFFF] cursor-pointer absolute top-0 right-0 m-[0.7rem] rounded-full p-[0.5rem] flex justify-center items-center borderofheart"
                 onClick={() => {
                   setClick(0);
                 }}
@@ -62,7 +62,7 @@ const GamingRigsCard = () => {
               </span>
             </div>
 
-            <button className="bg-[#151D20] text-[#FFFFFF] md:text-[1rem] rounded-md font-medium  h-[2.7rem]">
+            <button className="bg-[#151D20] hover:bg-[#0a0a0a] text-[#FFFFFF] md:text-[1rem] rounded-md font-medium  h-[2.7rem]">
               Add to Cart
             </button>
           </div>

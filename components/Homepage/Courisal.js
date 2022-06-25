@@ -36,7 +36,7 @@ const Courisal = ({ img, title, desc, price }) => {
               Add to wishlist
             </span>
           </div>
-          <button className="bg-[#EE2841] text-[#FFFFFF] md:text-[1.5rem] md:w-[11rem] md:h-[4rem] rounded-md font-bold md:mt-[1.5rem] text-[1.1rem]  w-[8rem] h-[2.7rem] mt-[1rem] ">
+          <button className="bg-[#EE2841] hover:bg-[#912f3b] text-[#FFFFFF] md:text-[1.5rem] md:w-[11rem] md:h-[4rem] rounded-md font-bold md:mt-[1.5rem] text-[1.1rem]  w-[8rem] h-[2.7rem] mt-[1rem] ">
             Buy Now
           </button>
         </div>

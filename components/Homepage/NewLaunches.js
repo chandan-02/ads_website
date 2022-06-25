@@ -13,7 +13,9 @@ const NewLaunches = () => {
           />
           <div className="w-full flex flex-col xl:gap-[0.4rem] 2xl:gap-[0.8rem] ">
             <div className="flex justify-between items-center w-full">
-              <span className="md:text-[1.5rem] text-[1rem] font-bold leading-6	">Ryzen 9 5900x</span>
+              <span className="md:text-[1.5rem] text-[1rem] font-bold leading-6	">
+                Ryzen 9 5900x
+              </span>
               {click == 0 ? (
                 <div
                   className="bg-[#FFFFFF]"
@@ -22,20 +24,20 @@ const NewLaunches = () => {
                   }}
                 >
                   <HeartFilled
-                    className=""
-                    style={{ fontSize: "1.5rem", color: "red" }}
+                    className="cursor-pointer"
+                    style={{ fontSize: "1.5rem", color: "black" }}
                   />
                 </div>
               ) : (
                 <div
-                  className="bg-[#FFFFFF]"
+                  className="bg-[#FFFFFF] cursor-pointer"
                   onClick={() => {
                     setClick(0);
                   }}
                 >
                   <HeartOutlined
                     className=""
-                    style={{ fontSize: "1.5rem", color: "red" }}
+                    style={{ fontSize: "1.5rem", color: "black" }}
                   />
                 </div>
               )}
@@ -48,7 +50,7 @@ const NewLaunches = () => {
               </span>
             </div>
             <p className="md:text-[1.2rem] font-bold m-[0rem]">₹ 36,000</p>
-            <button className="bg-[#EE2841] text-[#FFFFFF] md:text-[1rem] rounded-md font-bold  text-[0.9rem]  w-[7rem] h-[2rem]  ">
+            <button className="bg-[#EE2841] hover:bg-[#912f3b] text-[#FFFFFF] md:text-[1rem] rounded-md font-bold  text-[0.9rem]  w-[7rem] h-[2rem]  ">
               Buy Now
             </button>
           </div>
