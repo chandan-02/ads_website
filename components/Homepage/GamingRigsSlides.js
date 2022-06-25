@@ -44,8 +44,8 @@ const SamplePrevArrow = (props) => {
 };
 
 const settings = {
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
+  // nextArrow: <SampleNextArrow />,
+  // prevArrow: <SamplePrevArrow />,
   dots: false,
   infinite: true,
   speed: 500,
