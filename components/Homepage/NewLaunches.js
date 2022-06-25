@@ -42,12 +42,12 @@ const NewLaunches = () => {
                 </div>
               )}
             </div>
-            <div className="md:w-[20rem] 2xl:w-[30rem]">
-              <span className="md:text-[0.8rem] text-[0.6rem]">
+            <div className="md:w-[20rem] 2xl:w-[25rem] w-[10rem]">
+              <div className="md:text-[0.8rem] text-[0.6rem] overflow-hidden text-ellipsis whitespace-nowrap">
                 AMD 5000 Series Ryzen 9 5900X Desktop Processor 12 Cores 24
                 Threads 70 MB Cache 3.7 GHz up to 4.8 GHz AM4 Socket 500 Series
                 chipset (100-100000061WOF)
-              </span>
+              </div>
             </div>
             <p className="md:text-[1.2rem] font-bold m-[0rem]">₹ 36,000</p>
             <button className="bg-[#EE2841] hover:bg-[#912f3b] text-[#FFFFFF] md:text-[1rem] rounded-md font-bold  text-[0.9rem]  w-[7rem] h-[2rem]  ">
