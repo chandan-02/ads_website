@@ -4,8 +4,9 @@ import { useRouter } from 'next/router'
 import Drawers from "../Layout/Drawer";
 import Categories from '../Homepage/Categories';
 import { Avatar, Input } from 'antd';
-import { UilSearch,UilBars } from "@iconscout/react-unicons";
+import { UilSearch, UilBars, UilShoppingCart, UilHeart, UilBell } from "@iconscout/react-unicons";
 import { Dropdown, Space } from 'antd';
+import UseDimension from "../Head/UseDimension";
 
 
 function Navbar({setCollapsed,collapsed}) {
@@ -13,15 +14,21 @@ function Navbar({setCollapsed,collapsed}) {
   const [opened, setOpened] = useState(false);
 
   return (
-    <div className="flex flex-col justify-between py-4 md:gap-[1rem]">
-      <div className="flex justify-between items-center">
+    <div className="flex flex-col justify-between py-4 gap-[1rem]">
+      <div className="grid grid-cols-3 justify-center items-center">
         <img className="w-20" src="../assets/logo.webp"/>
         <Input
-          style={{ width: 400, borderRadius: 5 }}
+          style={{ width: 400, borderRadius: 5, height:35}}
           placeholder="Search Product ..."
           suffix={<UilSearch size="18" color="#6F6F6F" />}
+          className="justify-self-center"
         />
-        <Avatar alt="it's me" size={40}>CY</Avatar>
+        <div className="justify-self-end flex items-center gap-4">
+          <UilBell size={30}/>
+          <UilHeart size={30}/>
+          <UilShoppingCart size={30}/>
+          <Avatar size={40}>CY</Avatar>
+        </div>
       </div>
       <div className="grid grid-cols-4 items-center">
         <div className="" opened={collapsed} onClick={() => setCollapsed(!collapsed)}>

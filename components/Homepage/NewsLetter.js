@@ -9,7 +9,7 @@ const NewsLetter = () => {
   return (
     <div className="flex lg:flex-row md:flex-row flex-col justify-center md:items-center gap-4 my-[5rem] w-full h-full">
       <div className="relative flex md:w-3/6 h-full">
-        <div className="flex h-min gap-6 items-start">
+        <div className="flex h-min gap-6 items-start overflow-clip">
           <img className="object-contain" src="../assets/red-circles.webp" />
           <img className="lg:mt-[8rem]" src="../../assets/gray-circles.webp" />
         </div>
