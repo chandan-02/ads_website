@@ -35,7 +35,7 @@ function Navbar({setCollapsed,collapsed}) {
           <UilBars  />
         </div>
         <div className="col-start-2 col-end-4 gap-[2.4rem] flex justify-center text-xl">
-          <Link href="/homepage">
+          <Link href="/">
             <a className={`transition hover:text-[#EE2841] ${router.pathname === '/homepage' ? 'text-[#EE2841]':'text-black'}`}>
               Trending
             </a>
