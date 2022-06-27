@@ -7,21 +7,21 @@ const onChange = (e) => {
 
 const NewsLetter = () => {
   return (
-    <div className="flex lg:flex-row md:flex-row justify-center items-center gap-4 my-[5rem] w-full h-full">
-      <div className="relative w-3/6 h-full">
-        <div className="flex h-min gap-6">
+    <div className="flex lg:flex-row md:flex-row flex-col justify-center md:items-center gap-4 my-[5rem] w-full h-full">
+      <div className="relative flex md:w-3/6 h-full">
+        <div className="flex h-min gap-6 items-start">
           <img className="object-contain" src="../assets/red-circles.webp" />
-          <img className="lg:mt-[14rem]" src="../../assets/gray-circles.webp" />
+          <img className="lg:mt-[8rem]" src="../../assets/gray-circles.webp" />
         </div>
-        <p className="lg:text-[4rem] md:text-[3rem] font-semibold absolute inset-0 leading-tight m-0">
+        <p className="lg:text-[4rem] md:text-[3rem] text-[2rem] font-semibold absolute md:inset-0 leading-tight m-0">
           <span className="block">Subscribe</span> to our newsletter & recieve latest offers in your <span className="text-[#EE2841]">inbox.</span>
         </p>
       </div>
-      <div className="w-2/6 flex flex-col gap-4">
+      <div className="md:w-2/6 flex flex-col gap-4">
         <Input placeholder="example@mail.com"/>
         <div className="text-[]">
           <Checkbox onChange={onChange}>
-            I accept terms and conditions.
+            I accept <u>terms and conditions.</u>
           </Checkbox>
         </div>
         <Button type="primary">Subscribe</Button>
@@ -29,7 +29,7 @@ const NewsLetter = () => {
       <style>{`
         .ant-input{
             font-size: 1.625rem;
-            padding: 1rem 2.188rem;
+            padding: 1rem 1.5rem;
             border-radius: 0.625rem;
         }
         .ant-btn-primary{
@@ -47,6 +47,13 @@ const NewsLetter = () => {
         .ant-checkbox-checked .ant-checkbox-inner {
             background: #EE2841;
             border: #EE2841;
+        }
+        @media screen and (max-width: 480px) {
+          .ant-input {
+            font-size: 1rem;
+            padding: 0.725rem 1.25rem;
+            border-radius: 0.625rem;
+          }
         }
       `}</style>
     </div>

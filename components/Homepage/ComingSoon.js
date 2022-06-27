@@ -1,4 +1,5 @@
 import React from "react";
+import useDimension from '../Head/UseDimension.js'
 
 export const ComingSoon = () => {
   return (
@@ -9,13 +10,13 @@ export const ComingSoon = () => {
           <h1 className="text-[#EE2841]">Soon</h1>
         </div>
         <div className="flex justify-center items-center">
-          <figure className="relative text-white">
+          <figure className="relative text-white hidden lg:inline-block">
             <img
               src="https://i.rtings.com/assets/products/9CkdxVbX/ducky-one-3/design-medium.jpg"
               className="w-[34.5rem] h-[27rem] object-cover"
             />
             <figcaption className="absolute inset-x-0 bottom-0 w-full h-3/6 bg-[rgba(0,0,0,0.69)] flex flex-col justify-end items-center">
-              <p className="text-white text-[1.875rem]">Ducky One 3</p>
+              <p className="text-white text-[1.875rem] cursor-pointer hover:underline">Ducky One 3</p>
             </figcaption>
           </figure>
           <figure className="relative text-white">
@@ -25,16 +26,16 @@ export const ComingSoon = () => {
             />
             <figcaption className="absolute inset-x-0 bottom-0 w-full h-3/6 bg-[rgba(0,0,0,0.69)] flex flex-col gap-8 justify-end items-center">
               <div className="border-2 py-2 px-14 text-[1.875rem] rounded-[0.32rem] text-center"><p className="m-0">Enquire Now</p></div>  
-              <p className="text-white text-[1.875rem]">G Pro X Superlight</p>
+              <p className="text-white text-[1.875rem] cursor-pointer transition ease-in-out hover:underline">G Pro X Superlight</p>
             </figcaption>
           </figure>
-          <figure className="relative text-white">
+          <figure className="relative text-white hidden lg:inline-block">
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
               className="w-[34.5rem] h-[27rem]"
             />
             <figcaption className="absolute inset-x-0 bottom-0 w-full h-3/6 bg-[rgba(0,0,0,0.69)] flex flex-col justify-end items-center">
-              <p className="text-white text-[1.875rem]">Elon Musk</p>
+              <p className="text-white text-[1.875rem] cursor-pointer transition ease-in-out hover:underline">Elon Musk</p>
             </figcaption>
           </figure>
         </div>
