@@ -50,7 +50,7 @@ const NewLaunches = () => {
               </div>
             </div>
             <p className="md:text-[1.2rem] font-bold m-[0rem]">₹ 36,000</p>
-            <button className="bg-[#EE2841] hover:bg-[#912f3b] text-[#FFFFFF] md:text-[1rem] rounded-md font-bold  text-[0.9rem]  w-[7rem] h-[2rem]  ">
+            <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1rem] rounded-md font-bold  text-[0.9rem]  w-[7rem] h-[2rem]  ">
               Buy Now
             </button>
           </div>

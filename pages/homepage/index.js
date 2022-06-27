@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { RightOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
-import Slider from '../../components/homepage/slider'
+import Slider from "../../components/homepage/slider";
 import Banner from "../../components/Homepage/Banner";
 import Bannergrid from "../../components/Homepage/Bannergrid";
 import Secondcourisal from "../../components/Homepage/SecondCarousel";
@@ -38,12 +38,16 @@ const index = () => {
   };
 
   const carouselDecider = () => {
-    if(typeof window !== "undefined" && window.innerWidth >= "1000"){
-      return <ComingSoon/>;
-    }else{
-      return <Carousel><ComingSoon/></Carousel>;
+    if (typeof window !== "undefined" && window.innerWidth >= "1000") {
+      return <ComingSoon />;
+    } else {
+      return (
+        <Carousel>
+          <ComingSoon />
+        </Carousel>
+      );
     }
-  }
+  };
   return (
     <div className="md:p-8 p-4">
       <div className=" grid  grid-cols-2 grid-rows-4 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-6">
@@ -98,10 +102,10 @@ const index = () => {
 
           <div className="flex justify-between items-center mt-[1.2rem] ">
             <div className="flex gap-[0.5rem] items-center">
-              <span className="md:text-[2.2rem] text-[#000000] text-[0.8rem]">
+              <span className="md:text-[2.2rem] text-[#000000] text-[1rem]">
                 Upgrade your
               </span>
-              <span className="text-[#EE2841] font-bold text-[0.8rem] md:text-[2.2rem]">
+              <span className="text-[#EE2841] font-bold text-[1rem] md:text-[2.2rem]">
                 Existing Gaming Rigs
               </span>
             </div>
@@ -126,10 +130,10 @@ const index = () => {
       <div className="flex flex-col gap-[2rem]">
         <div className="flex justify-between items-center mt-[2rem] ">
           <div className="flex gap-[0.5rem] items-center">
-            <span className="md:text-[2.2rem] font-bold text-[#000000] text-[0.8rem]">
+            <span className="md:text-[2.2rem] font-bold text-[#000000] text-[1.5rem]">
               New
             </span>
-            <span className="text-[#EE2841] font-bold text-[0.8rem] md:text-[2.2rem]">
+            <span className="text-[#EE2841] font-bold text-[1.5rem] md:text-[2.2rem]">
               Launches
             </span>
           </div>
@@ -179,10 +183,10 @@ const index = () => {
         <Review />
       </div>
       <div>
-        <ComingSoon/>
+        <ComingSoon />
       </div>
       <div>
-        <NewsLetter/>
+        <NewsLetter />
       </div>
     </div>
   );
