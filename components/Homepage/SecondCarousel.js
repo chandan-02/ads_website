@@ -65,12 +65,12 @@ const Secondcourisal = () => {
   return (
     <div className="sliderNew">
       <Carousel autoplay={true} draggable={true}>
-        <div className=" flex justify-center items-center mt-[3.2rem]">
+        <div className=" flex justify-center items-center mt-[1.8rem]">
           <div>
             <img src="/assets/banner.svg" className="w-[100%]" />
           </div>
         </div>
-        <div className=" flex justify-center items-center mt-[3.2rem]">
+        <div className=" flex justify-center items-center mt-[1.8rem]">
           <img src="/assets/banner.svg" className="w-[100%]" />
         </div>
       </Carousel>
