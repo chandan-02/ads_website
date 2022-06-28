@@ -65,32 +65,38 @@ const index = () => {
         <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2 h-full">
           <img
             src={homeImages?.leftSideImage}
-            className="rounded-md h-[34.125rem] w-full"
+            className="rounded-md h-full  w-full"
           />
         </div>
 
+        <div className="w-full h-full">
         <img
           src={homeImages?.rtOneImage}
-          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
+          className="rounded-md w-full  h-full"
         />
+        </div>
+
+        <div className="w-full  h-full">
         <img
           src={homeImages?.rtTwoImage}
-          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
-          height={259}
-          width={456}
+          className="rounded-md w-full  h-full "
         />
+        </div>
+        
+        <div className="w-full  h-full">
         <img
           src={homeImages?.rtThreeImage}
-          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
-          height={259}
-          width={456}
+          className="rounded-md w-full  h-full"
         />
-        <img
+        </div>
+       
+       <div  className="w-full  h-full">
+       <img
           src={homeImages?.rtFourImage}
-          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
-          height={259}
-          width={456}
+          className="rounded-md w-full h-full "
         />
+       </div>
+        
       </div>
 
       <div>
