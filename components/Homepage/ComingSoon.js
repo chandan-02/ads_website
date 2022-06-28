@@ -37,7 +37,7 @@ export const ComingSoon = () => {
           <div className="relative text-white">
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
-              className="w-full h-[27rem]"
+              className="w-full h-[27rem] object-cover"
             />
             <div className="absolute inset-x-0 bottom-0 w-full h-3/6 bg-[rgba(0,0,0,0.69)] flex flex-col gap-8 justify-end items-center">
               <div className="border-2 py-2 px-14 text-[1.875rem] rounded-[0.32rem] text-center"><p className="m-0">Enquire Now</p></div>  
@@ -69,7 +69,7 @@ export const ComingSoon = () => {
           <figure className="relative text-white hidden lg:inline-block">
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
-              className="w-[34.5rem] h-[27rem]"
+              className="w-[34.5rem] h-[27rem] object-cover"
             />
             <figcaption className="absolute inset-x-0 bottom-0 w-full h-3/6 bg-[rgba(0,0,0,0.69)] flex flex-col justify-end items-center">
               <p className="text-white text-[1.875rem] cursor-pointer transition ease-in-out hover:underline">Elon Musk</p>

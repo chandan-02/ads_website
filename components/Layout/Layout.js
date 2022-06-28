@@ -12,6 +12,7 @@ import {
   UilUserSquare,
   UilHeart,
   UilShoppingCartAlt,
+  UilTimes,
 } from "@iconscout/react-unicons";
 import { Footer } from 'antd/lib/layout/layout';
 
@@ -22,7 +23,7 @@ export default function LayoutMain({ children }) {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Layout>
-      <Header style={{ background: '#fff',height: 'max-content' }}><Navbars collapsed={collapsed} setCollapsed={setCollapsed} /></Header>
+      <Header style={{ background: '#fff',height: 'max-content' }} className="custom-padding"><Navbars collapsed={collapsed} setCollapsed={setCollapsed} /></Header>
       <Layout>
         <Drawer
           size="default"
@@ -33,8 +34,9 @@ export default function LayoutMain({ children }) {
           visible={collapsed}
           className=""
         >
-          <div className='pb-6 border-[#4d4d4d] border-b-[1px]'>
+          <div className='pb-6 border-[#4d4d4d] border-b-[1px] flex items-center justify-between'>
             <img src="/assets/logo.webp"/>
+            <UilTimes onClick={() => setCollapsed(!collapsed)}/>
           </div>
           <div className="flex flex-col gap-2 md:gap-6 mb-16 mt-6">
             <h3 className="text-base">Links</h3>
@@ -98,6 +100,13 @@ export default function LayoutMain({ children }) {
           <Footers/>
         </Footer>
       </Layout>
+      <style>{`
+        @media screen and (max-width: 767px) {
+          .ant-layout-header {
+            padding: 0 2rem;
+          }
+        }
+      `}</style>
     </Layout>
   );
 }
