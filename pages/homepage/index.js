@@ -42,6 +42,7 @@ const index = () => {
   }
   useEffect(() => {
     getHomeImages();
+    console.log("helo")
   },[])
 
   const onChange = (currentSlide) => {
