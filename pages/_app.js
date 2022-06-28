@@ -1,6 +1,5 @@
 import "../styles/globals.css";
-import 'antd/dist/antd.css';
-import 'antd/dist/antd.css';
+import '../styles/antd.less';
 
 /*********************************** Components Import ************************************/
 import Header from "../components/Head/Head";
