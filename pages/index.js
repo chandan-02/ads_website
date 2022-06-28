@@ -14,51 +14,39 @@ import ShopByBrand from "../components/Homepage/ShopByBrand";
 import NewLaunches from "../components/Homepage/NewLaunches";
 import NewLaunchesCompo from "../components/Homepage/NewLaunchesCompo";
 import NewsLetter from "../components/Homepage/NewsLetter";
-import axios from '../helper/axios';
+import axios from "../helper/axios";
 
 const index = () => {
-
-  const[homeImages, setHomeImages] = useState();
+  const [homeImages, setHomeImages] = useState();
 
   const getHomeImages = async () => {
     // setLoading(true)
     try {
-        const userUpdated = await axios.get(`/pages/front_dashboard/`);
-        if (userUpdated?.data?.success) {
-            // Notification('Success', "User updated successfully", 'success');
-            // clearState();
-            // setModal({ editVisible: false });
-            // setLoading(false);
-            setHomeImages(userUpdated?.data?.data[0]?.sectionOne)
-        }
-    } catch (error) {
-        if (error?.response?.data) {
-            alert('Error', error?.response?.data?.data, 'error');
-        } else {
-            alert('Error', error?.message, 'error');
-        }
+      const userUpdated = await axios.get(`/pages/front_dashboard/`);
+      if (userUpdated?.data?.success) {
+        // Notification('Success', "User updated successfully", 'success');
+        // clearState();
+        // setModal({ editVisible: false });
         // setLoading(false);
+        setHomeImages(userUpdated?.data?.data[0]?.sectionOne);
+      }
+    } catch (error) {
+      if (error?.response?.data) {
+        alert("Error", error?.response?.data?.data, "error");
+      } else {
+        alert("Error", error?.message, "error");
+      }
+      // setLoading(false);
     }
-  }
+  };
   useEffect(() => {
     getHomeImages();
-  },[])
+  }, []);
 
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
 
-  const carouselDecider = () => {
-    if (typeof window !== "undefined" && window.innerWidth >= "1000") {
-      return <ComingSoon />;
-    } else {
-      return (
-        <Carousel>
-          <ComingSoon />
-        </Carousel>
-      );
-    }
-  };
   return (
     <div className="md:p-8 p-4">
       <div className=" grid  grid-cols-2 grid-rows-4 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-6">
@@ -70,33 +58,32 @@ const index = () => {
         </div>
 
         <div className="w-full h-full">
-        <img
-          src={homeImages?.rtOneImage}
-          className="rounded-md w-full  h-full"
-        />
+          <img
+            src={homeImages?.rtOneImage}
+            className="rounded-md w-full  h-full"
+          />
         </div>
 
         <div className="w-full  h-full">
-        <img
-          src={homeImages?.rtTwoImage}
-          className="rounded-md w-full  h-full "
-        />
+          <img
+            src={homeImages?.rtTwoImage}
+            className="rounded-md w-full  h-full "
+          />
         </div>
-        
+
         <div className="w-full  h-full">
-        <img
-          src={homeImages?.rtThreeImage}
-          className="rounded-md w-full  h-full"
-        />
+          <img
+            src={homeImages?.rtThreeImage}
+            className="rounded-md w-full  h-full"
+          />
         </div>
-       
-       <div  className="w-full  h-full">
-       <img
-          src={homeImages?.rtFourImage}
-          className="rounded-md w-full h-full "
-        />
-       </div>
-        
+
+        <div className="w-full  h-full">
+          <img
+            src={homeImages?.rtFourImage}
+            className="rounded-md w-full h-full "
+          />
+        </div>
       </div>
 
       <div>
