@@ -1,7 +1,12 @@
 import React from "react";
 import useDimension from '../Head/UseDimension.js'
+import { Carousel } from 'antd';
 
 export const ComingSoon = () => {
+  // const [width,height] = useDimenisos()
+
+  
+ 
   return (
     <div>
       <div className="flex flex-col gap-6 mt-12">

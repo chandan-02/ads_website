@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { RightOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
@@ -14,25 +14,36 @@ import ShopByBrand from "../components/Homepage/ShopByBrand";
 import NewLaunches from "../components/Homepage/NewLaunches";
 import NewLaunchesCompo from "../components/Homepage/NewLaunchesCompo";
 import NewsLetter from "../components/Homepage/NewsLetter";
+import axios from '../helper/axios';
 
 const index = () => {
-  const data = [
-    {
-      scr: "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    },
-    {
-      scr: "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    },
-    {
-      scr: "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    },
-    {
-      scr: "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    },
-    {
-      scr: "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    },
-  ];
+
+  const[homeImages, setHomeImages] = useState();
+
+  const getHomeImages = async () => {
+    // setLoading(true)
+    try {
+        const userUpdated = await axios.get(`/pages/front_dashboard/`);
+        if (userUpdated?.data?.success) {
+            // Notification('Success', "User updated successfully", 'success');
+            // clearState();
+            // setModal({ editVisible: false });
+            // setLoading(false);
+            setHomeImages(userUpdated?.data?.data[0]?.sectionOne)
+        }
+    } catch (error) {
+        if (error?.response?.data) {
+            alert('Error', error?.response?.data?.data, 'error');
+        } else {
+            alert('Error', error?.message, 'error');
+        }
+        // setLoading(false);
+    }
+  }
+  useEffect(() => {
+    getHomeImages();
+  },[])
+
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
@@ -51,34 +62,32 @@ const index = () => {
   return (
     <div className="md:p-8 p-4">
       <div className=" grid  grid-cols-2 grid-rows-4 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-6">
-        <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2  ">
+        <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2 h-full">
           <img
-            src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"
-            className="rounded-md"
+            src={homeImages?.leftSideImage}
+            className="rounded-md h-[34.125rem] w-full"
           />
         </div>
 
-        <Image
-          src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          className="rounded-md"
+        <img
+          src={homeImages?.rtOneImage}
+          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
+        />
+        <img
+          src={homeImages?.rtTwoImage}
+          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
           height={259}
           width={456}
         />
-        <Image
-          src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          className="rounded-md"
+        <img
+          src={homeImages?.rtThreeImage}
+          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
           height={259}
           width={456}
         />
-        <Image
-          src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          className="rounded-md"
-          height={259}
-          width={456}
-        />
-        <Image
-          src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          className="rounded-md"
+        <img
+          src={homeImages?.rtFourImage}
+          className="rounded-md w-[28.5rem] lg:h-[16.188rem] md:h-[14.188rem]"
           height={259}
           width={456}
         />
