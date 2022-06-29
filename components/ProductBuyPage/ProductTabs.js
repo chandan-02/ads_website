@@ -1,5 +1,6 @@
 import React from "react";
 import { Tabs } from "antd";
+import KeyFeatures from "./KeyFeatures";
 
 const { TabPane } = Tabs;
 
@@ -12,7 +13,7 @@ const ProductTabs = () => {
     <div className="w-full my-[6rem] mx-[3rem]">
          <Tabs defaultActiveKey="1" onChange={onChange} >
       <TabPane tab="Key Features" key="1" className="mainclass">
-        Content of Tab Pane 1
+        <KeyFeatures/>
       </TabPane>
       <TabPane tab="Reviews (0)" key="2">
         Content of Tab Pane 2
