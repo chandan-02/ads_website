@@ -17,6 +17,7 @@ const GamingRigsCard = () => {
             <img
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               className="rounded-md h-[14.2rem]"
+              alt="Gaming-Rigs"
             />
             {click == 0 ? (
               <div

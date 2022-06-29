@@ -67,11 +67,11 @@ const Secondcourisal = () => {
       <Carousel autoplay={true} draggable={true}>
         <div className=" flex justify-center items-center mt-[1.8rem]">
           <div>
-            <img src="/assets/banner.svg" className="w-[100%]" />
+            <img src="/assets/banner.svg" alt="Carousel-Product" className="w-[100%]" />
           </div>
         </div>
         <div className=" flex justify-center items-center mt-[1.8rem]">
-          <img src="/assets/banner.svg" className="w-[100%]" />
+          <img src="/assets/banner.svg" alt="Carousel-Product" className="w-[100%]" />
         </div>
       </Carousel>
       <style>{`

@@ -19,7 +19,7 @@ function Navbar({setCollapsed,collapsed}) {
         width <= 767 ? 
         <div className="flex flex-col justify-between py-4 gap-[1rem]">
           <div className="grid grid-cols-2 justify-center items-center">
-            <img className="w-20" src="../assets/logo.webp"/>
+            <img className="w-20" src="../assets/logo.webp" alt="logo" />
             <div className="justify-self-end flex items-center gap-4">
               <UilBell size={30}/>
               <UilHeart size={30}/>
@@ -60,7 +60,7 @@ function Navbar({setCollapsed,collapsed}) {
         </div> :
         <div className="flex flex-col justify-between py-4 gap-[1rem]">
           <div className="grid md:grid-cols-6 lg:grid-cols-3 justify-center items-center">
-            <img className="w-20" src="../assets/logo.webp"/>
+            <img className="w-20" src="../assets/logo.webp" alt="logo" />
             <Input
               style={{ borderRadius: 5, height:35}}
               placeholder="Search Product ..."

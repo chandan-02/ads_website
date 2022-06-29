@@ -16,6 +16,7 @@ const Courisal = ({ img, title, desc, price }) => {
           className="rounded-md"
           height={541}
           width={858}
+          alt="Carousel-Product"
         />
         <div className="flex flex-col md:gap-3.5 gap-[0.3rem]">
           <span className="md:text-left md:text-4xl font-bold text-[1.3rem] ">

@@ -53,35 +53,40 @@ const index = () => {
         <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2 h-full">
           <img
             src={homeImages?.leftSideImage}
-            className="rounded-md h-full  w-full"
+            className="rounded-md h-full w-full"
+            alt="left-banner"
           />
         </div>
 
         <div className="w-full h-full">
           <img
             src={homeImages?.rtOneImage}
-            className="rounded-md w-full  h-full"
+            className="rounded-md w-full h-full"
+            alt="right-banner-1"
           />
         </div>
 
-        <div className="w-full  h-full">
+        <div className="w-full h-full">
           <img
             src={homeImages?.rtTwoImage}
-            className="rounded-md w-full  h-full "
+            className="rounded-md w-full h-full"
+            alt="right-banner-2"
           />
         </div>
 
-        <div className="w-full  h-full">
+        <div className="w-full h-full">
           <img
             src={homeImages?.rtThreeImage}
-            className="rounded-md w-full  h-full"
+            className="rounded-md w-full h-full"
+            alt="right-banner-3"
           />
         </div>
 
-        <div className="w-full  h-full">
+        <div className="w-full h-full">
           <img
             src={homeImages?.rtFourImage}
-            className="rounded-md w-full h-full "
+            className="rounded-md w-full h-full"
+            alt="right-banner-4"
           />
         </div>
       </div>

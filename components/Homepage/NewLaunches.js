@@ -10,6 +10,7 @@ const NewLaunches = () => {
           <img
             src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"
             className="2xl:w-[15rem] 2xl:h-[9rem] 2xl:rounded-[0.3rem] w-[9rem] h-[6rem] xl:w-[12rem] xl:h-[8rem]"
+            alt="New-launched-product"
           />
           <div className="w-full flex flex-col xl:gap-[0.4rem] 2xl:gap-[0.8rem] ">
             <div className="flex justify-between items-center w-full">

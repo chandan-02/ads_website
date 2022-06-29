@@ -6,6 +6,7 @@ const ShopByBrandCard = () => {
       <img
         src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         className="md:h-[14rem] md:w-[17rem]"
+        alt="Brand"
       />
       <div className="absolute w-full h-full bg-[rgba(0,0,0,0.50)] inset-0 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">

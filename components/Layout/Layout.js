@@ -35,7 +35,7 @@ export default function LayoutMain({ children }) {
           className=""
         >
           <div className='pb-6 border-[#4d4d4d] border-b-[1px] flex items-center justify-between'>
-            <img src="/assets/logo.webp"/>
+            <img src="/assets/logo.webp" alt="logo" />
             <UilTimes onClick={() => setCollapsed(!collapsed)}/>
           </div>
           <div className="flex flex-col gap-2 md:gap-6 mb-16 mt-6">

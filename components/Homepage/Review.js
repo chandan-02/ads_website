@@ -18,13 +18,14 @@ const Review = () => {
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
               className="md:w-[36.5rem] md:h-[29rem] w-full h-[25rem] object-cover"
+              alt="Customer-Review"
             />
             <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
               <ReviewStars stars={5} />
               <h1 className="text-white text-[2.5rem]">Elon Musk</h1>
               <p className="md:text-[1.25rem] text-base text-center w-10/12">
                 Lorem Ipsum is simply dummy text industry's text ever since the
-                1500s, when an unknown printer took a galley of type and{" "}
+                1500s, when an unknown printer took a galley of type and
               </p>
             </figcaption>
           </figure>
@@ -32,13 +33,14 @@ const Review = () => {
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
               className="md:w-[36.5rem] md:h-[29rem] w-full h-[25rem] object-cover"
+              alt="Customer-Review"
             />
             <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
               <ReviewStars stars={3}/>
               <h1 className="text-white text-[2.5rem]">Elon Musk</h1>
               <p className="md:text-[1.25rem] text-base text-center w-10/12">
                 Lorem Ipsum is simply dummy text industry's text ever since the
-                1500s, when an unknown printer took a galley of type and{" "}
+                1500s, when an unknown printer took a galley of type and
               </p>
             </figcaption>
           </figure>
@@ -46,13 +48,14 @@ const Review = () => {
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
               className="md:w-[36.5rem] md:h-[29rem] w-full h-[25rem] object-cover"
+              alt="Customer-Review"
             />
             <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
               <ReviewStars stars={4}/>
               <h1 className="text-white text-[2.5rem]">Elon Musk</h1>
               <p className="md:text-[1.25rem] text-base text-center w-10/12">
                 Lorem Ipsum is simply dummy text industry's text ever since the
-                1500s, when an unknown printer took a galley of type and{" "}
+                1500s, when an unknown printer took a galley of type and
               </p>
             </figcaption>
           </figure>
@@ -63,13 +66,14 @@ const Review = () => {
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
               className="md:w-[36.5rem] md:h-[29rem] w-[30.5rem] h-[25rem] object-cover"
+              alt="Customer-Review"
             />
             <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
               <ReviewStars stars={5} />
               <h1 className="text-white text-[2.5rem]">Elon Musk</h1>
               <p className="md:text-[1.25rem] text-base text-center w-10/12">
                 Lorem Ipsum is simply dummy text industry's text ever since the
-                1500s, when an unknown printer took a galley of type and{" "}
+                1500s, when an unknown printer took a galley of type and
               </p>
             </figcaption>
           </figure>
@@ -77,13 +81,14 @@ const Review = () => {
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
               className="md:w-[36.5rem] md:h-[29rem] w-[30.5rem] h-[25rem] object-cover"
+              alt="Customer-Review"
             />
             <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
               <ReviewStars stars={3}/>
               <h1 className="text-white text-[2.5rem]">Elon Musk</h1>
               <p className="md:text-[1.25rem] text-base text-center w-10/12">
                 Lorem Ipsum is simply dummy text industry's text ever since the
-                1500s, when an unknown printer took a galley of type and{" "}
+                1500s, when an unknown printer took a galley of type and
               </p>
             </figcaption>
           </figure>
@@ -91,13 +96,14 @@ const Review = () => {
             <img
               src="https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Setups.jpg"
               className="w-[36.5rem] h-[29rem] object-cover"
+              alt="Customer-Review"
             />
             <figcaption className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.69)] flex flex-col justify-center items-center">
               <ReviewStars stars={4}/>
               <h1 className="text-white text-[2.5rem]">Elon Musk</h1>
               <p className="text-[1.25rem] text-center w-10/12">
                 Lorem Ipsum is simply dummy text industry's text ever since the
-                1500s, when an unknown printer took a galley of type and{" "}
+                1500s, when an unknown printer took a galley of type and
               </p>
             </figcaption>
           </figure>
