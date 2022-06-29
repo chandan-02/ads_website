@@ -16,10 +16,10 @@ import NewLaunchesCompo from "../components/Homepage/NewLaunchesCompo";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import axios from "../helper/axios";
 
-const index = () => {
+const Index = () => {
   const [homeImages, setHomeImages] = useState();
 
-  const getHomeImages = async () => {
+  const GetHomeImages = async () => {
     // setLoading(true)
     try {
       const userUpdated = await axios.get(`/pages/front_dashboard/`);
@@ -40,12 +40,12 @@ const index = () => {
     }
   };
   useEffect(() => {
-    getHomeImages();
+    GetHomeImages();
   }, []);
 
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
+  // const onChange = (currentSlide) => {
+  //   console.log(currentSlide);
+  // };
 
   return (
     <div className="md:p-8 p-4">
@@ -199,4 +199,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
