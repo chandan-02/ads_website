@@ -11,7 +11,7 @@ const ProductTabs = () => {
   };
 
   return (
-    <div className="w-full my-[6rem] mx-[3rem]">
+    <div className="md:w-full md:my-[6rem] md:mx-[3rem] my-[2rem]">
       <Tabs defaultActiveKey="1" onChange={onChange}>
         <TabPane tab="Key Features" key="1" className="mainclass">
           <div>
@@ -30,11 +30,7 @@ const ProductTabs = () => {
         {`
             .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
                 color: #EE2841;
-                // background:red;
                 display: flex;
-                // padding:1rem;
-                // width: 199px;
-                // height: 65px;
                 background: rgba(238, 40, 65, 0.18);
                 justify-content: center;
                 align-items: center;
@@ -59,6 +55,8 @@ const ProductTabs = () => {
                 line-height: 24px;
                 padding:1rem;
             }
+
+           
             `}
       </style>
     </div>
