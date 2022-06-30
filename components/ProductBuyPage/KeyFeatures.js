@@ -44,8 +44,8 @@ const SamplePrevArrow = (props) => {
 };
 
 const settings = {
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
+  // nextArrow: <SampleNextArrow />,
+  // prevArrow: <SamplePrevArrow />,
   dots: false,
   infinite: true,
   speed: 500,
@@ -148,7 +148,7 @@ const KeyFeatures = () => {
         </div>
       </div>
 
-      <div>
+      <div className="flex flex-col gap-[5.313rem]">
         <div className="flex justify-center items-center text-[2.5rem] font-bold text-[#000000]">
           <span>
             Recommended <span>Products</span>
