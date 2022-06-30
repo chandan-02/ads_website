@@ -4,7 +4,8 @@ import { HeartOutlined, HeartFilled } from "@ant-design/icons";
 const RecomProductSlider = () => {
   const [click, setClick] = useState(1);
   return (
-    <div className="w-[80%] relative">
+    <div className="flex justify-center items-center">
+    <div className="w-[80%] relative md:p-0   ">
       <img
         src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         className="rounded-md"
@@ -37,7 +38,7 @@ const RecomProductSlider = () => {
         </div>
       )}
 
-      <div className="flex  flex-col  absolute  bottom-[1rem] w-[100%] px-[1.5rem] gap-1">
+      <div className="flex  flex-col  absolute  bottom-[1rem] w-[100%] md:px-[1.5rem] md:gap-1">
         <div className="flex flex-col gap-1 ">
           <p className="m-0 text-[1rem] text-[#FFFFFF]">MSI B450 Tomhawk</p>
           <p className="m-0 text-[1.25rem] text-[#FFFFFF] font-bold">₹ 16,000</p>
@@ -46,6 +47,7 @@ const RecomProductSlider = () => {
           Add to Cart
         </button>
       </div>
+    </div>
     </div>
   );
 };

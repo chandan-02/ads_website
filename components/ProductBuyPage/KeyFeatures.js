@@ -116,18 +116,18 @@ const KeyFeatures = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-[15rem]">
+    <div className="flex flex-col md:gap-[15rem] gap-[5rem]">
       <div>
         <div className="flex flex-col gap-[1.7rem]">
           <div className="flex flex-col gap-[0.5rem]">
-            <p className="m-0 text-[1.2rem]">Features:</p>
-            <p className="m-0 w-[31rem] text-[1rem]">
+            <p className="m-0 md:text-[1.2rem] text-[1rem]">Features:</p>
+            <p className="m-0 md:w-[31rem] md:text-[1rem]">
               AMD 5000 Series Ryzen 9 5900X Desktop Processor 12 Cores 24
               Threads 70 MB Cache 3.7 GHz up to 4.8 GHz AM4 Socket 500 Series
               chipset (100-100000061WOF)
             </p>
           </div>
-          <div className="grid grid-cols-6 items-start justify-items-start">
+          <div className="grid md:grid-cols-6 grid-cols-3 items-start justify-items-start">
             {data.map((each, id) => {
               return (
                 <div
@@ -141,15 +141,15 @@ const KeyFeatures = () => {
             })}
           </div>
           <div>
-            <p className="m-0 font-[500] text-[22rem] flex items-center justify-center leading-[0rem] opacity-5 text-[#000000]">
+            <p className="m-0 font-[500] md:text-[22rem] text-[10rem] flex items-center justify-center leading-[0rem] opacity-5 text-[#000000]">
               AMD
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-[5.313rem]">
-        <div className="flex justify-center items-center text-[2.5rem] font-bold text-[#000000]">
+      <div className="flex flex-col md:gap-[5.313rem] gap-[1.2rem]">
+        <div className="flex justify-center items-center md:text-[2.5rem] text-[1.5rem] font-bold text-[#000000]">
           <span>
             Recommended <span>Products</span>
           </span>

@@ -35,8 +35,8 @@ const ProductTabs = () => {
                 justify-content: center;
                 align-items: center;
                 font-weight: 400;
-                font-size: 21px;
-                line-height: 24px;
+                font-size: 1.35rem;
+                line-height: 1.5rem;
             }
             .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-bottom > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-bottom > div > .ant-tabs-nav .ant-tabs-ink-bar
             {
@@ -51,9 +51,12 @@ const ProductTabs = () => {
             .ant-tabs-tab-btn{
                 color: #EE2841;
                 font-weight: 400;
-                font-size: 21px;
-                line-height: 24px;
-                padding:1rem;
+                font-size: 1.35rem;
+                line-height: 1.5rem;
+                // padding:1rem;
+                padding: 1rem 0.5rem
+            }
+            
             }
 
            
