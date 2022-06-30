@@ -8,7 +8,7 @@ const index = () => {
     
   return (
     <div className="md:p-16 p-6">
-        <div className='flex gap-[3.063rem]'>
+        <div className='md:flex md:gap-[3.063rem] flex flex-col gap-[1rem] md:flex-row'>
         <ProductSlider/>
         <ProductRightSection/>
         </div>

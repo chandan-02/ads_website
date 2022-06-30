@@ -4,24 +4,24 @@ import { Input } from "antd";
 const ProductRightSection = () => {
   return (
     <div>
-      <div className="flex flex-col gap-6">
-        <span className="m-0 text-[1.313rem] font-semibold leading-5	">AMD</span>
-        <span className="m-0 text-[2.5rem] font-semibold leading-5">
+      <div className="flex flex-col md:gap-6 gap-4">
+        <span className="m-0 md:text-[1.313rem] text-[1rem] font-semibold leading-5">AMD</span>
+        <span className="m-0 md:text-[2.5rem] text-[2rem] font-semibold leading-5">
           Ryzen 9 5900x
         </span>
         <div className="flex items-center">
           <p className="m-0">star</p>
-          <p className="text-[1.1rem] m-0">(19,230)</p>
+          <p className="md:text-[1.1rem] text-[0.9rem] m-0">(19,230)</p>
         </div>
 
         <div className="flex gap-[0.7rem] md:gap-3 align-baseline items-baseline">
-          <del className="text-red-600 text-[0.8rem]  md:text-[1.563rem] leading-5">
+          <del className="text-red-600 text-[1.2rem]  md:text-[1.563rem] leading-5">
             19000
           </del>
-          <span className="md:text-[2rem] text-[1.25rem] md:font-bold leading-5">
+          <span className="md:text-[2rem] text-[1.7rem] md:font-bold leading-5">
             19000
           </span>
-          <span className="text-[0.9rem] leading-5">( incl. GST )</span>
+          <span className="md:text-[0.9rem] text-[0.7rem] leading-5">( incl. GST )</span>
         </div>
 
         <div className="flex gap-[3rem]">
@@ -43,15 +43,15 @@ const ProductRightSection = () => {
         </div>
 
         <div className="flex items-baseline gap-[1.37rem]">
-          <button className="bg-[#ffff] text-[#EE2841] border-[#EE2841] border-2  md:text-[1rem] md:w-[8rem] md:h-[2.5rem] rounded-md   text-[1.1rem]  w-[8rem] h-[2.7rem]  ">
+          <button className="bg-[#ffff] text-[#EE2841] border-[#EE2841] border-2  md:text-[1rem] md:w-[8rem] md:h-[2.5rem] rounded-md   text-[1.1rem]  w-[7rem] h-[2.7rem]  ">
             Add to Cart
           </button>
-          <span className="underline underline-offset-4 text-[#EE2841] text-[1rem]">
+          <span className="underline underline-offset-4 text-[#EE2841] text-[1rem] ">
             Add to Wishlist
           </span>
         </div>
-        <div>
-          <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1.2rem] md:w-[11rem] md:h-[3.5rem] rounded-md font-bold  text-[1rem]  w-[8rem] h-[2.7rem]  ">
+        <div className="flex md:flex md:flex-col md:items-start ">
+          <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1.2rem] md:w-[11rem] md:h-[3.5rem] rounded-md font-bold  text-[1rem]  w-[14rem] h-[2.7rem]  ">
             Buy Now
           </button>
         </div>

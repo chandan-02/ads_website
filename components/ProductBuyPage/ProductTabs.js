@@ -1,6 +1,7 @@
 import React from "react";
 import { Tabs } from "antd";
 import KeyFeatures from "./KeyFeatures";
+import RecommendedProducts from "./KeyFeatures";
 
 const { TabPane } = Tabs;
 
@@ -10,28 +11,26 @@ const ProductTabs = () => {
   };
 
   return (
-    <div className="w-full my-[6rem] mx-[3rem]">
-         <Tabs defaultActiveKey="1" onChange={onChange} >
-      <TabPane tab="Key Features" key="1" className="mainclass">
-        <KeyFeatures/>
-      </TabPane>
-      <TabPane tab="Reviews (0)" key="2">
-        Content of Tab Pane 2
-      </TabPane>
-      <TabPane tab="FAQ" key="3">
-        Content of Tab Pane 3
-      </TabPane>
-    </Tabs>
-    <style>
-        {
-            `
+    <div className="md:w-full md:my-[6rem] md:mx-[3rem] my-[2rem]">
+      <Tabs defaultActiveKey="1" onChange={onChange}>
+        <TabPane tab="Key Features" key="1" className="mainclass">
+          <div>
+          <KeyFeatures />
+          {/* <RecommendedProducts/> */}
+          </div>
+        </TabPane>
+        <TabPane tab="Reviews (0)" key="2">
+          Content of Tab Pane 2
+        </TabPane>
+        <TabPane tab="FAQ" key="3">
+          Content of Tab Pane 3
+        </TabPane>
+      </Tabs>
+      <style>
+        {`
             .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
                 color: #EE2841;
-                // background:red;
                 display: flex;
-                // padding:1rem;
-                // width: 199px;
-                // height: 65px;
                 background: rgba(238, 40, 65, 0.18);
                 justify-content: center;
                 align-items: center;
@@ -56,11 +55,11 @@ const ProductTabs = () => {
                 line-height: 24px;
                 padding:1rem;
             }
-            `
-        }
-    </style>
+
+           
+            `}
+      </style>
     </div>
-   
   );
 };
 
