@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Radio, Input, Select, Checkbox } from "antd";
+import { Radio, Input, Select, Checkbox, Button, Dropdown, Menu, Space } from "antd";
 const { TextArea } = Input;
 const { Option } = Select;
 
@@ -20,11 +20,11 @@ const NumericInput = (props) => {
   const handleBlur = () => {
     let valueTemp = value;
 
-    if (value.charAt(value.length - 1) === "." || value === "-") {
+    if (value?.charAt(value.length - 1) === "." || value === "-") {
       valueTemp = value.slice(0, -1);
     }
 
-    onChange(valueTemp.replace(/0*(\d+)/, "$1"));
+    onChange(valueTemp?.replace(/0*(\d+)/, "$1"));
   };
 
   return (
@@ -32,14 +32,30 @@ const NumericInput = (props) => {
       {...props}
       onChange={handleChange}
       onBlur={handleBlur}
-      maxLength={25}
+      maxLength={6}
     />
   );
 };
 
-const onChange = (e) => {
-    console.log(`checked = ${e.target.checked}`);
-  };
+const menu = (
+  <Menu
+    // onClick={handleMenuClick}
+    items={[
+      {
+        label: '1',
+        key: '1',
+      },
+      {
+        label: '2',
+        key: '2',
+      },
+      {
+        label: '3',
+        key: '3',
+      },
+    ]}
+  />
+);
 
 const index = () => {
   const [radio, setRadio] = useState(1);
@@ -51,15 +67,17 @@ const index = () => {
     <div className="">
       <div className="flex justify-center gap-[12.438rem]">
         <div>
-          <div className="flex justify-between">
-            <h1>Billing Info</h1>
-            <p>Step 1 of 3</p>
+          <div>
+            <div className="flex justify-between">
+              <h1 className="text-[1.5rem] font-bold">Billing Info</h1>
+              <p>Step 1 of 3</p>
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-[2.875rem]">
+          <div className="grid grid-cols-2 gap-[2rem]">
             <Radio.Group
               onChange={(e) => setRadio(e?.target?.value)}
               value={radio}
-              className="col-span-2"
+              className="col-span-2 font-bold text-xl"
             >
               <Radio value={1}>New Address</Radio>
               <Radio value={2}>Existing Address</Radio>
@@ -116,7 +134,9 @@ const index = () => {
           </div>
           <div>
             <div className="flex justify-between">
-              <h1>Additional informations</h1>
+              <h1 className="text-[1.5rem] font-bold">
+                Additional informations
+              </h1>
               <p>Step 2 of 3</p>
             </div>
             <p>Need something else? we will make it for you.</p>
@@ -135,25 +155,63 @@ const index = () => {
           </div>
           <div>
             <div className="flex justify-between">
-              <h1>Additional informations</h1>
-              <p>Step 2 of 3</p>
+              <h1 className="text-[1.5rem] font-bold">Confirmation</h1>
+              <p>Step 3 of 3</p>
             </div>
-            <p>We are getting to the end. just few clicks and your order is ready</p>
+            <p>
+              We are getting to the end. just few clicks and your order is
+              ready!
+            </p>
             <div className="flex flex-col">
-              <Checkbox onChange={onChange}>
+              <Checkbox className="border cart-checkbox">
                 I agree with sending an Marketing and newsletter emails.
               </Checkbox>
-              <Checkbox onChange={onChange}>
-                I agree with our <u className="text-[#EE2841]">terms and conditions</u> and <u className="text-[#EE2841]">privacy policy</u>.
+              <br />
+              <Checkbox className="border cart-checkbox">
+                I agree with our{" "}
+                <u className="text-[#EE2841]">terms and conditions</u> and{" "}
+                <u className="text-[#EE2841]">privacy policy</u>.
               </Checkbox>
             </div>
           </div>
         </div>
-        <div>
-          <h1>Order summary</h1>
+        <div className="border">
+          <div>
+            <h1>Order summary</h1>
+            <p>
+              Price can change depending on shipping method and taxes of your
+              state.
+            </p>
+          </div>
+          <hr />
+          <div>
+            <img src="#" />
+            <div>
+              <h1>Tomahawk</h1>
+            </div>
+            <div>loremisiudaidbiuwabdiuabdinawd</div>
+            <div>
+              <h1>13900</h1>
+              <div>
+                <Dropdown overlay={menu}>
+                  <Button>
+                    <Space>
+                      Qty
+                    </Space>
+                  </Button>
+                </Dropdown>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <h1>All your data is safe</h1>
+      <style>{`
+        .ant-checkbox-wrapper {
+          border-radius: 5px;
+          padding: 5px 10px;
+        }
+      `}</style>
     </div>
   );
 };
