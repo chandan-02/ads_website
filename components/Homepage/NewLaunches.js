@@ -26,7 +26,7 @@ const NewLaunches = () => {
                 >
                   <HeartFilled
                     className="cursor-pointer"
-                    style={{ fontSize: "1.5rem", color: "red" }}
+                    style={{ fontSize: "1.5rem", color: "#EE2841" }}
                   />
                 </div>
               ) : (
@@ -38,7 +38,7 @@ const NewLaunches = () => {
                 >
                   <HeartOutlined
                     className=""
-                    style={{ fontSize: "1.5rem", color: "red" }}
+                    style={{ fontSize: "1.5rem", color: "#EE2841" }}
                   />
                 </div>
               )}
