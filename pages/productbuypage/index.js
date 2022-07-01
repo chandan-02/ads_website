@@ -4,7 +4,7 @@ import ProductSlider from "../../components/ProductBuyPage/ProductSlider"
 import ProductTabs from '../../components/ProductBuyPage/ProductTabs'
 
 
-const index = () => {
+const Index = () => {
     
   return (
     <div className="md:p-16 p-6">
@@ -17,4 +17,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
