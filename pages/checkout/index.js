@@ -64,7 +64,7 @@ const menu = (
   />
 );
 
-const index = () => {
+const Index = () => {
   const [radio, setRadio] = useState(1);
   const [address, setAddress] = useState("");
   const [pincode, setPincode] = useState();
@@ -96,4 +96,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

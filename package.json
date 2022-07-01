@@ -13,6 +13,7 @@
     "@iconscout/react-unicons-solid": "0.0.3",
     "antd": "^4.21.3",
     "axios": "^0.27.2",
+    "google-map-react": "^2.1.10",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
