@@ -65,7 +65,7 @@ export const OrderProduct = () => {
           </div>
         </div>
       </div>
-      <hr className="mx-[1.5rem] "/>
+      <hr className="mx-[1.5rem]"/>
     </div>
   );
 };
