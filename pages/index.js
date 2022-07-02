@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { RightOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
-import Slider from "../components/Homepage/slider";
+import Slider from "../components/Homepage/Slider";
 import Banner from "../components/Homepage/Banner";
 import Bannergrid from "../components/Homepage/Bannergrid";
 import Secondcourisal from "../components/Homepage/SecondCarousel";
