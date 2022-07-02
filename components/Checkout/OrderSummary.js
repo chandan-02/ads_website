@@ -12,7 +12,7 @@ export const OrderSummary = () => {
           Price can change depending on shipping method and taxes of your state.
         </p>
       </div>
-      <hr />
+      <hr/>
         <OrderProduct/>
         <OrderProduct/>
         <div className="mx-[1.5rem]">
