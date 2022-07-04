@@ -27,10 +27,10 @@ export const OrderProduct = () => {
     <div>
       <div className="2xl:p-[1.5rem] md:p-[1.5rem] xl:p-[1.5rem] py-[0.8rem] px-[0.8rem] mainborder">
         <div className="flex gap-3">
-          <div className="w-[9.813rem] h-[6.563rem]">
+          <div className="h-full w-full">
             <img
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"
-              className="rounded-[0.3rem] h-full w-full"
+              className="rounded-[0.3rem] w-[9rem] h-[6.1rem]"
               alt="checkout-product"
             />
           </div>
