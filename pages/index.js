@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { RightOutlined } from "@ant-design/icons";
-import { Carousel } from "antd";
+import { Carousel,Skeleton } from "antd";
 import Slider from "../components/Homepage/Slider";
 import Banner from "../components/Homepage/Banner";
 import Bannergrid from "../components/Homepage/Bannergrid";
@@ -16,9 +16,17 @@ import NewLaunchesCompo from "../components/Homepage/NewLaunchesCompo";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import axios from "../helper/axios";
 
+
 const Index = () => {
   const [homeImages, setHomeImages] = useState();
-
+  const [dataLoading, setDataLoading] = useState(true);
+  const SkeletonLoader = () => {
+    return (
+        <div style={{ display: 'flex' }}>
+            <Skeleton paragraph={{ rows: 1 }} size={"default"} active />
+        </div>
+    )
+}
   const GetHomeImages = async () => {
     // setLoading(true)
     try {
@@ -29,6 +37,7 @@ const Index = () => {
         // setModal({ editVisible: false });
         // setLoading(false);
         setHomeImages(userUpdated?.data?.data[0]?.sectionOne);
+        setDataLoading(false);
       }
     } catch (error) {
       if (error?.response?.data) {
@@ -36,6 +45,7 @@ const Index = () => {
       } else {
         alert("Error", error?.message, "error");
       }
+      setDataLoading(false);
       // setLoading(false);
     }
   };
@@ -50,13 +60,16 @@ const Index = () => {
   return (
     <div className="md:p-8 p-4">
       <div className=" grid  grid-cols-2 grid-rows-4 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-6">
-        <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2 h-full">
+        {
+         !dataLoading && <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2 h-full">
           <img
             src={homeImages?.leftSideImage}
             className="rounded-md h-full w-full"
             alt="left-banner"
           />
         </div>
+        }
+        
 
         <div className="w-full h-full">
           <img
@@ -195,6 +208,7 @@ const Index = () => {
       <div>
         <NewsLetter />
       </div>
+      
     </div>
   );
 };

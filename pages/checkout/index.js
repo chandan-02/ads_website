@@ -73,7 +73,7 @@ const Index = () => {
 
   return (
     <div className="py-[2rem] md:py-[4rem] md:mx-[4rem] mx-[2rem]">
-      <div className="flex flex-col-reverse lg:flex-row justify-center gap-[12.438rem] mb-[6.25rem]">
+      <div className="flex flex-col-reverse lg:flex-row justify-center md:gap-[12.438rem] gap-[3rem] mb-[6.25rem]">
         <BillingForm/>
         <OrderSummary/>
       </div>
