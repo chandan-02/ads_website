@@ -37,7 +37,7 @@ const ProductRightSection = () => {
             <Input
               allowClear={true}
               placeholder="Pincode..."
-              style={{ width: 200, borderRadius: "5px", height: 35 }}
+              style={{ borderRadius: "5px", height: 35 }}
             />
           </div>
         </div>

@@ -54,7 +54,7 @@ const ProductTabs = () => {
                 font-size: 1.35rem;
                 line-height: 1.5rem;
                 // padding:1rem;
-                padding: 1rem 0.5rem
+                padding: 1rem 1rem
             }
             
             }

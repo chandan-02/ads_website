@@ -154,7 +154,7 @@ const KeyFeatures = () => {
             Recommended <span>Products</span>
           </span>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col m-[1rem] md:m-[0rem]">
           <Carousel arrows {...settings} autoplay={false} draggable={true}>
             <RecomProductSlider/>
             <RecomProductSlider/>
