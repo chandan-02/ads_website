@@ -18,7 +18,7 @@ const NewsLetter = () => {
         </p>
       </div>
       <div className="md:w-2/6 flex flex-col gap-4">
-        <Input placeholder="example@mail.com"/>
+        <Input placeholder="example@mail.com" className="newsinput"/>
         <div className="text-[]">
           <Checkbox onChange={onChange}>
             I accept <u>terms and conditions.</u>
@@ -27,7 +27,7 @@ const NewsLetter = () => {
         <Button type="primary">Subscribe</Button>
       </div>
       <style>{`
-        .ant-input{
+        .newsinput>.ant-input{
             font-size: 1.625rem;
             padding: 1rem 1.5rem;
             border-radius: 0.625rem;

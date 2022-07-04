@@ -35,7 +35,7 @@ function Navbar({setCollapsed,collapsed}) {
               style={{ borderRadius: 5, height:35}}
               placeholder="Search Product ..."
               suffix={<UilSearch size="18" color="#6F6F6F" />}
-              className="justify-self-center col-span-2"
+              // className="justify-self-center col-span-2"
             />
           </div>
           <div className="col-start-2 col-end-4 gap-[2rem] flex justify-center text-xl">
@@ -100,6 +100,18 @@ function Navbar({setCollapsed,collapsed}) {
           </div>
         </div>
       }
+      <style>
+        {
+          `
+        //   .ant-input{
+        //     font-size: 0.5rem;
+        //     padding: 1rem 1.5rem;
+        //     border-radius: 0.625rem;
+        // }
+          }
+          `
+        }
+      </style>
     </div>
   );
 }
