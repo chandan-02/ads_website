@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-
-// import "./index.css";
-import { Carousel } from "antd";
+import React, { useState } from "react";
+import { Carousel, Skeleton } from "antd";
 import { LeftCircleFilled, RightCircleFilled } from "@ant-design/icons";
 
 // import { UilAngleRightB,UilAngleLeftB } from '@iconscout/react-unicons';
@@ -61,17 +59,33 @@ const settings = {
 };
 
 const Secondcourisal = () => {
+  const [dataLoading, setDataLoading] = useState(false);
+
+  const ImageSkeleton = () => {
+    return(
+      <div className="flex justify-center gap-4">
+        <Skeleton.Image className="w-full h-full" active />
+        <Skeleton paragraph={{rows:2}} />
+      </div>
+    );
+  };
 
   return (
     <div className="sliderNew">
       <Carousel autoplay={true} draggable={true}>
         <div className=" flex justify-center items-center mt-[1.8rem]">
-          <div>
-            <img src="/assets/banner.svg" alt="Carousel-Product" className="w-[100%]" />
-          </div>
+            { 
+              !dataLoading ? 
+              <img src="/assets/banner.svg" alt="Carousel-Product" className="w-[100%]" />
+              : ImageSkeleton() 
+            }
         </div>
         <div className=" flex justify-center items-center mt-[1.8rem]">
-          <img src="/assets/banner.svg" alt="Carousel-Product" className="w-[100%]" />
+          { 
+            !dataLoading ? 
+            <img src="/assets/banner.svg" alt="Carousel-Product" className="w-[100%]" />
+            : ImageSkeleton() 
+          }
         </div>
       </Carousel>
       <style>{`

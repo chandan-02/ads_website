@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import GamingRigsCard from "./GamingRigsCard";
@@ -90,13 +90,6 @@ const settings = {
 };
 
 const GamingRigsSlides = () => {
-  // const settings = {
-  //     dots: true,
-  //     infinite: true,
-  //     speed: 500,
-  //     slidesToShow: 3,
-  //     slidesToScroll: 3
-  //   };
 
   return (
     <div className="flex flex-col gap-[5rem]">

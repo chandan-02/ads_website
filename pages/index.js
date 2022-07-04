@@ -15,23 +15,24 @@ import NewLaunches from "../components/Homepage/NewLaunches";
 import NewLaunchesCompo from "../components/Homepage/NewLaunchesCompo";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import axios from "../helper/axios";
+import { data } from "autoprefixer";
 
 const Index = () => {
   const [homeImages, setHomeImages] = useState();
-  const [dataLoading, setDataLoading] = useState();
+  const [dataLoading, setDataLoading] = useState(false);
   const ImageSkeleton = () => {
     return <Skeleton.Image className="w-full h-full" active />;
   };
   const ProductSkeleton = () => {
     return (
-      <>
-        <Skeleton.Image className="w-full h-full" active />;
-        <Skeleton paragraph={{rows:3}} />
-        <Skeleton.Input paragraph={{rows:3}} />
-        <Skeleton.Button paragraph={{rows:3}} />
-        <Skeleton.Button paragraph={{rows:3}} />
-      </>
-    )
+      <div className="flex justify-center w-full gap-2">
+        <Skeleton.Image className="w-full h-full" active />
+        <div className="w-2/6">
+          <Skeleton paragraph={{ rows: 2 }} active />
+          <Skeleton.Button active />
+        </div>
+      </div>
+    );
   };
   const GetHomeImages = async () => {
     // setLoading(true)
@@ -58,10 +59,6 @@ const Index = () => {
   useEffect(() => {
     GetHomeImages();
   }, []);
-
-  // const onChange = (currentSlide) => {
-  //   console.log(currentSlide);
-  // };
 
   return (
     <div className="md:p-8 p-4">
@@ -133,12 +130,12 @@ const Index = () => {
         </span>
         <Slider />
         <div>
-          <Banner />
+          {!dataLoading ? <Banner /> : ImageSkeleton()}
           <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2">
-            <Bannergrid />
-            <Bannergrid />
+            {!dataLoading ? <Bannergrid /> : ImageSkeleton()}
+            {!dataLoading ? <Bannergrid /> : ImageSkeleton()}
             <div className="col-span-2 md:col-span-1">
-              <Bannergrid />
+              {!dataLoading ? <Bannergrid /> : ImageSkeleton()}
             </div>
           </div>
           <Secondcourisal />
@@ -152,17 +149,14 @@ const Index = () => {
                 Existing Gaming Rigs
               </span>
             </div>
-
-            <div>
-              <div className="flex items-end">
-                <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl">
-                  See More
-                </span>
-                <RightOutlined
-                  style={{ color: "#EE2841", font: "bold", fontSize: "" }}
-                  className="md:text-[1.5rem] text-[1rem]"
-                />
-              </div>
+            <div className="flex items-end">
+              <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl">
+                See More
+              </span>
+              <RightOutlined
+                style={{ color: "#EE2841", font: "bold", fontSize: "" }}
+                className="md:text-[1.5rem] text-[1rem]"
+              />
             </div>
           </div>
           <div className="">
@@ -170,6 +164,7 @@ const Index = () => {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col gap-[2rem]">
         <div className="flex justify-between items-center mt-[2rem] ">
           <div className="flex gap-[0.5rem] items-center">
@@ -181,20 +176,19 @@ const Index = () => {
             </span>
           </div>
 
-          <div>
-            <div className="flex items-end">
-              <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl">
-                See More
-              </span>
-              <RightOutlined
-                style={{ color: "#EE2841", font: "bold", fontSize: "" }}
-                className="md:text-[1.5rem] text-[1rem]"
-              />
-            </div>
+          <div className="flex items-end">
+            <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl">
+              See More
+            </span>
+            <RightOutlined
+              style={{ color: "#EE2841", font: "bold", fontSize: "" }}
+              className="md:text-[1.5rem] text-[1rem]"
+            />
           </div>
         </div>
         <NewLaunchesCompo />
       </div>
+
       <div className="mt-[1.5rem]">
         <div className="flex gap-[0.5rem] items-center justify-center">
           <span className="md:text-[2.2rem] font-bold text-[#000000] text-[1.5rem]">
@@ -206,31 +200,28 @@ const Index = () => {
         </div>
         <div className="grid 2xl:grid-cols-6 justify-items-center md:gap-y-[1.6rem] mt-[1.5rem] grid-cols-2 md:grid-cols-4 gap-[1.5rem]">
           <div className="2xl:col-start-2">
-            <ShopByBrand />
+            {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
           </div>
+          {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
 
-          <ShopByBrand />
-          <ShopByBrand />
-          <ShopByBrand />
+          {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
+
+          {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
 
           <div className="2xl:col-end-3">
-            <ShopByBrand />
+            {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
           </div>
-          <ShopByBrand />
-          <ShopByBrand />
-          <ShopByBrand />
+          {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
+          {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
+          {!dataLoading ? <ShopByBrand /> : ImageSkeleton()}
         </div>
       </div>
 
-      <div>
-        <Review />
-      </div>
-      <div>
-        <ComingSoon />
-      </div>
-      <div>
-        <NewsLetter />
-      </div>
+      <Review />
+
+      <ComingSoon />
+
+      <NewsLetter />
     </div>
   );
 };

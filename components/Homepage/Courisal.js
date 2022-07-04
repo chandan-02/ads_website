@@ -1,15 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
-// import Image from "next/image";
+import React, { useState } from 'react'
+import { Skeleton } from "antd";
+
 
 const Courisal = ({ img, title, desc, price }) => {
+  const [dataLoading, setDataLoading] = useState(false);
+
   var formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'INR',
     minimumFractionDigits: 0,
   });
+
+  const ProductSkeleton = () => {
+    return (
+      <div className="flex justify-center w-full gap-4">
+        <Skeleton.Image className="w-full h-full" active />
+        <div className="w-2/6">
+          <Skeleton paragraph={{rows:2}} active />
+          <Skeleton.Button active />
+        </div>
+      </div>
+    )
+  };
+
   return (
     <div>
+      {!dataLoading ? 
       <div className="md:flex md:justify-center  md:gap-[3.7rem]">
         <img
           src={img}
@@ -42,6 +59,8 @@ const Courisal = ({ img, title, desc, price }) => {
           </button>
         </div>
       </div>
+          : ProductSkeleton()
+      }
     </div>
   )
 }
