@@ -11,9 +11,9 @@ const ProductTabs = () => {
   };
 
   return (
-    <div className="md:w-full md:my-[6rem] md:mx-[3rem] my-[2rem]">
+    <div className="md:w-full md:my-[6rem] md:mx-[3rem] my-[2rem] mainclass">
       <Tabs defaultActiveKey="1" onChange={onChange}>
-        <TabPane tab="Key Features" key="1" className="mainclass">
+        <TabPane tab="Key Features" key="1">
           <div>
           <KeyFeatures />
           {/* <RecommendedProducts/> */}
@@ -45,7 +45,7 @@ const ProductTabs = () => {
             .ant-tabs-tab{
                 padding:0px;
             }
-            .ant-tabs-tab-btn{
+           .ant-tabs-tab-btn{
                 transition:none
             }
             .ant-tabs-tab-btn{
