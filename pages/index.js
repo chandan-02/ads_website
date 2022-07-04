@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { RightOutlined } from "@ant-design/icons";
-import { Carousel,Skeleton } from "antd";
+import { Carousel, Skeleton } from "antd";
 import Slider from "../components/Homepage/Slider";
 import Banner from "../components/Homepage/Banner";
 import Bannergrid from "../components/Homepage/Bannergrid";
@@ -16,19 +16,26 @@ import NewLaunchesCompo from "../components/Homepage/NewLaunchesCompo";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import axios from "../helper/axios";
 
-
 const Index = () => {
   const [homeImages, setHomeImages] = useState();
-  const [dataLoading, setDataLoading] = useState(true);
-  const SkeletonLoader = () => {
+  const [dataLoading, setDataLoading] = useState();
+  const ImageSkeleton = () => {
+    return <Skeleton.Image className="w-full h-full" active />;
+  };
+  const ProductSkeleton = () => {
     return (
-        <div style={{ display: 'flex' }}>
-            <Skeleton paragraph={{ rows: 1 }} size={"default"} active />
-        </div>
+      <>
+        <Skeleton.Image className="w-full h-full" active />;
+        <Skeleton paragraph={{rows:3}} />
+        <Skeleton.Input paragraph={{rows:3}} />
+        <Skeleton.Button paragraph={{rows:3}} />
+        <Skeleton.Button paragraph={{rows:3}} />
+      </>
     )
-}
+  };
   const GetHomeImages = async () => {
     // setLoading(true)
+    setDataLoading(true);
     try {
       const userUpdated = await axios.get(`/pages/front_dashboard/`);
       if (userUpdated?.data?.success) {
@@ -45,7 +52,6 @@ const Index = () => {
       } else {
         alert("Error", error?.message, "error");
       }
-      setDataLoading(false);
       // setLoading(false);
     }
   };
@@ -60,47 +66,64 @@ const Index = () => {
   return (
     <div className="md:p-8 p-4">
       <div className=" grid  grid-cols-2 grid-rows-4 gap-4 md:grid-cols-4 md:grid-rows-2 md:gap-6">
-        {
-         !dataLoading && <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2 h-full">
-          <img
-            src={homeImages?.leftSideImage}
-            className="rounded-md h-full w-full"
-            alt="left-banner"
-          />
-        </div>
-        }
-        
-
-        <div className="w-full h-full">
-          <img
-            src={homeImages?.rtOneImage}
-            className="rounded-md w-full h-full"
-            alt="right-banner-1"
-          />
+        <div className=" row-span-2 col-span-2 md:col-span-2 md:row-span-2 h-full">
+          {!dataLoading ? (
+            <img
+              src={homeImages?.leftSideImage}
+              className="rounded-md h-full w-full"
+              alt="left-banner"
+            />
+          ) : (
+            ImageSkeleton()
+          )}
         </div>
 
         <div className="w-full h-full">
-          <img
-            src={homeImages?.rtTwoImage}
-            className="rounded-md w-full h-full"
-            alt="right-banner-2"
-          />
+          {!dataLoading ? (
+            <img
+              src={homeImages?.rtOneImage}
+              className="rounded-md w-full h-full"
+              alt="right-banner-1"
+            />
+          ) : (
+            ImageSkeleton()
+          )}
         </div>
 
         <div className="w-full h-full">
-          <img
-            src={homeImages?.rtThreeImage}
-            className="rounded-md w-full h-full"
-            alt="right-banner-3"
-          />
+          {!dataLoading ? (
+            <img
+              src={homeImages?.rtTwoImage}
+              className="rounded-md w-full h-full"
+              alt="right-banner-2"
+            />
+          ) : (
+            ImageSkeleton()
+          )}
         </div>
 
         <div className="w-full h-full">
-          <img
-            src={homeImages?.rtFourImage}
-            className="rounded-md w-full h-full"
-            alt="right-banner-4"
-          />
+          {!dataLoading ? (
+            <img
+              src={homeImages?.rtThreeImage}
+              className="rounded-md w-full h-full"
+              alt="right-banner-3"
+            />
+          ) : (
+            ImageSkeleton()
+          )}
+        </div>
+
+        <div className="w-full h-full">
+          {!dataLoading ? (
+            <img
+              src={homeImages?.rtFourImage}
+              className="rounded-md w-full h-full"
+              alt="right-banner-4"
+            />
+          ) : (
+            ImageSkeleton()
+          )}
         </div>
       </div>
 
@@ -208,7 +231,6 @@ const Index = () => {
       <div>
         <NewsLetter />
       </div>
-      
     </div>
   );
 };
