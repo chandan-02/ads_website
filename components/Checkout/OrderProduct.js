@@ -27,14 +27,14 @@ export const OrderProduct = () => {
     <div>
       <div className="2xl:p-[1.5rem] md:p-[1.5rem] xl:p-[1.5rem] py-[0.8rem] px-[0.8rem] mainborder">
         <div className="flex gap-3">
-          <div className="h-full w-full">
+          <div className="md:w-[12rem] md:h-[6.1rem] w-[12rem] h-[6rem]">
             <img
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"
-              className="rounded-[0.3rem] w-[9rem] h-[6.1rem]"
+              className="rounded-[0.3rem] md:w-[100%] md:h-[100%]"
               alt="checkout-product"
             />
           </div>
-          <div className="w-full flex flex-col gap-[0.8rem]">
+          <div className="w-full flex flex-col md:gap-[0.8rem] gap-[0rem]">
             <div className="flex justify-between items-center w-full">
               <span className="md:text-[1.125rem] text-[1rem] font-bold leading-6	text-black">
                 Ryzen 9 5900x
@@ -56,7 +56,7 @@ export const OrderProduct = () => {
                 ₹ 36,000
               </p>
               <Dropdown overlay={menu}>
-                <Button>
+                <Button className=" w-[5rem] h-[2.5rem]">
                   <Space className="border-r-2 pr-1">1</Space>
                   <Space className="pl-1">Qty</Space>
                 </Button>
