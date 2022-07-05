@@ -3,7 +3,7 @@ import { Skeleton } from "antd";
 import ReviewStars from "../Homepage/ReviewStars";
 
 const ShopByBrandSlider = () => {
-  const [dataLoading, setDataLoading] = useState(true);
+  const [dataLoading, setDataLoading] = useState(false);
 
   const ImageSkeleton = () => {
     return <Skeleton.Image className="w-full h-full" active />

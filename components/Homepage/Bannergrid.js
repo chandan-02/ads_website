@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Skeleton } from "antd";
 
 const Bannergrid = () => {
-  const [dataLoading, setDataLoading] = useState(true);
+  const [dataLoading, setDataLoading] = useState(false);
 
   const ImageSkeleton = () => {
     return <Skeleton.Image className="w-full h-full" active />;

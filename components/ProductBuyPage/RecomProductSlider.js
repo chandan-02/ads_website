@@ -4,7 +4,7 @@ import { HeartOutlined, HeartFilled } from "@ant-design/icons";
 
 const RecomProductSlider = () => {
   const [click, setClick] = useState(1);
-  const [dataLoading, setDataLoading] = useState(true);
+  const [dataLoading, setDataLoading] = useState(false);
 
   const ImageSkeleton = () => {
     return <Skeleton.Image className="w-full h-full" active />;
