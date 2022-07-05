@@ -30,7 +30,7 @@ const ShopByBrandSlider = () => {
                 Eligible for Shipping To Mars or somewhere else
               </p>
               <div className="flex items-center gap-[1rem]">
-                <div>star</div>
+                <ReviewStars stars={5} size={18} />
                 <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[0.9rem] rounded-md font-bold  text-[0.9rem]  w-[5rem] h-[1.9rem]  ">
                   Buy
                 </button>
