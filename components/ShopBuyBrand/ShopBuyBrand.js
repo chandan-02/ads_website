@@ -1,6 +1,7 @@
 import React from "react";
 import { Tabs } from "antd";
 import { Input, Carousel } from "antd";
+import Bannergrid from "../Homepage/Bannergrid";
 import {
   UilSearch,
   UilBars,
@@ -11,6 +12,8 @@ import {
 
 import ShopBuyBanner from "./ShopBuyBanner";
 import RecomProductSlider from "../ProductBuyPage/RecomProductSlider";
+import ShopBuyBrandSlider from "./ShopBuyBrandSlider";
+import ProductSlider from "./ProductSlider";
 
 const { TabPane } = Tabs;
 
@@ -114,16 +117,18 @@ const ShopBuyBrand = () => {
               <ShopBuyBanner />
               <div>
                 <div className="flex justify-between items-center mb-[3rem] ml-[2.1rem]">
-                  <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1rem] text-bold ">Motherboards</p>
+                  <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1rem] text-bold ">
+                    Motherboards
+                  </p>
                   <span className="underline underline-offset-4 text-[#EE2841] font-bold md:text-[1rem] md:text-2xl">
-                  View All
-                </span>
+                    View All
+                  </span>
                 </div>
                 <div className="flex flex-col m-[1rem] md:m-[0rem]">
                   <Carousel
                     arrows
                     {...settings}
-                    autoplay={false}
+                    autoplay={true}
                     draggable={true}
                   >
                     <RecomProductSlider />
@@ -135,10 +140,27 @@ const ShopBuyBrand = () => {
                   </Carousel>
                 </div>
               </div>
-              <div>
-                <p className="m-0 font-[500] md:text-[22rem] text-[10rem] flex items-center justify-center leading-[0rem] opacity-5 text-[#000000]">
-                  AMD
+              <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2">
+                <Bannergrid />
+                <Bannergrid />
+                <div className="col-span-2 md:col-span-1">
+                  <Bannergrid />
+                </div>
+              </div>
+              <div className="flex justify-between items-center  ml-[2.1rem]">
+                <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1rem] text-bold ">
+                  Graphic Cards
                 </p>
+                <span className="underline underline-offset-4 text-[#EE2841] font-bold md:text-[1rem] md:text-2xl">
+                  View All
+                </span>
+              </div>
+              <ProductSlider/>
+              <ShopBuyBanner />
+              <div>
+                {/* <p className="m-0 font-[500] md:text-[22rem] text-[10rem] flex items-center justify-center leading-[0rem] opacity-5 text-[#000000]">
+                  AMD
+                </p> */}
               </div>
             </div>
           </TabPane>
