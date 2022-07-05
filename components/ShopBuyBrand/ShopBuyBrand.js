@@ -110,13 +110,13 @@ const ShopBuyBrand = () => {
 
   return (
     <div className="flex  items-start md:my-[2rem] md:mx-[3rem] my-[2rem]">
-      <div className="mainclass md:w-[65rem] 2xl:w-[100rem]">
+      <div className="mainclass md:w-[65rem] 2xl:w-[100rem] w-[100%]">
         <Tabs defaultActiveKey="1" onChange={onChange} className="">
           <TabPane tab="ASUS" key="1">
-            <div className=" flex flex-col gap-[3rem]">
+            <div className=" flex flex-col md:gap-[3rem] gap-[2rem]">
               <ShopBuyBanner />
               <div>
-                <div className="flex justify-between items-center mb-[3rem] ml-[2.1rem]">
+                <div className="flex justify-between items-center md:mb-[3rem] ml-[2.1rem] mb-[2rem] ">
                   <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1rem] text-bold ">
                     Motherboards
                   </p>
@@ -140,7 +140,7 @@ const ShopBuyBrand = () => {
                   </Carousel>
                 </div>
               </div>
-              <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2">
+              <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] md:mt-[1.8rem] grid grid-cols-2">
                 <Bannergrid />
                 <Bannergrid />
                 <div className="col-span-2 md:col-span-1">
@@ -220,6 +220,33 @@ const ShopBuyBrand = () => {
                 border-bottom: 0px solid #f0f0f0;
                 content: '';
             }
+
+            @media screen and ( max-width: 480px ) {
+               .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+                color:#EE2841;
+                display: flex;
+                background: rgba(238, 40, 65, 0.18);
+                justify-content: center;
+                align-items: center;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                border-radius: 50px;
+                padding: 1rem 2rem
+            }
+
+            .ant-tabs-tab-btn{
+              color: #EE2841;
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              // padding:1rem;
+              padding: 1rem 2rem
+          }
+          .ant-tabs-tab + .ant-tabs-tab{
+             margin: 0;
+          }
+          }
             
             }
 
@@ -228,7 +255,7 @@ const ShopBuyBrand = () => {
         </style>
       </div>
 
-      <div className="md:w-[20rem]">
+      <div className="md:w-[20rem] ">
         <Input
           style={{ borderRadius: 5, height: 50 }}
           placeholder="Search Product ..."
