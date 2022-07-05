@@ -1,4 +1,5 @@
 import React from "react";
+import ReviewStars from "../Homepage/ReviewStars";
 import { Input } from "antd";
 
 const ProductRightSection = () => {
@@ -9,8 +10,8 @@ const ProductRightSection = () => {
         <span className="m-0 md:text-[2.5rem] text-[2rem] font-semibold leading-5">
           Ryzen 9 5900x
         </span>
-        <div className="flex items-center">
-          <p className="m-0">star</p>
+        <div className="flex gap-2 items-center">
+          <ReviewStars stars={4} />
           <p className="md:text-[1.1rem] text-[0.9rem] m-0">(19,230)</p>
         </div>
 

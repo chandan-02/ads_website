@@ -10,9 +10,9 @@ import {
   UilBell,
 } from "@iconscout/react-unicons";
 
-import ShopBuyBanner from "./ShopBuyBanner";
+import ShopBuyBanner from "./ShopByBanner";
 import RecomProductSlider from "../ProductBuyPage/RecomProductSlider";
-import ShopBuyBrandSlider from "./ShopBuyBrandSlider";
+import ShopBuyBrandSlider from "./ShopByBrandSlider";
 import ProductSlider from "./ProductSlider";
 
 const { TabPane } = Tabs;
