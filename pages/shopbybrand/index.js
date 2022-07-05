@@ -109,8 +109,23 @@ const Index = () => {
   };
 
   return (
-    <div className="flex  items-start md:my-[2rem] md:mx-[3rem] my-[2rem]">
-      <div className="mainclass md:w-[65rem] 2xl:w-[100rem] w-[100%]">
+    <div>
+      <div className="flex justify-end items-center mr-[6rem] ">
+      {/* <div></div> */}
+      <div className="md:w-[20rem]">
+        <Input
+          style={{ borderRadius: 5, height: 50 }}
+          placeholder="Search Product ..."
+          suffix={<UilSearch size="18" color="#6F6F6F" />}
+        />
+      </div>
+      
+      </div>
+     
+
+
+       <div className="flex  items-start md:my-[2rem] md:mx-[3rem] my-[2rem]">
+      <div className="mainclass w-[100%]">
         <Tabs defaultActiveKey="1" onChange={onChange} className="">
           <TabPane tab="ASUS" key="1">
             <div className=" flex flex-col md:gap-[3rem] gap-[2rem]">
@@ -255,14 +270,10 @@ const Index = () => {
         </style>
       </div>
 
-      <div className="md:w-[20rem] ">
-        <Input
-          style={{ borderRadius: 5, height: 50 }}
-          placeholder="Search Product ..."
-          suffix={<UilSearch size="18" color="#6F6F6F" />}
-        />
-      </div>
+      
     </div>
+    </div>
+   
   );
 };
 
