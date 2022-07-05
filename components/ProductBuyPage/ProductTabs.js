@@ -11,7 +11,7 @@ const ProductTabs = () => {
   };
 
   return (
-    <div className="md:w-full md:my-[6rem] md:mx-[3rem] my-[2rem] mainclass">
+    <div className="md:w-full md:mx-[3rem] md:mb-[3rem] mainclass">
       <Tabs defaultActiveKey="1" onChange={onChange}>
         <TabPane tab="Key Features" key="1">
           <div>
