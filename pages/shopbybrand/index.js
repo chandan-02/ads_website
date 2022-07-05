@@ -103,7 +103,7 @@ const settings = {
   ],
 };
 
-const ShopByBrand = () => {
+const Index = () => {
   const onChange = (key) => {
     console.log(key);
   };
@@ -266,4 +266,4 @@ const ShopByBrand = () => {
   );
 };
 
-export default ShopByBrand;
+export default Index;
