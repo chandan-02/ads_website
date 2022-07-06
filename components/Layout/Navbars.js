@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from 'next/router'
-import Categories from '../Homepage/Categories';
-import { Avatar, Input } from 'antd';
-import { UilSearch, UilBars, UilShoppingCart, UilHeart, UilBell } from "@iconscout/react-unicons";
-import { Dropdown, Space } from 'antd';
+import { useRouter } from "next/router";
+import Categories from "../Homepage/Categories";
+import { Avatar, Input } from "antd";
+import {
+  UilSearch,
+  UilBars,
+  UilShoppingCart,
+  UilHeart,
+  UilBell,
+} from "@iconscout/react-unicons";
+import { Dropdown, Space } from "antd";
 import UseDimension from "../Head/UseDimension";
 import { SearchPop } from "../Homepage/SearchPop";
 
@@ -33,7 +39,6 @@ function Navbar({ setCollapsed, collapsed }) {
               />
             </div>
 
-            
             <Input
               style={{ borderRadius: 5, height: 35 }}
               placeholder="Search Product ..."
@@ -76,24 +81,14 @@ function Navbar({ setCollapsed, collapsed }) {
         <div className="flex flex-col justify-between py-4 gap-[1rem]">
           <div className="grid md:grid-cols-6 lg:grid-cols-3 justify-center items-center">
             <img className="w-20" src="../assets/logo.webp" alt="logo" />
-            <div>
-
-           
-             <Dropdown placement="bottom" overlay={<SearchPop />}>
-                {/* <a
-                  className={`transition hover:text-[#EE2841] hover:underline hover:underline-offset-2 text-black`}
-                  onClick={(e) => e.preventDefault()}
-                >
-                  
-                </a> */}
-                 <Input
-              style={{ borderRadius: 5, height: 35 }}
-              placeholder="Search Product ..."
-              suffix={<UilSearch size="18" color="#6F6F6F" />}
-              className="justify-self-center w-full col-span-2 col-start-3 lg:col-start-auto lg:col-span-1"
-              />
+              <Dropdown placement="bottom" overlay={<SearchPop />}>
+                <Input
+                  style={{ borderRadius: 5, height: 35 }}
+                  placeholder="Search Product ..."
+                  suffix={<UilSearch size="18" color="#6F6F6F" />}
+                  className="justify-self-center w-full col-span-2 col-start-3 lg:col-start-auto lg:col-span-1"
+                />
               </Dropdown>
-            </div>
             <div className="justify-self-end flex items-center gap-4 col-start-6 lg:col-start-auto">
               <UilBell size={30} />
               <UilHeart size={30} />
