@@ -18,9 +18,7 @@ const SampleNextArrow = (props) => {
       }}
       onClick={onClick}
     >
-      <RightOutlined
-        style={{ color: "#EE2841", font: "bold", fontSize: "1.5rem" }}
-      />
+     
     </div>
   );
 };
@@ -38,9 +36,7 @@ const SamplePrevArrow = (props) => {
       }}
       onClick={onClick}
     >
-      <LeftOutlined
-        style={{ color: "#EE2841", font: "bold", fontSize: "1.5rem" }}
-      />
+   
     </div>
   );
 };
