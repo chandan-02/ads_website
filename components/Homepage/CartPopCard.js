@@ -1,42 +1,42 @@
 import React,{useState} from "react";
-import ReviewStars from "./ReviewStars";
+// import ReviewStars from "./ReviewStars";
 import { UilTimes } from "@iconscout/react-unicons";
 import { Button, Dropdown, Space, Menu } from "antd";
 
-const menu = (
-  <Menu
-    // onClick={handleMenuClick}
-    items={[
-      {
-        label: "1",
-        key: "1",
-      },
-      {
-        label: "2",
-        key: "2",
-      },
-      {
-        label: "3",
-        key: "3",
-      },
-    ]}
-  />
-);
+// const menu = (
+//   <Menu
+//     // onClick={handleMenuClick}
+//     items={[
+//       {
+//         label: "1",
+//         key: "1",
+//       },
+//       {
+//         label: "2",
+//         key: "2",
+//       },
+//       {
+//         label: "3",
+//         key: "3",
+//       },
+//     ]}
+//   />
+// );
 
 
-const ProductSkeleton = () => {
-    return (
-      <div className="flex w-full gap-4">
-        <Skeleton.Image className="w-full h-full" active />
-        <div className="w-4/6">
-          <Skeleton paragraph={{ rows: 2 }} active />
-          <Skeleton.Button active />
-        </div>
-      </div>
-    );
-  };
+// const ProductSkeleton = () => {
+//     return (
+//       <div className="flex w-full gap-4">
+//         <Skeleton.Image className="w-full h-full" active />
+//         <div className="w-4/6">
+//           <Skeleton paragraph={{ rows: 2 }} active />
+//           <Skeleton.Button active />
+//         </div>
+//       </div>
+//     );
+//   };
 const CartPopCard = () => {
-  const [dataLoading, setDataLoading] = useState(false);
+  // const [dataLoading, setDataLoading] = useState(false);
  
   return (
     <div>
