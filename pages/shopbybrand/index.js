@@ -109,12 +109,13 @@ const Index = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-end items-center mr-[6rem] ">
+    <div className="mt-[2rem]">
+      <div className="flex md:justify-end justify-center items-center md:mr-[6rem] mb-[1rem] md:mb-[0rem] ">
       {/* <div></div> */}
-      <div className="md:w-[20rem]">
+      <div className="md:w-[20rem] ">
         <Input
-          style={{ borderRadius: 5, height: 50 }}
+         
+          style={{ borderRadius: 5}}
           placeholder="Search Product ..."
           suffix={<UilSearch size="18" color="#6F6F6F" />}
         />
@@ -124,18 +125,18 @@ const Index = () => {
      
 
 
-       <div className="flex  items-start md:my-[2rem] md:mx-[3rem] my-[2rem]">
+       <div className="flex  items-start md:my-[2rem] md:mx-[3rem] mx-[0.2rem] ">
       <div className="mainclass w-[100%]">
         <Tabs defaultActiveKey="1" onChange={onChange} className="">
           <TabPane tab="ASUS" key="1">
             <div className=" flex flex-col md:gap-[3rem] gap-[2rem]">
               <ShopByBanner />
               <div>
-                <div className="flex justify-between items-center md:mb-[3rem] ml-[2.1rem] mb-[2rem] ">
-                  <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1rem] text-bold ">
+                <div className="flex justify-between items-center md:mb-[3rem] md:ml-[2.1rem] md:mb-[2rem] ">
+                  <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1.4rem] text-bold font-bold">
                     Motherboards
                   </p>
-                  <span className="underline underline-offset-4 text-[#EE2841] font-bold md:text-[1rem] md:text-2xl">
+                  <span className="underline underline-offset-4 text-[#EE2841] font-bold md:text-[1rem] text-[1rem] md:text-2xl">
                     View All
                   </span>
                 </div>
@@ -162,11 +163,11 @@ const Index = () => {
                   <Bannergrid />
                 </div>
               </div>
-              <div className="flex justify-between items-center  ml-[2.1rem]">
-                <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1rem] text-bold ">
+              <div className="flex justify-between items-center  md:ml-[2.1rem]">
+                <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1.4rem] font-bold ">
                   Graphic Cards
                 </p>
-                <span className="underline underline-offset-4 text-[#EE2841] font-bold md:text-[1rem] md:text-2xl">
+                <span className="underline underline-offset-4 text-[#EE2841] font-bold text-[1rem] md:text-[1rem] md:text-2xl">
                   View All
                 </span>
               </div>
