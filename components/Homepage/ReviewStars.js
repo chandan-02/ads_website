@@ -16,7 +16,7 @@ const ReviewStars = ({stars, size}) => {
   finalStar();
 
   return (
-    <div className="flex my-4">
+    <div className="flex">
       {totalStars.map((each) => {
         return each;
       })}
