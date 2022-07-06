@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Categories from "../Homepage/Categories";
+<<<<<<< HEAD
+=======
+import CartPop from "../Homepage/CartPop";
+>>>>>>> c1d1a7ee712803794db22bcd858bf28656948358
 import { Avatar, Input } from "antd";
 import {
   UilSearch,
@@ -17,6 +21,18 @@ import { SearchPop } from "../Homepage/SearchPop";
 function Navbar({ setCollapsed, collapsed }) {
   const router = useRouter();
   const [width, height] = UseDimension();
+  const [visible, setVisible] = useState(false);
+
+  const handleMenuClick = (e) => {
+    if (e.key === '3') {
+      setVisible(false);
+    }
+  };
+
+  const handleVisibleChange = (flag) => {
+    setVisible(flag);
+  };
+
 
   return (
     <div>
@@ -92,7 +108,9 @@ function Navbar({ setCollapsed, collapsed }) {
             <div className="justify-self-end flex items-center gap-4 col-start-6 lg:col-start-auto">
               <UilBell size={30} />
               <UilHeart size={30} />
+              <Dropdown placement="bottom" trigger="click" onVisibleChange={handleVisibleChange} visible={visible} overlay={<CartPop/>}>
               <UilShoppingCart size={30} />
+              </Dropdown>
               <Avatar size={40}>CY</Avatar>
             </div>
           </div>
