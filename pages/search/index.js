@@ -21,11 +21,11 @@ const options = [
 
 export const Index = () => {
   return (
-    <div className="flex mx-[2rem] md:mx-[3.2rem] my-[3rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
+    <div className="flex mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] my-[3rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
       <div className="collapse flex flex-col gap-[2rem]">
         <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
         <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="Price Range" className="text-[1.125rem] p-0">
+          <Panel header="Price Range" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
             <InputNumber
               defaultValue={1000}
               formatter={(value) =>
@@ -44,7 +44,7 @@ export const Index = () => {
           </Panel>
         </Collapse>
         <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="Brand" className="text-[1.125rem] p-0">
+          <Panel header="Brand" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
             <Checkbox.Group>
               <div className="flex flex-col gap-2 checkbox">
                 <Checkbox value="amd">AMD</Checkbox>
@@ -55,7 +55,7 @@ export const Index = () => {
           </Panel>
         </Collapse>
         <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="RAM Size" className="text-[1.125rem] p-0">
+          <Panel header="RAM Size" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
             <Checkbox.Group>
               <div className="flex flex-col gap-2 checkbox">
                 <Checkbox value="4gb">4 Gigabyte</Checkbox>
@@ -67,7 +67,7 @@ export const Index = () => {
           </Panel>
         </Collapse>
         <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="Storage Capacity" className="text-[1.125rem] p-0">
+          <Panel header="Storage Capacity" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
             <Checkbox.Group>
               <div className="flex flex-col gap-2 checkbox">
                 <Checkbox value="128gb">128 Gigabyte</Checkbox>
@@ -80,7 +80,7 @@ export const Index = () => {
           </Panel>
         </Collapse>
       </div>
-      <div className="w-full">
+      <div className="w-full flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h1 className="m-0">30 products</h1>
           <div className="flex items-center sort border pl-3">
@@ -129,6 +129,14 @@ export const Index = () => {
         }
         .checkbox > .ant-checkbox-wrapper + .ant-checkbox-wrapper{
             margin: 0;
+        }
+        @media screen and ( max-width: 767px ) {
+          .checkbox > .ant-checkbox-wrapper{
+            font-size: 0.7rem;
+          }
+          .checkbox > .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+            font-size: 0.7rem;
+          }
         }
       `}</style>
     </div>

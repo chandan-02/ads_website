@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Categories from "../Homepage/Categories";
-<<<<<<< HEAD
-=======
 import CartPop from "../Homepage/CartPop";
->>>>>>> c1d1a7ee712803794db22bcd858bf28656948358
 import { Avatar, Input } from "antd";
 import {
   UilSearch,
