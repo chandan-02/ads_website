@@ -30,7 +30,6 @@ const SampleNextArrow = (props) => {
       }}
       onClick={onClick}
     >
-     
     </div>
   );
 };
@@ -48,7 +47,6 @@ const SamplePrevArrow = (props) => {
       }}
       onClick={onClick}
     >
-      
     </div>
   );
 };
