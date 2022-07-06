@@ -40,9 +40,9 @@ const CartPopCard = () => {
  
   return (
     <div>
-      <div className="2xl:p-[4rem] md:p-[1.5rem] xl:p-[1.5rem] py-[0.8rem] px-[3rem]">
+      <div className="my-[1rem]">
         <div className="flex gap-3">
-          <div className="md:w-[12rem] md:h-[6.1rem] w-[12rem] h-[6rem]">
+          <div className="md:w-[9rem] md:h-[5rem] w-[12rem] h-[6rem]">
             <img
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"
               className="rounded-[0.3rem] md:w-[100%] md:h-[100%]"
@@ -84,7 +84,7 @@ const CartPopCard = () => {
           </div>
         </div>
       </div>
-      <hr className="mx-[1.5rem]"/>
+      <hr className=""/>
     </div>
   );
 };
