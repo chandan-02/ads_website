@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Drawers from "../Layout/Drawer";
 import Categories from "../Homepage/Categories";
 import CartPop from "../Homepage/CartPop";
 import { Avatar, Input } from "antd";
