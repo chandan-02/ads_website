@@ -4,7 +4,7 @@ import { Carousel, Skeleton } from "antd";
 import ReviewStars from "./ReviewStars";
 
 export const SearchPopCard = () => {
-//   const [click, setClick] = useState(1);
+  //   const [click, setClick] = useState(1);
   const [dataLoading, setDataLoading] = useState(false);
 
   const ProductSkeleton = () => {
@@ -34,7 +34,6 @@ export const SearchPopCard = () => {
                   <span className="md:text-[1.5rem] text-[1rem] font-bold leading-6	">
                     Ryzen 9 5900x
                   </span>
-                 
                 </div>
                 <div className="md:w-[20rem] 2xl:w-[30rem] w-[10rem]">
                   <div className="md:text-[0.8rem] text-[0.6rem] ">
@@ -43,9 +42,11 @@ export const SearchPopCard = () => {
                     Series chipset (100-100000061WOF)
                   </div>
                   <ReviewStars className="bg-[#EE2841]" stars={4} size={15} />
-                <p className="md:text-[1.2rem] font-bold m-[0rem] text-[#EE2841] p">₹ 36,000</p>
+                  <p className="md:text-[1.2rem] font-bold m-[0rem] text-[#EE2841] p">
+                    ₹ 36,000
+                  </p>
                 </div>
-                 
+
                 {/* <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1rem] rounded-md font-bold  text-[0.9rem]  w-[7rem] h-[2rem]  ">
                   Buy Now
                 </button> */}

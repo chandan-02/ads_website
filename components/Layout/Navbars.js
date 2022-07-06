@@ -18,6 +18,18 @@ import { SearchPop } from "../Homepage/SearchPop";
 function Navbar({ setCollapsed, collapsed }) {
   const router = useRouter();
   const [width, height] = UseDimension();
+  const [visible, setVisible] = useState(false);
+
+  const handleMenuClick = (e) => {
+    if (e.key === '3') {
+      setVisible(false);
+    }
+  };
+
+  const handleVisibleChange = (flag) => {
+    setVisible(flag);
+  };
+
 
   return (
     <div>
@@ -101,7 +113,7 @@ function Navbar({ setCollapsed, collapsed }) {
             <div className="justify-self-end flex items-center gap-4 col-start-6 lg:col-start-auto">
               <UilBell size={30} />
               <UilHeart size={30} />
-              <Dropdown placement="bottom" overlay={<CartPop/>}>
+              <Dropdown placement="bottom" trigger="click" onVisibleChange={handleVisibleChange} visible={visible} overlay={<CartPop/>}>
               <UilShoppingCart size={30} />
               </Dropdown>
               <Avatar size={40}>CY</Avatar>
