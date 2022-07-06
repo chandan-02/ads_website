@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Drawers from "../Layout/Drawer";
 import Categories from "../Homepage/Categories";
+import CartPop from "../Homepage/CartPop";
 import { Avatar, Input } from "antd";
 import {
   UilSearch,
@@ -40,7 +41,6 @@ function Navbar({ setCollapsed, collapsed }) {
               />
             </div>
 
-            
             <Input
               style={{ borderRadius: 5, height: 35 }}
               placeholder="Search Product ..."
@@ -84,27 +84,27 @@ function Navbar({ setCollapsed, collapsed }) {
           <div className="grid md:grid-cols-6 lg:grid-cols-3 justify-center items-center">
             <img className="w-20" src="../assets/logo.webp" alt="logo" />
             <div>
-
-           
-             <Dropdown placement="bottom" overlay={<SearchPop />}>
+              <Dropdown placement="bottom" overlay={<SearchPop />}>
                 {/* <a
                   className={`transition hover:text-[#EE2841] hover:underline hover:underline-offset-2 text-black`}
                   onClick={(e) => e.preventDefault()}
                 >
                   
                 </a> */}
-                 <Input
-              style={{ borderRadius: 5, height: 35 }}
-              placeholder="Search Product ..."
-              suffix={<UilSearch size="18" color="#6F6F6F" />}
-              className="justify-self-center w-full col-span-2 col-start-3 lg:col-start-auto lg:col-span-1"
-              />
+                <Input
+                  style={{ borderRadius: 5, height: 35 }}
+                  placeholder="Search Product ..."
+                  suffix={<UilSearch size="18" color="#6F6F6F" />}
+                  className="justify-self-center w-full col-span-2 col-start-3 lg:col-start-auto lg:col-span-1"
+                />
               </Dropdown>
             </div>
             <div className="justify-self-end flex items-center gap-4 col-start-6 lg:col-start-auto">
               <UilBell size={30} />
               <UilHeart size={30} />
+              <Dropdown placement="bottom" overlay={<CartPop/>}>
               <UilShoppingCart size={30} />
+              </Dropdown>
               <Avatar size={40}>CY</Avatar>
             </div>
           </div>
