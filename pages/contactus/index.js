@@ -42,9 +42,8 @@ function Index() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type 
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            and scrambled it to make a type only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
           </p>
           <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1.5rem] md:w-[13rem] md:h-[3.5rem] rounded-md font-bold  text-[1.1rem]  w-[8rem] h-[2.7rem] md:mt-0 mt-[1rem] ">
             Shop Now
@@ -98,7 +97,13 @@ function Index() {
                   maxRows: 5,
                 }}
               />
+             
             </div>
+            <div>
+              <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1.1rem] md:w-[10rem] md:h-[3rem] rounded-md font-bold  text-[1.1rem]  w-[8rem] h-[2.7rem] md:mt-0 mt-[1rem] ">
+              Submit
+              </button>
+              </div>
           </div>
         </div>
       </div>
