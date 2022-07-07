@@ -1,6 +1,7 @@
 import React from "react";
-import { Select, Collapse, Checkbox, InputNumber } from "antd";
+import { Select, Collapse, Checkbox, InputNumber, Pagination } from "antd";
 import { ProductCard } from "../../components/Search/ProductCard";
+import Filters from "../../components/Search/Filters";
 const { Option } = Select;
 const { Panel } = Collapse;
 
@@ -21,65 +22,9 @@ const options = [
 
 export const Index = () => {
   return (
-    <div className="flex mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] my-[3rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
-      <div className="collapse flex flex-col gap-[2rem]">
-        <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
-        <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="Price Range" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
-            <InputNumber
-              defaultValue={1000}
-              formatter={(value) =>
-                `₹ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-              }
-              parser={(value) => value.replace(/\$\s?|(,*)/g, "")}
-            />
-            <span> - </span>
-            <InputNumber
-              defaultValue={10000}
-              formatter={(value) =>
-                `₹ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-              }
-              parser={(value) => value.replace(/\$\s?|(,*)/g, "")}
-            />
-          </Panel>
-        </Collapse>
-        <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="Brand" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
-            <Checkbox.Group>
-              <div className="flex flex-col gap-2 checkbox">
-                <Checkbox value="amd">AMD</Checkbox>
-                <Checkbox value="intel">Intel</Checkbox>
-                <Checkbox value="msi">MSI</Checkbox>
-              </div>
-            </Checkbox.Group>
-          </Panel>
-        </Collapse>
-        <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="RAM Size" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
-            <Checkbox.Group>
-              <div className="flex flex-col gap-2 checkbox">
-                <Checkbox value="4gb">4 Gigabyte</Checkbox>
-                <Checkbox value="8gb">8 Gigabyte</Checkbox>
-                <Checkbox value="16gb">16 Gigabyte</Checkbox>
-                <Checkbox value="32gb">32 Gigabyte</Checkbox>
-              </div>
-            </Checkbox.Group>
-          </Panel>
-        </Collapse>
-        <Collapse ghost className="inline-block whitespace-nowrap">
-          <Panel header="Storage Capacity" className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0">
-            <Checkbox.Group>
-              <div className="flex flex-col gap-2 checkbox">
-                <Checkbox value="128gb">128 Gigabyte</Checkbox>
-                <Checkbox value="intel">256 Gigabyte</Checkbox>
-                <Checkbox value="msi">512 Gigabyte</Checkbox>
-                <Checkbox value="msi">1024 Gigabyte</Checkbox>
-                <Checkbox value="msi">Greater than 1024 Gigabyte</Checkbox>
-              </div>
-            </Checkbox.Group>
-          </Panel>
-        </Collapse>
-      </div>
+    <div className="flex flex-col md:flex-row mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] my-[3rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
+      
+      <Filters/>
       <div className="w-full flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h1 className="m-0">30 products</h1>
@@ -99,19 +44,21 @@ export const Index = () => {
           </div>
         </div>
         <div className="grid 2xl:lg:grid-cols-5 xl:lg:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-[1.625rem]">
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
-        <div></div>
+        <div>
+          <Pagination defaultCurrent={1} total={50} />
+        </div>
       </div>
       <style>{`
         .sort > .ant-select:not(.ant-select-customize-input) .ant-select-selector{
