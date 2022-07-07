@@ -7,7 +7,7 @@ export const Filters = () => {
   const [width, height] = useDimension();
 
   return (
-    <div className="hidden md:flex collapse flex-col gap-[2rem]">
+    <div className="flex collapse flex-col gap-[2rem]">
       <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
       <Collapse ghost className="inline-block whitespace-nowrap">
         <Panel

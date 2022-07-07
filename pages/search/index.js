@@ -1,30 +1,20 @@
 import React from "react";
-import { Select, Collapse, Checkbox, InputNumber, Pagination } from "antd";
+import { Select, Collapse, Pagination } from "antd";
 import { ProductCard } from "../../components/Search/ProductCard";
 import Filters from "../../components/Search/Filters";
+import { UilArrowRight } from '@iconscout/react-unicons'
 const { Option } = Select;
 const { Panel } = Collapse;
 
-const options = [
-  {
-    label: "Apple",
-    value: "Apple",
-  },
-  {
-    label: "Pear",
-    value: "Pear",
-  },
-  {
-    label: "Orange",
-    value: "Orange",
-  },
-];
-
 export const Index = () => {
   return (
-    <div className="flex flex-col md:flex-row mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] my-[3rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
-      
-      <Filters/>
+    <div className="flex flex-col md:flex-row mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
+      <div className="flex md:hidden items-center gap-1 cursor-pointer">
+        <h1 className="text-[1.5rem] font-bold m-0">Filters</h1><UilArrowRight/>
+      </div>
+      <div className="hidden md:block">
+        <Filters/>
+      </div>
       <div className="w-full flex flex-col gap-4">
         <div className="flex justify-between items-center">
           <h1 className="m-0">30 products</h1>
