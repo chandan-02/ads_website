@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Categories from "../Homepage/Categories";
 import CartPop from "../Homepage/CartPop";
+import User from "../Homepage/User";
 import { Avatar, Input } from "antd";
 import {
   UilSearch,
@@ -19,6 +20,7 @@ function Navbar({ setCollapsed, collapsed }) {
   const router = useRouter();
   const [width, height] = UseDimension();
   const [visible, setVisible] = useState(false);
+  const [visibles, setVisibles] = useState(false);
 
   const handleMenuClick = (e) => {
     if (e.key === '3') {
@@ -28,6 +30,10 @@ function Navbar({ setCollapsed, collapsed }) {
 
   const handleVisibleChange = (flag) => {
     setVisible(flag);
+  };
+
+  const handleVisibleChanges = (flag) => {
+    setVisibles(flag);
   };
 
 
@@ -103,12 +109,15 @@ function Navbar({ setCollapsed, collapsed }) {
                 />
               </Dropdown>
             <div className="justify-self-end flex items-center gap-4 col-start-6 lg:col-start-auto">
-              <UilBell size={30} />
-              <UilHeart size={30} />
-              <Dropdown placement="bottom" trigger="click" onVisibleChange={handleVisibleChange} visible={visible} overlay={<CartPop/>}>
-              <UilShoppingCart size={30} />
+              <UilBell className="cursor-pointer"  size={30} />
+              <UilHeart className="cursor-pointer"  size={30} />
+              <Dropdown placement="bottomLeft" trigger="click" onVisibleChange={handleVisibleChange} visible={visible} overlay={<CartPop/>}>
+              <UilShoppingCart className="cursor-pointer" size={30} />
               </Dropdown>
-              <Avatar size={40}>CY</Avatar>
+              <Dropdown placement="bottomLeft"  trigger="click" onVisibleChange={handleVisibleChanges} visible={visibles}  overlay={<User/>}>
+
+              <Avatar className="cursor-pointer"  size={40}>CY</Avatar>
+              </Dropdown>
             </div>
           </div>
           <div className="grid grid-cols-4 items-center">
@@ -117,7 +126,7 @@ function Navbar({ setCollapsed, collapsed }) {
               opened={collapsed}
               onClick={() => setCollapsed(!collapsed)}
             >
-              <UilBars />
+              <UilBars  />
             </div>
             <div className="col-start-2 col-end-4 gap-[2.4rem] flex justify-center text-xl">
               <Link href="/">

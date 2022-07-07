@@ -29,8 +29,7 @@ const SampleNextArrow = (props) => {
         lineHeight: "1.5715",
       }}
       onClick={onClick}
-    >
-    </div>
+    ></div>
   );
 };
 
@@ -46,8 +45,7 @@ const SamplePrevArrow = (props) => {
         lineHeight: "1.5715",
       }}
       onClick={onClick}
-    >
-    </div>
+    ></div>
   );
 };
 
@@ -103,98 +101,94 @@ const Index = () => {
   };
 
   return (
-    <div className="mt-[2rem]">
+    <div className="md:mt-[2rem] md:my-[0rem] md:mx-0 my-[2rem] mx-[0.4rem]">
       <div className="flex md:justify-end justify-center items-center md:mr-[6rem] mb-[1rem] md:mb-[0rem] ">
-      {/* <div></div> */}
-      <div className="md:w-[20rem] ">
-        <Input
-         
-          style={{ borderRadius: 5}}
-          placeholder="Search Product ..."
-          suffix={<UilSearch size="18" color="#6F6F6F" />}
-        />
+        {/* <div></div> */}
+        <div className="md:w-[20rem] ">
+          <Input
+            style={{ borderRadius: 5 }}
+            placeholder="Search Product ..."
+            suffix={<UilSearch size="18" color="#6F6F6F" />}
+          />
+        </div>
       </div>
-      
-      </div>
-     
 
-
-       <div className="flex  items-start md:my-[2rem] md:mx-[3rem] mx-[0.2rem] ">
-      <div className="mainclass w-[100%]">
-        <Tabs defaultActiveKey="1" onChange={onChange} className="">
-          <TabPane tab="ASUS" key="1">
-            <div className=" flex flex-col md:gap-[3rem] gap-[2rem]">
-              <ShopByBanner />
-              <div>
-                <div className="flex justify-between items-center md:mb-[3rem] md:ml-[2.1rem] md:mb-[2rem] ">
-                  <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1.4rem] text-bold font-bold">
-                    Motherboards
+      <div className="flex  items-start md:my-[2rem] md:mx-[3rem] mx-[0.2rem] ">
+        <div className="mainclass w-[100%]">
+          <Tabs defaultActiveKey="1" onChange={onChange} className="">
+            <TabPane tab="ASUS" key="1">
+              <div className=" flex flex-col md:gap-[3rem] gap-[2rem]">
+                <ShopByBanner />
+                <div>
+                  <div className="flex justify-between items-center md:mb-[3rem] md:ml-[2.1rem] md:mb-[2rem] ">
+                    <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1.4rem] text-bold font-bold">
+                      Motherboards
+                    </p>
+                    <span className="underline underline-offset-4 text-[#EE2841] font-bold md:text-[1rem] text-[1rem] md:text-2xl">
+                      View All
+                    </span>
+                  </div>
+                  <div className="flex flex-col m-[1rem] md:m-[0rem]">
+                    <Carousel
+                      arrows
+                      {...settings}
+                      // autoplay={true}
+                      draggable={true}
+                    >
+                      <RecomProductSlider />
+                      <RecomProductSlider />
+                      <RecomProductSlider />
+                      <RecomProductSlider />
+                      <RecomProductSlider />
+                      <RecomProductSlider />
+                    </Carousel>
+                  </div>
+                </div>
+                <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] md:mt-[1.8rem] grid grid-cols-2">
+                  <Bannergrid />
+                  <Bannergrid />
+                  <div className="col-span-2 md:col-span-1">
+                    <Bannergrid />
+                  </div>
+                </div>
+                <div className="flex justify-between items-center  md:ml-[2.1rem]">
+                  <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1.4rem] font-bold ">
+                    Graphic Cards
                   </p>
-                  <span className="underline underline-offset-4 text-[#EE2841] font-bold md:text-[1rem] text-[1rem] md:text-2xl">
+                  <span className="underline underline-offset-4 text-[#EE2841] font-bold text-[1rem] md:text-[1rem] md:text-2xl">
                     View All
                   </span>
                 </div>
-                <div className="flex flex-col m-[1rem] md:m-[0rem]">
-                  <Carousel
-                    arrows
-                    {...settings}
-                    autoplay={true}
-                    draggable={true}
-                  >
-                    <RecomProductSlider />
-                    <RecomProductSlider />
-                    <RecomProductSlider />
-                    <RecomProductSlider />
-                    <RecomProductSlider />
-                    <RecomProductSlider />
-                  </Carousel>
-                </div>
-              </div>
-              <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] md:mt-[1.8rem] grid grid-cols-2">
-                <Bannergrid />
-                <Bannergrid />
-                <div className="col-span-2 md:col-span-1">
-                  <Bannergrid />
-                </div>
-              </div>
-              <div className="flex justify-between items-center  md:ml-[2.1rem]">
-                <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1.4rem] font-bold ">
-                  Graphic Cards
-                </p>
-                <span className="underline underline-offset-4 text-[#EE2841] font-bold text-[1rem] md:text-[1rem] md:text-2xl">
-                  View All
-                </span>
-              </div>
-              <ProductSlider />
-              <ShopByBanner />
-              <div>
-                {/* <p className="m-0 font-[500] md:text-[22rem] text-[10rem] flex items-center justify-center leading-[0rem] opacity-5 text-[#000000]">
+                <ProductSlider />
+                <ShopByBanner />
+                <div>
+                  {/* <p className="m-0 font-[500] md:text-[22rem] text-[10rem] flex items-center justify-center leading-[0rem] opacity-5 text-[#000000]">
                   AMD
                 </p> */}
+                </div>
               </div>
-            </div>
-          </TabPane>
-          <TabPane tab="COOLER MASTER" key="2">
-            Content of Tab Pane 2
-          </TabPane>
-          <TabPane tab="COOLER MASTER" key="3">
-            Content of Tab Pane 3
-          </TabPane>
-          <TabPane tab="COOLER MASTER" key="4">
-            Content of Tab Pane 3
-          </TabPane>
-          <TabPane tab="COOLER MASTER" key="5">
-            Content of Tab Pane 3
-          </TabPane>
-          <TabPane tab="COOLER MASTER" key="6">
-            Content of Tab Pane 3
-          </TabPane>
-          <TabPane tab="COOLER MASTER" key="7">
-            Content of Tab Pane 3
-          </TabPane>
-        </Tabs>
-        <style>
-          {`
+            </TabPane>
+            <TabPane tab="COOLER MASTER" key="2">
+              Content of Tab Pane 2
+            </TabPane>
+            <TabPane tab="COOLER MASTER" key="3">
+              Content of Tab Pane 3
+            </TabPane>
+            <TabPane tab="COOLER MASTER" key="4">
+              Content of Tab Pane 3
+            </TabPane>
+            <TabPane tab="COOLER MASTER" key="5">
+              Content of Tab Pane 3
+            </TabPane>
+            <TabPane tab="COOLER MASTER" key="6">
+              Content of Tab Pane 3
+            </TabPane>
+            <TabPane tab="COOLER MASTER" key="7">
+              Content of Tab Pane 3
+            </TabPane>
+          </Tabs>
+          <style>
+            {`
             .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
                 color: #EE2841;
                 display: flex;
@@ -239,19 +233,19 @@ const Index = () => {
                 justify-content: center;
                 align-items: center;
                 font-weight: 400;
-                font-size: 1rem;
-                line-height: 1.5rem;
+                font-size: 0.8rem;
+                line-height: 1rem;
                 border-radius: 50px;
-                padding: 1rem 2rem
+                padding: 0.5rem 1.5rem
             }
 
             .ant-tabs-tab-btn{
               color: #EE2841;
               font-weight: 400;
-              font-size: 1rem;
-              line-height: 1.5rem;
+              font-size: 0.8rem;
+              line-height: 1rem;
               // padding:1rem;
-              padding: 1rem 2rem
+              padding: 0.5rem 1.5rem
           }
           .ant-tabs-tab + .ant-tabs-tab{
              margin: 0;
@@ -262,13 +256,10 @@ const Index = () => {
 
            
             `}
-        </style>
+          </style>
+        </div>
       </div>
-
-      
     </div>
-    </div>
-   
   );
 };
 
