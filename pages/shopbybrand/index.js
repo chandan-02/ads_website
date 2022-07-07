@@ -132,7 +132,7 @@ const Index = () => {
                     <Carousel
                       arrows
                       {...settings}
-                      autoplay={true}
+                      // autoplay={true}
                       draggable={true}
                     >
                       <RecomProductSlider />
