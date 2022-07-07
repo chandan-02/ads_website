@@ -13,15 +13,15 @@ const ShopByBrandSlider = () => {
     <div className="flex flex-col gap-4">
       {!dataLoading ? (
         <div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center md:w-[80%] w-[100%]">
             <img
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"
-              className="2xl:w-[10rem] 2xl:h-[7rem] 2xl:rounded-[0.3rem] w-[15rem] h-[10rem] xl:w-[12rem] xl:h-[8rem]"
+              className="rounded-md"
               alt="product"
             />
           </div>
-          <div className=" flex flex-col items-center justify-center">
-            <div className="md:w-[12rem] flex flex-col gap-[0.2rem] w-[15rem] ">
+          <div className=" flex flex-col">
+            <div className="md:w-[15rem] flex flex-col gap-[0.2rem] w-[15rem] ">
               <p className="m-0 md:text-[1rem] font-bold text-[1rem]">
                 Amd Ryzen 9 5950x - processor
               </p>
