@@ -1,16 +1,41 @@
-import React from "react";
-import { Select, Collapse, Pagination } from "antd";
+import React, { useState } from "react";
+import { Select, Collapse, Pagination, Drawer } from "antd";
 import { ProductCard } from "../../components/Search/ProductCard";
 import Filters from "../../components/Search/Filters";
-import { UilArrowRight } from '@iconscout/react-unicons'
+import { UilArrowRight } from "@iconscout/react-unicons";
 const { Option } = Select;
 const { Panel } = Collapse;
 
 export const Index = () => {
+  const [collapsed, setCollapsed] = useState(false);
+
+  const showDrawer = () => {
+    setCollapsed(true);
+  };
+
+  const hideDrawer = () => {
+    setCollapsed(false);
+  };
+
   return (
     <div className="flex flex-col md:flex-row mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
-      <div className="flex md:hidden items-center gap-1 cursor-pointer">
-        <h1 className="text-[1.5rem] font-bold m-0">Filters</h1><UilArrowRight/>
+      <div
+        className="flex md:hidden items-center gap-1 cursor-pointer"
+        opened={collapsed}
+        onClick={() => setCollapsed(!collapsed)}
+      >
+        <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
+        <UilArrowRight/>
+        <Drawer
+          size="default"
+          placement={"left"}
+          closable={false}
+          onClose={() => setCollapsed(false)}
+          visible={collapsed}
+          className=""
+        >
+          <Filters/>
+        </Drawer>
       </div>
       <div className="hidden md:block">
         <Filters/>

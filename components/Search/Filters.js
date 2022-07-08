@@ -69,10 +69,10 @@ export const Filters = () => {
           <Checkbox.Group>
             <div className="flex flex-col gap-2 checkbox">
               <Checkbox value="128gb">128 Gigabyte</Checkbox>
-              <Checkbox value="intel">256 Gigabyte</Checkbox>
-              <Checkbox value="msi">512 Gigabyte</Checkbox>
-              <Checkbox value="msi">1024 Gigabyte</Checkbox>
-              <Checkbox value="msi">Greater than 1024 Gigabyte</Checkbox>
+              <Checkbox value="256gb">256 Gigabyte</Checkbox>
+              <Checkbox value="512gb">512 Gigabyte</Checkbox>
+              <Checkbox value="1024gb">1024 Gigabyte</Checkbox>
+              <Checkbox value="1025gb">Greater than 1024 Gigabyte</Checkbox>
             </div>
           </Checkbox.Group>
         </Panel>
