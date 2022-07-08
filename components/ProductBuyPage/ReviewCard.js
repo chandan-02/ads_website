@@ -4,7 +4,6 @@ import ReviewStars from "../Homepage/ReviewStars";
 
 const RandomColor = () => {
   var colors = ["#D6EFED", "#C694FF","#FCF8E8","#FED1EF","#FFF6F6","#E5ECF2"];
-
   return(colors[Math.floor(Math.random() * colors.length)]);
 };
 RandomColor();
