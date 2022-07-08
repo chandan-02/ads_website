@@ -2,6 +2,7 @@ import React from "react";
 import { Tabs } from "antd";
 import KeyFeatures from "./KeyFeatures";
 import RecommendedProducts from "./KeyFeatures";
+import FaqCompo from "./FaqCompo";
 
 const { TabPane } = Tabs;
 
@@ -11,7 +12,7 @@ const ProductTabs = () => {
   };
 
   return (
-    <div className="md:w-full md:mx-[3rem] md:mb-[3rem] mainclass">
+    <div className="md:w-full md:mx-[3rem] md:mb-[3rem] mainclass md:pr-[9rem]">
       <Tabs defaultActiveKey="1" onChange={onChange}>
         <TabPane tab="Key Features" key="1">
           <div>
@@ -23,7 +24,7 @@ const ProductTabs = () => {
           Content of Tab Pane 2
         </TabPane>
         <TabPane tab="FAQ" key="3">
-          Content of Tab Pane 3
+          <FaqCompo/>
         </TabPane>
       </Tabs>
       <style>

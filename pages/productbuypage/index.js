@@ -94,7 +94,7 @@ const Index = () => {
         <ProductSlider />
         <ProductRightSection />
       </div>
-      <div className="flex flex-col gap-[6rem] md:gap-[10rem]">
+      <div className="flex flex-col gap-[6rem] md:gap-[9rem]">
         <ProductTabs />
         <div className="flex flex-col md:gap-[5.313rem] gap-[1.2rem]">
           <div className="flex justify-center items-center md:text-[2.5rem] text-[1.5rem] font-bold text-[#000000]">
