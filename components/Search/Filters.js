@@ -1,18 +1,24 @@
 import React from "react";
 import useDimension from "../Head/UseDimension";
 import { Select, Collapse, Checkbox, InputNumber, Pagination } from "antd";
+import { UilArrowLeft } from "@iconscout/react-unicons";
 const { Panel } = Collapse;
 
-export const Filters = () => {
+export const Filters = ({collapsed,setCollapsed}) => {
   const [width, height] = useDimension();
 
   return (
-    <div className="flex collapse flex-col gap-[2rem]">
-      <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
+    <div className="flex collapse flex-col gap-[2rem] collapse">
+      <div
+        className="inline-flex md:hidden items-center gap-1 cursor-pointer justify-between"
+      >
+        <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
+        <UilArrowLeft onClick={() => setCollapsed(!collapsed)} />
+      </div>
       <Collapse ghost className="inline-block whitespace-nowrap">
         <Panel
           header="Price Range"
-          className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0"
+          className="lg:text-[1.125rem] text-[0.9rem] p-0"
         >
           <InputNumber
             defaultValue={1000}
@@ -35,7 +41,7 @@ export const Filters = () => {
       <Collapse ghost className="inline-block whitespace-nowrap">
         <Panel
           header="Brand"
-          className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0"
+          className="lg:text-[1.125rem] text-[0.9rem] p-0"
         >
           <Checkbox.Group>
             <div className="flex flex-col gap-2 checkbox">
@@ -49,7 +55,7 @@ export const Filters = () => {
       <Collapse ghost className="inline-block whitespace-nowrap">
         <Panel
           header="RAM Size"
-          className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0"
+          className="lg:text-[1.125rem] text-[0.9rem] p-0"
         >
           <Checkbox.Group>
             <div className="flex flex-col gap-2 checkbox">
@@ -64,7 +70,7 @@ export const Filters = () => {
       <Collapse ghost className="inline-block whitespace-nowrap">
         <Panel
           header="Storage Capacity"
-          className="lg:text-[1.125rem] md:text-[0.9rem] text-[0.8rem] p-0"
+          className="lg:text-[1.125rem] text-[0.9rem] p-0"
         >
           <Checkbox.Group>
             <div className="flex flex-col gap-2 checkbox">
@@ -77,6 +83,33 @@ export const Filters = () => {
           </Checkbox.Group>
         </Panel>
       </Collapse>
+      <style>{`
+    
+        .collapse > .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box{
+            padding: 0;
+        }
+        .collapse > .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+          padding: 0;
+          display : flex;
+          align-items : center;
+          color : #000;
+        }
+
+        .collapse > .ant-collapse-expand-icon{
+          display : flex;
+        }
+        .checkbox > .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+            margin: 0;
+        }
+        @media screen and ( max-width: 767px ) {
+          .checkbox > .ant-checkbox-wrapper{
+            font-size: 0.7rem;
+          }
+          .checkbox > .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+            font-size: 0.7rem;
+          }
+        }
+      `}</style>
     </div>
   );
 };

@@ -9,35 +9,27 @@ const { Panel } = Collapse;
 export const Index = () => {
   const [collapsed, setCollapsed] = useState(false);
 
-  const showDrawer = () => {
-    setCollapsed(true);
-  };
-
-  const hideDrawer = () => {
-    setCollapsed(false);
-  };
-
   return (
     <div className="flex flex-col md:flex-row mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
       <div
-        className="flex md:hidden items-center gap-1 cursor-pointer"
+        className="inline-flex md:hidden items-center gap-1 cursor-pointer"
         opened={collapsed}
         onClick={() => setCollapsed(!collapsed)}
       >
         <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
         <UilArrowRight/>
+      </div>
         <Drawer
           size="default"
           placement={"left"}
           closable={false}
           onClose={() => setCollapsed(false)}
           visible={collapsed}
-          className=""
+          height={"bottom"}
         >
-          <Filters/>
+          <Filters collapsed={collapsed} setCollapsed={setCollapsed} />
         </Drawer>
-      </div>
-      <div className="hidden md:block">
+      <div className="hidden md:inline-block">
         <Filters/>
       </div>
       <div className="w-full flex flex-col gap-4">
