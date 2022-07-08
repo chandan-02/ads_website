@@ -3,6 +3,7 @@ import { Tabs } from "antd";
 import KeyFeatures from "./KeyFeatures";
 import RecommendedProducts from "./KeyFeatures";
 import FaqCompo from "./FaqCompo";
+import ReviewCompo from "./ReviewCompo";
 
 const { TabPane } = Tabs;
 
@@ -21,7 +22,7 @@ const ProductTabs = () => {
           </div>
         </TabPane>
         <TabPane tab="Reviews (0)" key="2">
-          Content of Tab Pane 2
+          <ReviewCompo/>
         </TabPane>
         <TabPane tab="FAQ" key="3">
           <FaqCompo/>
