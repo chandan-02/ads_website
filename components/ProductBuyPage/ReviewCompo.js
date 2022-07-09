@@ -176,6 +176,7 @@ const ReviewCompo = () => {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
             position: absolute;
             bottom: -195rem;
+            display:none;
           }
        }
        @media screen and ( max-width: 1360px ) {
