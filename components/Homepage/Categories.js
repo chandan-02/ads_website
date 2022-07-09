@@ -38,14 +38,14 @@ const Categories = () => {
   ];
 
   return (
-    <div className="bg-white w-screen grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:p-6 p-0 uppercase justify-center lg:gap-[5rem] md:gap-12">
+    <div className="bg-white w-screen grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 p-6 uppercase justify-items-center">
       {category.map((each, id) => {
         return (
           <div key={id} className="md:flex md:flex-col md:gap-4 m-4">
-            <div className="text-semibold text-[1.25rem] mx-6">
+            <div className="text-semibold text-[1.25rem]">
               <h1>{each.title}</h1>
             </div>
-            <div className="text-[#202020] text-[1rem] mx-6">
+            <div className="text-[#202020] text-[1rem]">
               {each.content?.map((item, id) => {
                 return (
                   <div key={id}>
