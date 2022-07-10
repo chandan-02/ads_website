@@ -16,6 +16,7 @@ import NewLaunchesCompo from "../components/Homepage/NewLaunchesCompo";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import axios from "../helper/axios";
 import { data } from "autoprefixer";
+import Link from "next/link";
 
 const Index = () => {
   const [homeImages, setHomeImages] = useState();
@@ -150,9 +151,12 @@ const Index = () => {
               </span>
             </div>
             <div className="flex items-end">
-              <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl">
+            <Link
+            href='/search'>
+              <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl cursor-pointer">
                 See More
               </span>
+            </Link>
               <RightOutlined
                 style={{ color: "#EE2841", font: "bold", fontSize: "" }}
                 className="md:text-[1.5rem] text-[1rem]"
@@ -176,10 +180,14 @@ const Index = () => {
             </span>
           </div>
 
-          <div className="flex items-end">
+          <div className="flex items-end cursor-pointer">
+            <Link
+            href='/search'>
             <span className="underline underline-offset-4 text-[#000000] font-bold md:text-[1.1rem] md:text-2xl">
               See More
             </span>
+            </Link>
+           
             <RightOutlined
               style={{ color: "#EE2841", font: "bold", fontSize: "" }}
               className="md:text-[1.5rem] text-[1rem]"
