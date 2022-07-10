@@ -65,8 +65,8 @@ export default function LayoutMain({ children }) {
           <div className="flex flex-col gap-2 md:gap-6">
             <h3>User</h3>
             <div className="flex flex-col gap-8 text-xl md:gap-12">
-              <Link href="/myaccount">
-                <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/myaccount' ? 'text-[#EE2841]':'text-black'}`}>
+              <Link href="/myprofile">
+                <a className={`flex items-center gap-2 transition hover:text-[#EE2841] ${router.pathname === '/myprofile' ? 'text-[#EE2841]':'text-black'}`}>
                   <UilUserSquare />
                   My Account
                 </a>

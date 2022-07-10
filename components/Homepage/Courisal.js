@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react'
 import { Skeleton } from "antd";
+import Link from 'next/link';
 
 
 const Courisal = ({ img, title, desc, price }) => {
@@ -47,16 +48,21 @@ const Courisal = ({ img, title, desc, price }) => {
             <span className="md:text-[2.5rem] text-[1.8rem] md:font-bold">{formatter.format(price ?? 0)}</span>
           </div>
           <div className="flex md:gap-7 gap-[0.7rem]">
-            <span className="underline underline-offset-4 text-[#404040] text-[1.1rem] md:text-2xl">
+            <span className="underline underline-offset-4 text-[#404040] text-[1.1rem] md:text-2xl cursor-pointer">
               Add to cart
             </span>
-            <span className="underline underline-offset-4 text-[#404040] text-[1.1rem] md:text-2xl">
+            <Link href='/wishlist'>
+            <span className="underline underline-offset-4 text-[#404040] text-[1.1rem] md:text-2xl  cursor-pointer">
               Add to wishlist
             </span>
+            </Link>
+           
           </div>
+          <Link href='/productbuypage'>
           <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1.5rem] md:w-[11rem] md:h-[4rem] rounded-md font-bold md:mt-[1.5rem] text-[1.1rem]  w-[8rem] h-[2.7rem] mt-[1rem] ">
             Buy Now
           </button>
+          </Link>
         </div>
       </div>
           : ProductSkeleton()

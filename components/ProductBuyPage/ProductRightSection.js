@@ -1,6 +1,7 @@
 import React from "react";
 import ReviewStars from "../Homepage/ReviewStars";
 import { Input } from "antd";
+import Link from 'next/link';
 
 const ProductRightSection = () => {
   return (
@@ -47,14 +48,19 @@ const ProductRightSection = () => {
           <button className="bg-[#ffff] text-[#EE2841] border-[#EE2841] border-2  md:text-[1rem] md:w-[8rem] md:h-[2.5rem] rounded-md   text-[1.1rem]  w-[7rem] h-[2.7rem]  ">
             Add to Cart
           </button>
-          <span className="underline underline-offset-4 text-[#EE2841] text-[1rem] ">
+          <Link href='/wishlist'>
+          <span className="underline underline-offset-4 text-[#EE2841] text-[1rem] cursor-pointer">
             Add to Wishlist
           </span>
+          </Link>
         </div>
+        
         <div className="flex md:flex md:flex-col md:items-start ">
+          <Link href='/checkout'>
           <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1.2rem] md:w-[11rem] md:h-[3.5rem] rounded-md font-bold  text-[1rem]  w-[14rem] h-[2.7rem]  ">
             Buy Now
           </button>
+          </Link>
         </div>
         <div className="flex flex-col gap-[1.2rem]">
           <p className="text-[1.5rem] font-bold m-0 leading-5">Details</p>

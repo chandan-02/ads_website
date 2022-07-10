@@ -1,6 +1,7 @@
 import React from 'react'
 import { Avatar, Input } from "antd";
 import { UilArrowRight,UilShoppingBag,UilHeart,UilEditAlt,UilLock,UilBell ,UilSignout} from '@iconscout/react-unicons'
+import Link from 'next/link';
 
 const User = () => {
   const data =[{
@@ -10,10 +11,6 @@ const User = () => {
   {
     icon:<UilHeart  />,
     title:"My Wishlist"
-  },
-  {
-    icon:<UilEditAlt/>,
-    title:"Edit profile"
   },
   {
     icon:<UilLock/>,
@@ -34,13 +31,16 @@ const User = () => {
       <div className='flex flex-col gap-[0.5rem]'>
       <Avatar className="cursor-pointer"  size={40}>CY</Avatar>
       <div className=''>
-        <div className=''>
+        <Link href='/myprofile'>
+        <div className='cursor-pointer'>
         <p className='m-0 text-[#1B1918] text-[1rem]'>Leslie Alexander</p>
         <div className='flex'>
         <p className='m-0 text-[#6F6F6F]'>View my profile</p>
         <UilArrowRight/>
         </div>
         </div>
+        </Link>
+        
         
         <div className='flex flex-col gap-[1rem] mt-[1rem]'>
           {

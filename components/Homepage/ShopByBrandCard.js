@@ -1,8 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 const ShopByBrandCard = () => {
   return (
-    <div className="relative md:h-[14rem] md:w-[17rem] md:mx-[1.5rem]">
+    <Link  href="/shopbybrand">
+    <div className="relative md:h-[14rem] md:w-[17rem] md:mx-[1.5rem] cursor-pointer">
       <img
         src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         className="md:h-[14rem] md:w-[17rem]"
@@ -13,9 +15,11 @@ const ShopByBrandCard = () => {
           <span className="text-[#FFFFFF] font-bold text-[0.8rem] md:text-[1.7rem]">
             Zotac
           </span>
-          <span className="underline underline-offset-4 text-[#FFFFFF] font-bold md:text-[1rem] md:text-2xl">
-            Shop Now
-          </span>
+          <Link href="/shopbybrand">
+            <span className="underline underline-offset-4 text-[#FFFFFF] font-bold md:text-[1rem] md:text-2xl cursor-pointer">
+              Shop Now
+            </span>
+          </Link>
         </div>
       </div>
       <div className="absolute top-0 right-0 m-[0.5rem]">
@@ -26,6 +30,8 @@ const ShopByBrandCard = () => {
         </div>
       </div>
     </div>
+    </Link>
+    
   );
 };
 
