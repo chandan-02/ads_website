@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Tabs } from "antd";
+import { Button, Input, Tabs } from "antd";
 const { TextArea } = Input;
 
 
@@ -37,6 +37,7 @@ export const PersonalDetails = () => {
           disabled
         />
       </div>
+      <Button type="primary" size="large">Save Changes</Button>
     </div>
   );
 };
