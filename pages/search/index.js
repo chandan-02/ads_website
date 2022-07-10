@@ -10,7 +10,7 @@ export const Index = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className="flex flex-col md:flex-row mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem]">
+    <div className="flex flex-col md:flex-row mx-[1.5rem] md:mx-[2rem] lg:mx-[3.2rem] xl:gap-[7rem] lg:gap-[5rem] md:gap-[3rem] gap-[1rem] md:my-[2rem] ">
       <div
         className="inline-flex md:hidden items-center gap-1 cursor-pointer"
         opened={collapsed}

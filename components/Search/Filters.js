@@ -15,6 +15,7 @@ export const Filters = ({collapsed,setCollapsed}) => {
         <h1 className="text-[1.5rem] font-bold m-0">Filters</h1>
         <UilArrowLeft onClick={() => setCollapsed(!collapsed)} />
       </div>
+      <h1 className="md:inline-flex hidden text-[1.5rem] font-bold m-0">Filters</h1>
       <Collapse ghost className="inline-block whitespace-nowrap">
         <Panel
           header="Price Range"

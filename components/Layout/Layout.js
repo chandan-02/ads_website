@@ -24,7 +24,7 @@ export default function LayoutMain({ children }) {
   return (
     <Layout>
       <Header style={{ background: '#fff',height: 'max-content' }} className="custom-padding"><Navbars collapsed={collapsed} setCollapsed={setCollapsed} /></Header>
-      <Layout className='custom'>
+      <Layout >
         <Drawer
           size="default"
           // title="aDS"
@@ -87,11 +87,11 @@ export default function LayoutMain({ children }) {
           </div>
         </Drawer>
         <style>{`
-          .custom > .ant-drawer-content {
+          .ant-drawer-content {
             background-color: rgb(255,255,255,0.70);
             backdrop-filter: blur(35px);
           }
-          custom > .ant-drawer-mask {
+          .ant-drawer-mask {
             background: none;
           }
         `}</style>

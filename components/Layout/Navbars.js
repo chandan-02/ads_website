@@ -51,7 +51,7 @@ function Navbar({ setCollapsed, collapsed }) {
             </div>
           </div>
           <div className="grid grid-cols-3 items-center">
-            <div className="">
+            <div className="cursor-pointer">
               <UilBars
                 opened={collapsed}
                 onClick={() => setCollapsed(!collapsed)}
@@ -122,7 +122,7 @@ function Navbar({ setCollapsed, collapsed }) {
           </div>
           <div className="grid grid-cols-4 items-center">
             <div
-              className=""
+              className="cursor-pointer"
               opened={collapsed}
               onClick={() => setCollapsed(!collapsed)}
             >
