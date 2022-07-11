@@ -12,13 +12,15 @@ const ReviewCard = () => {
   return (
     <div className="2xl:w-[25rem] 2xl:h-[15rem] lg:w-[22rem] lg:h-[15rem] md:w-[22rem] md:h-[15rem] rounded-xl 2xl:m-0 w-[20.5rem] h-[17rem] " style={{backgroundColor:`${RandomColor()}`}} >
       <div className="flex flex-col justify-center items-center md:p-[1rem] md:gap-[1rem] p-[2rem] gap-[0.8rem]  w-full ">
-        <p className="m-0 text-[000000] text-[1rem] md:w-[20rem]">
+        <p className="m-0 text-[000000] text-[1rem] md:w-[20rem] text-[#000]">
           “Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s”{" "}
         </p>
-        <ReviewStars stars={5} size={20} />
-        <p className="m-0 text-[1.125rem] text-[000000] font-bold">
+        <div className="cursor-pointer">
+        <ReviewStars stars={5} size={20}  />
+        </div>
+        <p className="m-0 text-[1.125rem] text-[000000] font-bold text-[#000]">
           Mark Zubukbuk
         </p>
         <div className="border-solid border-[000000] rounded-full">

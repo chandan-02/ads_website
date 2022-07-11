@@ -33,8 +33,8 @@ const KeyFeatures = () => {
       <div>
         <div className="flex flex-col gap-[1.7rem]">
           <div className="flex flex-col gap-[0.5rem]">
-            <p className="m-0 md:text-[1.2rem] text-[1rem]">Features:</p>
-            <p className="m-0 md:w-[31rem] md:text-[1rem]">
+            <p className="m-0 md:text-[1.2rem] text-[1rem] text-[#000]">Features:</p>
+            <p className="m-0 md:w-[31rem] md:text-[1rem] text-[#000]">
               AMD 5000 Series Ryzen 9 5900X Desktop Processor 12 Cores 24
               Threads 70 MB Cache 3.7 GHz up to 4.8 GHz AM4 Socket 500 Series
               chipset (100-100000061WOF)
@@ -47,8 +47,8 @@ const KeyFeatures = () => {
                   key={id}
                   className="flex flex-col justify-center items-center"
                 >
-                  <p className="m-0 text-[0.8rem]">{each.title}</p>
-                  <p className="m-0 text-[1.1rem] font-bold">{each.content}</p>
+                  <p className="m-0 text-[0.8rem] text-[#000]">{each.title}</p>
+                  <p className="m-0 text-[1.1rem] font-bold text-[#000]">{each.content}</p>
                 </div>
               );
             })}

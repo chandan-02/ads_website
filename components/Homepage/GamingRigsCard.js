@@ -64,7 +64,7 @@ const GamingRigsCard = () => {
             </div>
 
             <div className="flex flex-col gap-[0.5rem]">
-              <span className="text-[0.9rem] text-[#000000] font-medium">
+              <span className="text-[0.9rem] text-[#000000] font-medium ">
                 Royal kludge rk69
               </span>
               <span className="text-[0.8rem] text-[#3D3D3D] font-medium">
@@ -75,7 +75,7 @@ const GamingRigsCard = () => {
                 <del className="text-red-600 text-[0.8rem]  md:text-[1rem]">
                   19000
                 </del>
-                <span className="md:text-[1.2rem] text-[1.25rem] md:font-bold">
+                <span className="md:text-[1.2rem] text-[1.25rem] md:font-bold text-[#000]">
                   19000
                 </span>
               </div>

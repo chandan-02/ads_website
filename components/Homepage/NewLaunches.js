@@ -32,7 +32,7 @@ const NewLaunches = () => {
             />
             <div className="w-full flex flex-col xl:gap-[0.4rem] 2xl:gap-[0.8rem] ">
               <div className="flex justify-between items-center w-full">
-                <span className="md:text-[1.5rem] text-[1rem] font-bold leading-6	">
+                <span className="md:text-[1.5rem] text-[1rem] font-bold leading-6	text-[#000]">
                   Ryzen 9 5900x
                 </span>
                 {click == 0 ? (
@@ -68,7 +68,7 @@ const NewLaunches = () => {
                   chipset (100-100000061WOF)
                 </div>
               </div>
-              <p className="md:text-[1.2rem] font-bold m-[0rem]">₹ 36,000</p>
+              <p className="md:text-[1.2rem] font-bold m-[0rem] text-[#000]">₹ 36,000</p>
               <Link href='/productbuypage'>
              
               <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1rem] rounded-md font-bold  text-[0.9rem]  w-[7rem] h-[2rem]  ">
