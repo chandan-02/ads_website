@@ -116,7 +116,7 @@ function Navbar({ setCollapsed, collapsed }) {
               </Dropdown>
               <Dropdown placement="bottomLeft"  trigger="click" onVisibleChange={handleVisibleChanges} visible={visibles}  overlay={<User/>}>
 
-              <Avatar className="cursor-pointer"  size={40}>CY</Avatar>
+              <Avatar className="cursor-pointer hover:text-[#E2] transition-all"  size={40}>CY</Avatar>
               </Dropdown>
             </div>
           </div>

@@ -3,7 +3,7 @@ import CartPopCard from "./CartPopCard";
 
 const CartPop = () => {
   return (
-    <div className="bg-[#FFFF] flex flex-col gap-2  w-[30rem] shadow-sm rounded">
+    <div className="bg-[#FFFF] flex flex-col gap-2  w-[30rem] shadow-xl rounded">
       <div className="m-[2rem]">
         <p className="m-0 font-bold text-[1rem] text-[#000000]">Cart (3)</p>
         <div className=" h-[22rem] overflow-y-scroll scrollbar">

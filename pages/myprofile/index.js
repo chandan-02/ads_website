@@ -10,7 +10,7 @@ export const Index = () => {
     <div className="flex flex-col items-center my-[2rem] gap-[15rem]">
       <div className="flex flex-col justify-start items-center bg-[#CACACA] h-[13.563rem] rounded-[10px] w-4/6">
         <div className="flex justify-end w-full">
-          <UilEdit size="30" className="m-[1.25rem]" />
+          <UilEdit size="30" className="m-[1.25rem] cursor-pointer hover:text-black transition-all" />
         </div>
         <div className="flex flex-col items-center">
           <div className="w-[16.375rem] h-[16.375rem] rounded-full">
@@ -65,7 +65,7 @@ export const Index = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center bg-[#1E7E93] text-white w-full px-[5rem] py-[2.5rem] rounded-[10px] gap-3">
+          <div className="flex flex-col items-center bg-[#1E7E93] text-white w-full px-[4rem] py-[2.5rem] rounded-[10px] gap-3">
             <UilEnvelopeAdd size="40" />
             <h1 className="text-white text-[2.5rem] font-semibold m-0">
               Hooray !

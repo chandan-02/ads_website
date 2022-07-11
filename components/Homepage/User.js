@@ -27,7 +27,7 @@ const User = () => {
 
 ]
   return (
-    <div className='bg-[#fff] p-[1.5rem] rounded-md drop-shadow-2xl'>
+    <div className='bg-[#fff] p-[1.5rem] rounded-md shadow-lg'>
       <div className='flex flex-col gap-[0.5rem]'>
       <Avatar className="cursor-pointer"  size={40}>CY</Avatar>
       <div className=''>
