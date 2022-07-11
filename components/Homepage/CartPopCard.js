@@ -41,7 +41,7 @@ const CartPopCard = () => {
   return (
     <div>
       <div className="my-[1rem]">
-        <div className="flex gap-3">
+        <div className="flex gap-[0.5rem]">
           <div className="md:w-[9rem] md:h-[5rem] w-[12rem] h-[6rem]">
             <img
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"

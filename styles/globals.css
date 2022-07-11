@@ -17,6 +17,27 @@ a {
   box-sizing: border-box;
 }
 
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: #D6D6D6;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #4d4c4c;
+    border-radius: 20px;
+    border: 3px solid #4d4c4c;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #4d4c4c;
+  }
+}
 
 
 
