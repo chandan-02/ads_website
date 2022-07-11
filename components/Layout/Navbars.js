@@ -44,9 +44,9 @@ function Navbar({ setCollapsed, collapsed }) {
           <div className="grid grid-cols-2 justify-center items-center">
             <img className="w-20" src="../assets/logo.webp" alt="logo" />
             <div className="justify-self-end flex items-center gap-4">
-              <UilBell size={30} className="text-[#000]" />
-              <UilHeart size={30} className="text-[#000]" />
-              <UilShoppingCart  size={30} className="text-[#000]" />
+              <UilBell size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
+              <UilHeart size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
+              <UilShoppingCart  size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
               <Avatar size={40}>CY</Avatar>
             </div>
           </div>
@@ -109,10 +109,10 @@ function Navbar({ setCollapsed, collapsed }) {
                 />
               </Dropdown>
             <div className="justify-self-end flex items-center gap-4 col-start-6 lg:col-start-auto">
-              <UilBell className="cursor-pointer text-[#000]"  size={30} />
-              <UilHeart className="cursor-pointer text-[#000]"  size={30} />
+              <UilBell className="cursor-pointer text-[#000] hover:text-[#EE2841] transition-all"  size={30} />
+              <UilHeart className="cursor-pointer text-[#000] hover:text-[#EE2841] transition-all"  size={30} />
               <Dropdown placement="bottomLeft" trigger="click" onVisibleChange={handleVisibleChange} visible={visible} overlay={<CartPop/>}>
-              <UilShoppingCart  className="cursor-pointer text-[#000]" size={30} />
+              <UilShoppingCart  className="cursor-pointer text-[#000] hover:text-[#EE2841] transition-all" size={30} />
               </Dropdown>
               <Dropdown placement="bottomLeft"  trigger="click" onVisibleChange={handleVisibleChanges} visible={visibles}  overlay={<User/>}>
 
