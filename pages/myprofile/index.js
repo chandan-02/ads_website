@@ -8,7 +8,7 @@ const { TabPane } = Tabs;
 export const Index = () => {
   return (
     <div className="flex flex-col items-center my-[2rem] gap-[15rem]">
-      <div className="flex flex-col justify-start items-center bg-[#CACACA] h-[13.563rem] rounded-[10px] w-4/6">
+      <div className="flex flex-col justify-start items-center bg-[#CACACA] h-[13.563rem] rounded-[10px] 2xl:w-4/6 lg:w-4/5 w-11/12">
         <div className="flex justify-end w-full">
           <UilEdit size="30" className="m-[1.25rem] cursor-pointer hover:text-black transition-all" />
         </div>
@@ -23,7 +23,7 @@ export const Index = () => {
           <span className="text-[1.125rem]">@zenistu_th</span>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between w-4/6">
+      <div className="flex flex-col md:flex-row justify-between 2xl:w-4/6 lg:w-4/5 gap-10 w-11/12">
         <Tabs defaultActiveKey="1">
           <TabPane tab="Personal Details" key="1">
             <PersonalDetails />
@@ -65,7 +65,7 @@ export const Index = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center bg-[#1E7E93] text-white w-full px-[4rem] py-[2.5rem] rounded-[10px] gap-3">
+          <div className="flex flex-col items-center bg-[#1E7E93] text-white w-full py-4 px-5 lg:px-[4rem] lg:py-[2.5rem] rounded-[10px] gap-3">
             <UilEnvelopeAdd size="40" />
             <h1 className="text-white text-[2.5rem] font-semibold m-0">
               Hooray !
