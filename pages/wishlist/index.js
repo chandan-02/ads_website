@@ -10,7 +10,7 @@ function Index() {
           <p className="m-0 text-[1.5rem] text-[#EE2841] font-bold">
             My Wish List
           </p>
-          <p className="m-0 text-[0.7rem] text-[#595959]">
+          <p className="m-0 text-[1rem] text-[#595959]">
             Price can change depending on shipping method and taxes of your
             state.
           </p>

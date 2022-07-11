@@ -22,10 +22,10 @@ const ShopByBrandSlider = () => {
           </div>
           <div className=" flex flex-col">
             <div className="md:w-[15rem] flex flex-col gap-[0.2rem] w-[15rem] ">
-              <p className="m-0 md:text-[1rem] font-bold text-[1rem]">
+              <p className="m-0 md:text-[1rem] font-bold text-[1rem] text-[#000]">
                 Amd Ryzen 9 5950x - processor
               </p>
-              <p className="m-0 md:text-[1.5rem] font-bold text-[1.2rem]">₹ 33,760</p>
+              <p className="m-0 md:text-[1.5rem] font-bold text-[1.2rem] text-[#000]">₹ 33,760</p>
               <p className="m-0 text-[#787885] md:text-[0.8rem]">
                 Eligible for Shipping To Mars or somewhere else
               </p>

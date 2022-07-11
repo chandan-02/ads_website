@@ -126,7 +126,7 @@ const Index = () => {
       </div>
 
       <div className="m-[1rem]">
-        <span className="flex justify-center items-center text-[2.5rem] font-bold gap-2 my-10 ">
+        <span className="flex justify-center items-center text-[2.5rem] font-bold gap-2 my-10 text-[#000] ">
           Today’s <span className="text-red-600"> Deal</span>
         </span>
         <Slider />

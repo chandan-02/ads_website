@@ -37,7 +37,7 @@ const Courisal = ({ img, title, desc, price }) => {
           alt="Carousel-Product"
         />
         <div className="flex flex-col md:gap-3.5 gap-[0.3rem]">
-          <span className="md:text-left md:text-4xl font-bold text-[1.3rem] ">
+          <span className="md:text-left md:text-4xl font-bold text-[1.3rem] text-[#000] ">
             {title}
           </span>
           <span className="md:text-left md:text-[1.375rem] md:w-[42.938rem] text-[#404040]">
@@ -45,7 +45,7 @@ const Courisal = ({ img, title, desc, price }) => {
           </span>
           <div className="flex gap-[0.7rem] md:gap-7 align-baseline items-baseline">
             <del className="text-red-600 text-[1.3rem]  md:text-3xl">{formatter.format(price ?? 0)}</del>
-            <span className="md:text-[2.5rem] text-[1.8rem] md:font-bold">{formatter.format(price ?? 0)}</span>
+            <span className="md:text-[2.5rem] text-[1.8rem] md:font-bold text-[#000]">{formatter.format(price ?? 0)}</span>
           </div>
           <div className="flex md:gap-7 gap-[0.7rem]">
             <span className="underline underline-offset-4 text-[#404040] text-[1.1rem] md:text-2xl cursor-pointer">
