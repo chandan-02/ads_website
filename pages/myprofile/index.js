@@ -38,7 +38,7 @@ export const Index = () => {
             Content of Tab Pane 3
           </TabPane>
         </Tabs>
-        <div className="flex flex-col gap-[1.87rem] w-2/5">
+        <div className="flex flex-col gap-[1.87rem] md:w-2/5 w-full">
           <div className="flex justify-between items-center mt-[1.2rem]">
             <span className="md:text-[1.125rem] text-[0.9rem] text-[#000000] font-bold">
               Latest Notifications
