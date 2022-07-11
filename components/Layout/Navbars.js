@@ -15,6 +15,7 @@ import {
 import { Dropdown, Space } from "antd";
 import UseDimension from "../Head/UseDimension";
 import { SearchPop } from "../Homepage/SearchPop";
+import { UserOutlined } from '@ant-design/icons';
 
 function Navbar({ setCollapsed, collapsed }) {
   const router = useRouter();
@@ -47,13 +48,13 @@ function Navbar({ setCollapsed, collapsed }) {
               <UilBell size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
               <UilHeart size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
               <UilShoppingCart  size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
-              <Avatar size={40}>CY</Avatar>
+              <Avatar size={40} icon={<UserOutlined />} className="leading-6"></Avatar>
             </div>
           </div>
           <div className="grid grid-cols-3 items-center">
             <div className="cursor-pointer">
               <UilBars
-                opened={collapsed}
+                // opened={collapsed}
                 onClick={() => setCollapsed(!collapsed)}
               />
             </div>
@@ -116,14 +117,14 @@ function Navbar({ setCollapsed, collapsed }) {
               </Dropdown>
               <Dropdown placement="bottomLeft"  trigger="click" onVisibleChange={handleVisibleChanges} visible={visibles}  overlay={<User/>}>
 
-              <Avatar className="cursor-pointer hover:text-[#E2] transition-all"  size={40}>CY</Avatar>
+              <Avatar className="cursor-pointer leading-6" icon={<UserOutlined />} size={40}/>
               </Dropdown>
             </div>
           </div>
           <div className="grid grid-cols-4 items-center">
             <div
               className="cursor-pointer"
-              opened={collapsed}
+              // opened={collapsed}
               onClick={() => setCollapsed(!collapsed)}
             >
               <UilBars  />
