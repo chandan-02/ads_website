@@ -142,8 +142,8 @@ const Index = () => {
           <Secondcourisal />
 
           <div className="flex justify-between items-center mt-[1.2rem] ">
-            <div className="flex gap-[0.5rem] items-center">
-              <span className="md:text-[2.2rem] text-[#000000] text-[1rem]">
+            <div className="flex gap-[0.5rem] md:flex-row md:items-center flex-col">
+              <span className="md:text-[2.2rem] text-[#000000] text-[1rem] ">
                 Upgrade your
               </span>
               <span className="text-[#EE2841] font-bold text-[1rem] md:text-[2.2rem]">
