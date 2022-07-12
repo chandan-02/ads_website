@@ -33,7 +33,7 @@ const GamingRigsCard = () => {
             <div className="w-[100%] relative">
               <img
                 src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                className="rounded-md h-[14.2rem]"
+                className="rounded-md h-[13.2rem] object-none"
                 alt="Gaming-Rigs"
               />
               {click == 0 ? (
