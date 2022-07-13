@@ -31,7 +31,7 @@ const ShopByBrandSlider = () => {
               </p>
               <div className="flex items-center gap-[1rem]">
                 <ReviewStars stars={5} size={18} />
-                <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[0.9rem] rounded-md font-bold  text-[0.9rem]  w-[5rem] h-[1.9rem]  ">
+                <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[0.9rem] rounded-md font-bold  text-[0.9rem]  w-[5rem] h-[1.9rem] transition-all  ">
                   Buy
                 </button>
               </div>

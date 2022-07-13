@@ -80,7 +80,7 @@ const GamingRigsCard = () => {
                 </span>
               </div>
 
-              <button className="bg-[#151D20] hover:bg-[#ffff] hover:text-[#151D20] hover:border-[#151D20] hover:border-2 text-[#FFFFFF] md:text-[1rem] rounded-md font-medium  h-[2.7rem]">
+              <button className="bg-[#151D20] hover:bg-[#ffff] hover:text-[#151D20] hover:border-[#151D20] hover:border-2 text-[#FFFFFF] md:text-[1rem] rounded-md font-medium  h-[2.7rem] transition-all">
                 Add to Cart
               </button>
             </div>
