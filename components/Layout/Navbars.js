@@ -22,6 +22,8 @@ function Navbar({ setCollapsed, collapsed }) {
   const [width, height] = UseDimension();
   const [visible, setVisible] = useState(false);
   const [visibles, setVisibles] = useState(false);
+  const [signed, setSigned] = useState(false);
+
 
   const handleMenuClick = (e) => {
     if (e.key === '3') {
@@ -48,7 +50,11 @@ function Navbar({ setCollapsed, collapsed }) {
               <UilBell size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
               <UilHeart size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
               <UilShoppingCart  size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
-              <Avatar size={40} icon={<UserOutlined />} className="leading-6"></Avatar>
+              {
+                !signed ? <span className="text-black hover:underline hover:underline-offset-1 text-[1rem] transition-all whitespace-nowrap font-semibold">Hi, Sign <span className="text-[#EE2841]">in?</span></span>
+                : 
+                <Avatar size={40} icon={<UserOutlined />} className="leading-6"></Avatar>
+              }
             </div>
           </div>
           <div className="grid grid-cols-3 items-center">
@@ -115,10 +121,13 @@ function Navbar({ setCollapsed, collapsed }) {
               <Dropdown placement="bottomLeft" trigger="click" onVisibleChange={handleVisibleChange} visible={visible} overlay={<CartPop/>}>
               <UilShoppingCart  className="cursor-pointer text-[#000] hover:text-[#EE2841] transition-all" size={30} />
               </Dropdown>
-              <Dropdown placement="bottomLeft"  trigger="click" onVisibleChange={handleVisibleChanges} visible={visibles}  overlay={<User/>}>
-
-              <Avatar className="cursor-pointer leading-6" icon={<UserOutlined />} size={40}/>
-              </Dropdown>
+              {
+                !signed ? <span className="text-black hover:underline hover:underline-offset-1 text-[1rem] transition-all whitespace-nowrap font-semibold">Hi, Sign <span className="text-[#EE2841]">in?</span></span> 
+                : 
+                <Dropdown placement="bottomLeft"  trigger="click" onVisibleChange={handleVisibleChanges} visible={visibles}  overlay={<User/>}>
+                  <Avatar className="cursor-pointer leading-6" icon={<UserOutlined />} size={40}/>
+                </Dropdown>
+              }
             </div>
           </div>
           <div className="grid grid-cols-4 items-center">
