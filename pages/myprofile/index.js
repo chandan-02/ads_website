@@ -3,6 +3,7 @@ import { UilEdit, UilEnvelopeAdd, UilLaptop } from "@iconscout/react-unicons";
 import { RightOutlined } from "@ant-design/icons";
 import { Input, Tabs } from "antd";
 import PersonalDetails from "../../components/MyProfile/PersonalDetails";
+import ResetPass from "../../components/MyProfile/ResetPass";
 const { TabPane } = Tabs;
 
 export const Index = () => {
@@ -32,7 +33,7 @@ export const Index = () => {
             Content of Tab Pane 2
           </TabPane>
           <TabPane tab="Reset Password" key="3">
-            Content of Tab Pane 3
+            <ResetPass/>
           </TabPane>
           <TabPane tab="My Orders" key="4">
             Content of Tab Pane 3
