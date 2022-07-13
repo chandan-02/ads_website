@@ -4,6 +4,7 @@ import { RightOutlined } from "@ant-design/icons";
 import { Input, Tabs } from "antd";
 import PersonalDetails from "../../components/MyProfile/PersonalDetails";
 import ResetPass from "../../components/MyProfile/ResetPass";
+import MyOrders from "../../components/MyProfile/MyOrders";
 const { TabPane } = Tabs;
 
 export const Index = () => {
@@ -30,13 +31,13 @@ export const Index = () => {
             <PersonalDetails />
           </TabPane>
           <TabPane tab="Address" key="2">
-            Content of Tab Pane 2
+            addres
           </TabPane>
           <TabPane tab="Reset Password" key="3">
             <ResetPass/>
           </TabPane>
           <TabPane tab="My Orders" key="4">
-            Content of Tab Pane 3
+          <MyOrders/>
           </TabPane>
         </Tabs>
         <div className="flex flex-col gap-[1.87rem] md:w-2/5 w-full">
