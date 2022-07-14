@@ -169,7 +169,7 @@ const ReviewCompo = () => {
         .gradientclass{
           background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
           position: absolute;
-          bottom: -38rem;
+          bottom: -36rem;
         }
         @media screen and ( max-width: 480px ) {
           .gradientclass{

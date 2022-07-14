@@ -56,7 +56,7 @@ const RecomProductSlider = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <button className=" bg-[#151D20]hover:bg-[#ffff] text-[#FFFFFF] border-[#FFFFFF] border-2  md:text-[1rem] rounded-md font-medium  h-[2.7rem] md:w-[100%] w-[95%] ">
+              <button className=" bg-[#151D20]hover:bg-[#ffff] text-[#FFFFFF] border-[#FFFFFF] border-2  md:text-[1rem] rounded-md font-medium  h-[2.7rem] md:w-[100%] w-[95%] hover:bg-white hover:text-black hover:border-none transition-all">
                 Add to Cart
               </button>
             </div>

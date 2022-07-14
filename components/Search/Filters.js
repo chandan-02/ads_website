@@ -110,6 +110,9 @@ export const Filters = ({collapsed,setCollapsed}) => {
             font-size: 0.7rem;
           }
         }
+        .ant-collapse-expand-icon{
+          line-height: 0;
+        }
       `}</style>
     </div>
   );
