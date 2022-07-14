@@ -14,12 +14,12 @@ import MyOrdersCard from './MyOrderCard';
 const MyOrders = () => {
   return (
     <div>
-        <div className='flex justify-between gap-16'>
-        <div className="flex items-center sort border pl-3 rounded">
+        <div className='md:flex md:justify-between   md:gap-16 gap-[4rem]'>
+        <div className="flex items-center sort border pl-3 rounded md:w-[14rem] md:h-[3rem] w-[14rem] h-[3rem] ">
             <h1 className="m-0">Sort By:</h1>
             <Select
+              className=''
               style={{
-                width: 160,
                 color: "#000",
                 borderRadius: 5
               }}
@@ -29,9 +29,10 @@ const MyOrders = () => {
               <Option value="hightolow">Cancelled</Option>
             </Select>
           </div>
-          <div className="">
+          <div className="md:w-[14rem] md:h-[3rem] w-[14rem] h-[3rem] mt-[1rem] md:mt-[0rem] ">
           <Input
-            style={{ borderRadius: 5,height:45 }}
+             className="md:w-[10rem] md:h-[3rem] w-[10rem] h-[3rem]"
+             style={{ borderRadius: 5 }} 
             placeholder="Search by order id"
             suffix={<UilSearch size="18" color="#6F6F6F" />}
           />

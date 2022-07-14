@@ -25,8 +25,8 @@ const MyOrdersCard = () => {
   return (
     <div>
       <div className=" mainborder md:mt-[2rem] mt-[1rem] py-[0.8rem]">
-        <div className="flex gap-3 md:w-[50rem]">
-          <div className="md:w-[17rem] md:h-[9.2rem] w-[12rem] h-[6rem] object-none ">
+        <div className="md:flex gap-3">
+          <div className="md:w-[17rem] md:h-[9.2rem] object-none ">
             <img
               src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg"
               className="rounded-[0.3rem] md:w-[100%] md:h-[100%]"
@@ -34,8 +34,8 @@ const MyOrdersCard = () => {
             />
           </div>
           <div className="w-full flex flex-col  gap-[0rem] md:gap-[]">
-            <div className="flex justify-between items-center">
-              <span className="md:text-[1.125rem] text-[1rem] font-bold leading-6	text-black">
+            <div className="md:flex justify-between items-center">
+              <span className="md:text-[1.125rem] text-[0.9rem] font-bold leading-6	text-black">
               Name : Mark Zubukbuk
               </span>
 
@@ -43,7 +43,7 @@ const MyOrdersCard = () => {
                <p className="m-0 md:text-[1.125rem] text-black">Order id : #ODRi4753nbjcasak</p>
               </div>
             </div>
-            <div className="md:w-[12rem] 2xl:w-[27rem] w-[6rem]">
+            <div className="md:w-[12rem] 2xl:w-[27rem]">
               <div className="md:text-[1.1rem] text-[0.8rem] text-black">
               Products : Zotoc Gaming Rtx 3080, G Skill 8x2 3200mhz, MSI B450m pro vdh max ...
               </div>
@@ -59,7 +59,7 @@ const MyOrdersCard = () => {
                 </Button>
               </Dropdown> */}
             </div>
-            <div className="flex justify-end">
+            <div className="">
             <div className="flex">
             <Button  size="large" className="w-[7rem] rounded-2xl border-[#000]">Update</Button>
             <Button  type="link" size="large" className="w-[7rem] rounded-2xl">Cancel Order</Button>
