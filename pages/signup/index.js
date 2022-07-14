@@ -3,19 +3,37 @@ import Link from "next/link";
 import React from "react";
 
 export const Index = () => {
+  const functiondisable = () => {
+    // To get the scroll position of current webpage
+    const TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
+    
+    // if scroll happens, set it to the previous value
+    window.onscroll = function() {
+      window.scrollTo(LeftScroll, TopScroll);
+    };
+  }
+  setTimeout(functiondisable(),4000)
+  const functionenable = () => {
+    window.onscroll = function() {};
+  }
 
   return (
     <div
-      id="signin"
-      className="flex items-center justify-center h-screen gap-[2rem]"
+      id="signup"
+      className="flex items-center justify-center h-screen gap-[2rem] overflow-hidden"
     >
       <div className="flex flex-col items-center w-[90%] gap-[1.5rem] md:w-[28rem]">
-        <h1 className="text-[#EE2841] m-0 text-[2.5rem]">
-          Sign<span className="text-black"> In</span>
+        <h1 className="text-black m-0 text-[2.5rem]">
+          Sign<span className="text-[#EE2841]"> Up</span>
         </h1>
         <div className="button flex flex-col gap-4 w-full">
           <div className="form w-full">
             <span className="text-black">Email</span>
+            <Input />
+          </div>
+          <div className="form w-full">
+            <span className="text-black">Username</span>
             <Input />
           </div>
           <div className="form w-full">
@@ -27,16 +45,16 @@ export const Index = () => {
               className="h-6"
               src="https://img.icons8.com/color/344/google-logo.png"
             />
-            Sign in with Google
+            Sign up with Google
           </button>
-          <Button type="primary" className="w-full">
-            Sign In
+          <Button type="primary" className="w-full" onClick={functionenable}>
+            Sign Up
           </Button>
           <span className="text-black font-semibold">
-            Do not have an account?{" "}
-            <Link href="/signup#signup">
+            Already have an account?{" "}
+            <Link href="/signin#signin">
               <a className="underline hover:text-[#EE2841] text-[#EE2841]">
-                Create one
+                Sign In
               </a>
             </Link>
           </span>

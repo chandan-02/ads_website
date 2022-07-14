@@ -122,7 +122,7 @@ function Navbar({ setCollapsed, collapsed }) {
               <UilShoppingCart  className="cursor-pointer text-[#000] hover:text-[#EE2841] transition-all" size={30} />
               </Dropdown>
               {
-                !signed ? <span className="text-black hover:underline hover:underline-offset-1 text-[1rem] transition-all whitespace-nowrap font-semibold">Hi, Sign <span className="text-[#EE2841]">in?</span></span> 
+                !signed ? <Link href="/signin#signin"><a className="text-black hover:underline hover:underline-offset-1 text-[1rem] transition-all whitespace-nowrap font-semibold">Hi, Sign <span className="text-[#EE2841]">in?</span></a></Link>
                 : 
                 <Dropdown placement="bottomLeft"  trigger="click" onVisibleChange={handleVisibleChanges} visible={visibles}  overlay={<User/>}>
                   <Avatar className="cursor-pointer leading-6" icon={<UserOutlined />} size={40}/>
