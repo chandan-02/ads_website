@@ -9,7 +9,7 @@ export const Index = () => {
       id="signin"
       className="flex items-center justify-center h-screen gap-[2rem]"
     >
-      <div className="flex flex-col items-center w-[90%] gap-[1.5rem] md:w-[28rem]">
+      <div className="flex flex-col w-[90%] h-full items-center justify-center overflow-hidden gap-[1.5rem] md:w-[28rem]">
         <h1 className="text-[#EE2841] m-0 text-[2.5rem]">
           Sign<span className="text-black"> In</span>
         </h1>

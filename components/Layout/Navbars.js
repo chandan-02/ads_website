@@ -47,13 +47,13 @@ function Navbar({ setCollapsed, collapsed }) {
           <div className="grid grid-cols-2 justify-center items-center">
             <img className="w-20" src="../assets/logo.webp" alt="logo" />
             <div className="justify-self-end flex items-center gap-4">
-              <UilBell size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
-              <UilHeart size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
-              <UilShoppingCart  size={30} className="text-[#000] hover:text-[#EE2841] transition-all" />
+              <UilBell size={24} className="text-[#000] hover:text-[#EE2841] transition-all" />
+              <UilHeart size={24} className="text-[#000] hover:text-[#EE2841] transition-all" />
+              <UilShoppingCart  size={24} className="text-[#000] hover:text-[#EE2841] transition-all" />
               {
                 !signed ? <span className="text-black hover:underline hover:underline-offset-1 text-[1rem] transition-all whitespace-nowrap font-semibold">Hi, Sign <span className="text-[#EE2841]">in?</span></span>
                 : 
-                <Avatar size={40} icon={<UserOutlined />} className="leading-6"></Avatar>
+                <Avatar size={34} icon={<UserOutlined />} className="leading-6"></Avatar>
               }
             </div>
           </div>
@@ -72,7 +72,7 @@ function Navbar({ setCollapsed, collapsed }) {
               className="justify-self-center col-span-2"
             />
           </div>
-          <div className="col-start-2 col-end-4 gap-[2rem] flex justify-center text-xl">
+          <div className="col-start-2 col-end-4 gap-[2rem] flex justify-center text-lg">
             <Link href="/">
               <a
                 className={`transition hover:text-[#EE2841] ${
