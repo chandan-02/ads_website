@@ -1,23 +1,8 @@
-import { Button, Input } from "antd";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import { Button, Input } from "antd";
 
-export const Index = () => {
-  const functiondisable = () => {
-    // To get the scroll position of current webpage
-    const TopScroll = window.pageYOffset || document.documentElement.scrollTop;
-    const LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
-    
-    // if scroll happens, set it to the previous value
-    window.onscroll = function() {
-      window.scrollTo(LeftScroll, TopScroll);
-    };
-  }
-  setTimeout(functiondisable(),4000)
-  const functionenable = () => {
-    window.onscroll = function() {};
-  }
-
+const Index = () => {
   return (
     <div
       id="signup"

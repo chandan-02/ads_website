@@ -2,13 +2,7 @@ import React from "react";
 import { Tabs } from "antd";
 import { Input, Carousel } from "antd";
 import Bannergrid from "../../components/Homepage/Bannergrid";
-import {
-  UilSearch,
-  UilBars,
-  UilShoppingCart,
-  UilHeart,
-  UilBell,
-} from "@iconscout/react-unicons";
+import { UilSearch } from "@iconscout/react-unicons";
 
 import ShopByBanner from "../../components/ShopByBrand/ShopByBanner";
 import RecomProductSlider from "../../components/ProductBuyPage/RecomProductSlider";
@@ -120,7 +114,7 @@ const Index = () => {
               <div className=" flex flex-col md:gap-[3rem] gap-[2rem]">
                 <ShopByBanner />
                 <div>
-                  <div className="flex justify-between items-center md:mb-[3rem] md:ml-[2.1rem] md:mb-[2rem] ">
+                  <div className="flex justify-between items-center md:ml-[2.1rem] md:mb-[2rem] ">
                     <p className="m-[0] md:text-[2.2rem] text-[#000000] text-[1.4rem] text-bold font-bold">
                       Motherboards
                     </p>

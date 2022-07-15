@@ -1,9 +1,8 @@
-import { Button, Input } from "antd";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import { Button, Input } from "antd";
 
-export const Index = () => {
-
+const Index = () => {
   return (
     <div
       id="signin"
