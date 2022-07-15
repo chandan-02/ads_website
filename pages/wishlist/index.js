@@ -2,7 +2,7 @@ import React from "react";
 import { Pagination } from "antd";
 import WishListCard from "../../components/WishList/WishListCard";
 
-function Index() {
+const Index = () => {
   return (
     <div className="flex justify-center items-center md:mb-[2rem] mx-[2rem] my-[1rem]">
       <div>

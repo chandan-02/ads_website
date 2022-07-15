@@ -6,7 +6,7 @@ import { UilArrowRight } from "@iconscout/react-unicons";
 const { Option } = Select;
 const { Panel } = Collapse;
 
-export const Index = () => {
+const Index = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
