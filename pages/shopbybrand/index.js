@@ -181,46 +181,44 @@ const Index = () => {
               Content of Tab Pane 3
             </TabPane>
           </Tabs>
-          <style>
-            {`
+          <style>{`
             .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
-                color: #EE2841;
-                display: flex;
-                background: rgba(238, 40, 65, 0.18);
-                justify-content: center;
-                align-items: center;
-                font-weight: 400;
-                font-size: 1.35rem;
-                line-height: 1.5rem;
-                border-radius: 50px;
-                padding: 1rem 3rem
+              color: #EE2841;
+              display: flex;
+              background: rgba(238, 40, 65, 0.18);
+              justify-content: center;
+              align-items: center;
+              font-weight: 400;
+              font-size: 1.35rem;
+              line-height: 1.5rem;
+              border-radius: 50px;
+              padding: 1rem 3rem
             }
             .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-bottom > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-bottom > div > .ant-tabs-nav .ant-tabs-ink-bar
             {
-                height: 0px;
+              height: 0px;
             }
             .ant-tabs-tab{
-                padding:0px;
+              padding:0px;
             }
            .ant-tabs-tab-btn{
-                transition:none
+              transition:none
             }
             .ant-tabs-tab-btn{
-                color: #EE2841;
-                font-weight: 400;
-                font-size: 1.35rem;
-                line-height: 1.5rem;
-                // padding:1rem;
-                padding: 1rem 3rem
+              color: #EE2841;
+              font-weight: 400;
+              font-size: 1.35rem;
+              line-height: 1.5rem;
+              padding: 1rem 3rem
             }
 
             .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
-                border-bottom: 0px solid #f0f0f0;
-                content: '';
+              border-bottom: 0px solid #f0f0f0;
+              content: '';
             }
 
             @media screen and ( max-width: 480px ) {
-               .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+              .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
                 color:#EE2841;
                 display: flex;
                 background: rgba(238, 40, 65, 0.18);
@@ -231,26 +229,20 @@ const Index = () => {
                 line-height: 1rem;
                 border-radius: 50px;
                 padding: 0.5rem 1.5rem
-            }
+              }
 
-            .ant-tabs-tab-btn{
-              color: #EE2841;
-              font-weight: 400;
-              font-size: 0.8rem;
-              line-height: 1rem;
-              // padding:1rem;
-              padding: 0.5rem 1.5rem
-          }
-          .ant-tabs-tab + .ant-tabs-tab{
-             margin: 0;
-          }
-          }
-            
+              .ant-tabs-tab-btn{
+                color: #EE2841;
+                font-weight: 400;
+                font-size: 0.8rem;
+                line-height: 1rem;
+                padding: 0.5rem 1.5rem
+              }
+              .ant-tabs-tab + .ant-tabs-tab{
+                margin: 0;
+              }
             }
-
-           
-            `}
-          </style>
+          `}</style>
         </div>
       </div>
     </div>

@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 import Maps from "../../components/ContactUs/Maps";
-import {
-  Radio,
-  Input,
-  Select,
-  Checkbox,
-  Button,
-  Dropdown,
-  Menu,
-  Space,
-} from "antd";
+import { Input, Select } from "antd";
 const { TextArea } = Input;
 const { Option } = Select;
 
@@ -19,7 +10,9 @@ function Index() {
   return (
     <div className="flex flex-col gap-[4rem]">
       <div className="flex justify-center items-center mt-[2rem]">
-        <p className="m-0 p-0 text-[2rem] font-bold text-[#000]">Know More About Us</p>
+        <p className="m-0 p-0 text-[2rem] font-bold text-[#000]">
+          Know More About Us
+        </p>
       </div>
 
       <div className=" md:flex md:items-center md:flex-row flex flex-col-reverse  md:mx-[7rem] md:gap-[4rem]  md:w-[100%] mx-[1rem] gap-[2rem]">
@@ -37,7 +30,6 @@ function Index() {
             />
           </div>
 
-          {/* <span className="block">Subscribe</span> to our newsletter & recieve latest offers in your <span className="text-[#EE2841]">inbox.</span> */}
           <p className="lg:text-[1.5rem] md:text-[1rem] text-[0.8rem] font-semibold absolute md:inset-0 leading-tight m-0 p-[1rem] lg:w-[46rem] text-[#000]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -96,15 +88,13 @@ function Index() {
                   minRows: 3,
                   maxRows: 5,
                 }}
-                
               />
-             
             </div>
             <div>
               <button className="bg-[#EE2841] hover:bg-[#ffff] hover:text-[#EE2841] hover:border-[#EE2841] hover:border-2 text-[#FFFFFF] md:text-[1.1rem] md:w-[10rem] md:h-[3rem] rounded-md font-bold  text-[1.1rem]  w-[8rem] h-[2.7rem] md:mt-0 mt-[1rem] ">
-              Submit
+                Submit
               </button>
-              </div>
+            </div>
           </div>
         </div>
       </div>

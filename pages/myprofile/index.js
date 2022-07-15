@@ -7,7 +7,7 @@ import ResetPass from "../../components/MyProfile/ResetPass";
 import MyOrders from "../../components/MyProfile/MyOrders";
 const { TabPane } = Tabs;
 
-export const Index = () => {
+const Index = () => {
   return (
     <div className="flex flex-col items-center my-[2rem] gap-[15rem]">
       <div className="flex flex-col justify-start items-center bg-[#CACACA] h-[13.563rem] rounded-[10px] 2xl:w-4/6 lg:w-4/5 w-11/12">

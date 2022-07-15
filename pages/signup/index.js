@@ -32,7 +32,7 @@ const Index = () => {
             />
             Sign up with Google
           </button>
-          <Button type="primary" className="w-full" onClick={functionenable}>
+          <Button type="primary" className="w-full">
             Sign Up
           </Button>
           <span className="text-black font-semibold">

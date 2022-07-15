@@ -59,7 +59,7 @@ const Index = () => {
         `}</style>
       </div>
     </div>
-  );
+  )
 };
 
 export default Index;
