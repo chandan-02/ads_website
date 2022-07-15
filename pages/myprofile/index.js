@@ -5,6 +5,7 @@ import { Input, Tabs } from "antd";
 import PersonalDetails from "../../components/MyProfile/PersonalDetails";
 import ResetPass from "../../components/MyProfile/ResetPass";
 import MyOrders from "../../components/MyProfile/MyOrders";
+import Address from "../../components/MyProfile/Address";
 const { TabPane } = Tabs;
 
 export const Index = () => {
@@ -31,7 +32,7 @@ export const Index = () => {
             <PersonalDetails />
           </TabPane>
           <TabPane tab="Address" key="2">
-            addres
+            <Address/>
           </TabPane>
           <TabPane tab="Reset Password" key="3">
             <ResetPass/>
