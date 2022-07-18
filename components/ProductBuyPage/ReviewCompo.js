@@ -36,12 +36,12 @@ const ReviewCompo = () => {
            } */}
             {!visibal && (
               <div className="flex flex-col gap-[5rem]">
-                <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 2xl:gap-[5rem] lg:gap-[7rem] md:gap-[5rem] gap-[4rem] gird">
+                <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 2xl:gap-[5rem] lg:gap-[7rem] md:gap-[5rem] gap-[4rem] gird justify-center">
                   <ReviewCard />
                   <ReviewCard />
                   <ReviewCard />
                 </div>
-                <div className="grid 2xl:grid-cols-4  xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 2xl:gap-[5rem] lg:gap-[7rem] md:gap-[5rem] gap-[4rem] ">
+                <div className="grid 2xl:grid-cols-4  xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 2xl:gap-[5rem] lg:gap-[7rem] md:gap-[5rem] gap-[4rem] justify-center ">
                   <ReviewCard />
                   <ReviewCard />
                   <ReviewCard />
