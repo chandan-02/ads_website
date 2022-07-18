@@ -61,6 +61,19 @@ const ProductTabs = () => {
             
             }
 
+            @media screen and ( max-width: 480px ) {
+              .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+                color: #EE2841;
+                display: flex;
+                background: rgba(238, 40, 65, 0.18);
+                justify-content: center;
+                align-items: center;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+            }
+
            
             `}
       </style>

@@ -103,7 +103,7 @@ const Index = () => {
             </span>
           </div>
           <div className="flex flex-col m-[1rem] md:m-[0rem]">
-            <Carousel arrows {...settings} autoplay={false} draggable={true}>
+            <Carousel arrows {...settings} autoplay={true} draggable={true}>
               <RecomProductSlider />
               <RecomProductSlider />
               <RecomProductSlider />
