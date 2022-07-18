@@ -13,7 +13,10 @@ const Index = () => {
     <div className="flex flex-col items-center my-[2rem] gap-[15rem]">
       <div className="flex flex-col justify-start items-center bg-[#CACACA] h-[13.563rem] rounded-[10px] 2xl:w-4/6 lg:w-4/5 w-11/12">
         <div className="flex justify-end w-full">
-          <UilEdit size="30" className="m-[1.25rem] cursor-pointer hover:text-black transition-all" />
+          <UilEdit
+            size="30"
+            className="m-[1.25rem] cursor-pointer hover:text-black transition-all"
+          />
         </div>
         <div className="flex flex-col items-center">
           <div className="w-[16.375rem] h-[16.375rem] rounded-full">
@@ -32,13 +35,13 @@ const Index = () => {
             <PersonalDetails />
           </TabPane>
           <TabPane tab="Address" key="2">
-            <Address/>
+            <Address />
           </TabPane>
           <TabPane tab="Reset Password" key="3">
-            <ResetPass/>
+            <ResetPass />
           </TabPane>
           <TabPane tab="My Orders" key="4">
-          <MyOrders/>
+            <MyOrders />
           </TabPane>
         </Tabs>
         <div className="flex flex-col gap-[1.87rem] md:w-2/5 w-full">
@@ -58,9 +61,13 @@ const Index = () => {
           </div>
           <div className="border rounded-[10px] py-[1.56rem] px-[1.873rem] ">
             <div className="flex items-center gap-4">
-              <div className="bg-[#EF9797] rounded-full inline-flex p-4"><UilLaptop size="31" color="#fff" /></div>
+              <div className="bg-[#EF9797] rounded-full inline-flex p-4">
+                <UilLaptop size="31" color="#fff" />
+              </div>
               <div>
-                <h1 className="text-base text-black font-semibold m-0">Order Status Update</h1>
+                <h1 className="text-base text-black font-semibold m-0">
+                  Order Status Update
+                </h1>
                 <span className="text-[0.75rem]">
                   Your Order with id #ODRTX3080 will be delivered within next
                   two days.

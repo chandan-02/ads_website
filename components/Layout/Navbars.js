@@ -22,7 +22,7 @@ function Navbar({ setCollapsed, collapsed }) {
   const [width, height] = UseDimension();
   const [visible, setVisible] = useState(false);
   const [visibles, setVisibles] = useState(false);
-  const [signed, setSigned] = useState(false);
+  const [signed, setSigned] = useState(true);
 
 
   const handleMenuClick = (e) => {

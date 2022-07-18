@@ -1,52 +1,52 @@
-import React from 'react'
+import React from "react";
 const { Option } = Select;
 const { Panel } = Collapse;
-import { Select, Collapse,Input,Pagination } from "antd";
+import { Select, Collapse, Input, Pagination } from "antd";
 import {
-    UilSearch,
-    UilBars,
-    UilShoppingCart,
-    UilHeart,
-    UilBell,
-  } from "@iconscout/react-unicons";
-import MyOrdersCard from './MyOrderCard';
+  UilSearch,
+  UilBars,
+  UilShoppingCart,
+  UilHeart,
+  UilBell,
+} from "@iconscout/react-unicons";
+import MyOrdersCard from "./MyOrderCard";
 
 const MyOrders = () => {
   return (
     <div>
-        <div className='md:flex md:justify-between   md:gap-16 gap-[4rem]'>
+      <div className="md:flex md:justify-between md:gap-16 gap-[4rem]">
         <div className="flex items-center sort border pl-3 rounded md:w-[14rem] md:h-[3rem] w-[14rem] h-[3rem] ">
-            <h1 className="m-0">Sort By:</h1>
-            <Select
-              className=''
-              style={{
-                color: "#000",
-                borderRadius: 5
-              }}
-            >
-              <Option value="popularity">Shipping / Active</Option>
-              <Option value="lowtohigh">Delivered</Option>
-              <Option value="hightolow">Cancelled</Option>
-            </Select>
-          </div>
-          <div className="md:w-[14rem] md:h-[3rem] w-[14rem] h-[3rem] mt-[1rem] md:mt-[0rem] ">
+          <h1 className="m-0">Sort By:</h1>
+          <Select
+            className=""
+            style={{
+              color: "#000",
+              borderRadius: 5,
+            }}
+          >
+            <Option value="popularity">Shipping / Active</Option>
+            <Option value="lowtohigh">Delivered</Option>
+            <Option value="hightolow">Cancelled</Option>
+          </Select>
+        </div>
+        <div className="md:w-[14rem] md:h-[3rem] w-[14rem] h-[3rem] mt-[1rem] md:mt-[0rem] ">
           <Input
-             className="md:w-[10rem] md:h-[3rem] w-[10rem] h-[3rem]"
-             style={{ borderRadius: 5 }} 
+            className="md:w-[10rem] md:h-[3rem] w-[10rem] h-[3rem]"
+            style={{ borderRadius: 5 }}
             placeholder="Search by order id"
             suffix={<UilSearch size="18" color="#6F6F6F" />}
           />
         </div>
-        </div>
-    <div>
-        <MyOrdersCard/>
-        <MyOrdersCard/>
-        <MyOrdersCard/>
+      </div>
+      <div>
+        <MyOrdersCard />
+        <MyOrdersCard />
+        <MyOrdersCard />
         <div className="flex justify-end mt-[2rem]">
           <Pagination defaultCurrent={1} total={30} />
         </div>
-    </div>
-        <style>{`
+      </div>
+      <style>{`
         .sort > .ant-select:not(.ant-select-customize-input) .ant-select-selector{
             border: none;
         }
@@ -73,7 +73,7 @@ const MyOrders = () => {
         }
       `}</style>
     </div>
-  )
-}
+  );
+};
 
-export default MyOrders
+export default MyOrders;
