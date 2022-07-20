@@ -125,14 +125,14 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="m-[1rem]">
+      <div className="m-[1rem]" >
         <span className="flex justify-center items-center text-[2.5rem] font-bold gap-2 my-10 text-[#000] ">
           Today’s <span className="text-red-600"> Deal</span>
         </span>
         <Slider />
-        <div>
+        <div >
           {!dataLoading ? <Banner /> : ImageSkeleton()}
-          <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2">
+          <div className="md:grid md:grid-cols-3 justify-items-center justify-evenly gap-[1.8rem] mt-[1.8rem] grid grid-cols-2" >
             {!dataLoading ? <Bannergrid /> : ImageSkeleton()}
             {!dataLoading ? <Bannergrid /> : ImageSkeleton()}
             <div className="col-span-2 md:col-span-1">
@@ -141,7 +141,7 @@ const Index = () => {
           </div>
           <Secondcourisal />
 
-          <div className="flex justify-between items-center mt-[1.2rem] ">
+          <div className="flex justify-between items-center mt-[1.2rem] "data-aos="fade-right">
             <div className="flex gap-[0.5rem] md:flex-row md:items-center flex-col">
               <span className="md:text-[2.2rem] text-[#000000] text-[1rem] ">
                 Upgrade your
@@ -163,7 +163,7 @@ const Index = () => {
               />
             </div>
           </div>
-          <div className="">
+          <div className="" data-aos="fade-right">
             <GamingRigsSlides />
           </div>
         </div>

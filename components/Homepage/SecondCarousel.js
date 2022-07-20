@@ -71,7 +71,7 @@ const Secondcourisal = () => {
   };
 
   return (
-    <div className="sliderNew">
+    <div className="sliderNew" data-aos="zoom-in-down">
       <Carousel autoplay={true} draggable={true}>
         <div className=" flex justify-center items-center mt-[1.8rem]">
             { 
