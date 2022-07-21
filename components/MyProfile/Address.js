@@ -4,7 +4,7 @@ import { UilPen, UilPlus } from "@iconscout/react-unicons";
 const { TextArea } = Input;
 
 const Address = () => {
-  const [newAddress, setNewAddress] = useState(false);
+  const [newAddress, setNewAddress] = useState();
 
   return (
     <div className="btn flex flex-col gap-4 w-4/5">
