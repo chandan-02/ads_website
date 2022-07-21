@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Input, Tabs } from "antd";
 import { UilPen, UilPlus } from "@iconscout/react-unicons";
 const { TextArea } = Input;
 
 const Address = () => {
+  const [newAddress, setNewAddress] = useState(false);
+
   return (
     <div className="btn flex flex-col gap-4 w-4/5">
       <div className="flex w-full gap-2">
