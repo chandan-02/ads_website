@@ -49,9 +49,9 @@ const ReviewCompo = () => {
               </div>
             )}
 
-            {!visibal && (
+            {/* {!visibal && (
               <div className=" md:w-[110rem] md:h-[11rem] w-[21rem] h-[10rem] gradientclass"></div>
-            )}
+            )} */}
 
             {visibal && (
               <div className="grid 2xl:grid-cols-4  xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 2xl:gap-[5rem] lg:gap-[7rem] md:gap-[5rem] gap-[4rem] ">
